@@ -1,0 +1,15 @@
+.directorio-item {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover:not(.swiper-slide-active) {
+    transform: scale(1.03);
+  }
+
+  &.swiper-slide-active:hover {
+    transform: scale(1.18);
+  }
+}

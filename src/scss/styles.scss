@@ -1,5 +1,5 @@
 // Vendors
-// @import "vendors/bootstrap/bootstrap.scss";
+@import "vendors/bootstrap/bootstrap.scss";
 // @import "vendors/slick/slick.scss";
 // @import "vendors/slick/slick-theme.scss";
 // @import "vendors/fontawesome/all.min.scss";
@@ -17,8 +17,25 @@
 @import "layout/layout";
 
 // MODULOS
+@import "components/header";
 @import "components/buttons";
 @import "components/menus";
+@import "components/indicator-counter";
+@import "components/programs";
+@import "components/how-to";
+@import "components/tabs";
+@import "components/sliders";
+@import "components/lists";
+@import "components/entries";
+@import "components/animations";
+@import "components/bubbles";
+@import "components/becas";
+@import "components/requisitos";
+@import "components/collapse-item";
+@import "components/icons";
+@import "components/respaldo";
+@import "components/custom-modal";
+@import "components/directorio";
 
 // Theme (colors and fonts)
 @import "theme/typography";

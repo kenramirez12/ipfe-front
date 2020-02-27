@@ -1,0 +1,22 @@
+.main-menu {
+    display: flex;
+    list-style: none;
+
+    &__item:not(:first-child) {
+        margin-left: 3rem;
+    }
+
+    &__link {
+        font-size: 14px;
+        color: $secondary;
+        
+        &:hover {
+            text-decoration: none;
+        }
+
+        &.active {
+            color: $primary;
+            font-weight: 700;
+        }
+    }
+}

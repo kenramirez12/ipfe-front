@@ -1,0 +1,15 @@
+.indicator-counter {
+  text-align: center;
+  flex: 1;
+
+  &__value {
+    font-family: 'HeadingFont';
+    font-size: 5.125rem;
+    line-height: 1.1em;
+    color: $primary;
+  }
+
+  &__label {
+    font-size: 1.125rem;
+  }
+}

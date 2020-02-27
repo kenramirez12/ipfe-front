@@ -1,0 +1,24 @@
+extends ../config/template
+
+block main
+  .container
+    .row.align-items-center
+      .col-md-6
+        span.d-block.text-primary.heading-font(style="font-size:20rem") 404
+        <span class="text-secondary font-weight-bold h2 d-block mt-1 mb-4">Página no encontrada</span>
+        a.btn.btn-primary.px-5.mr-4(href="index.html") Volver al inicio
+      .col-md-6.position-relative
+        <div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
+        <div class="bubble bubble-primary bubble--sm delay-1" style="right: -4rem;bottom: 0rem;"></div>
+        <div class="bubble bubble-secondary" style="bottom: 0;left: 0rem;"></div>
+        <div class="bubble bubble-secondary delay-2" style="top: 2rem;right: -2rem;"></div>
+        <div class="bubble bubble-primary bubble--sm delay-3" style="bottom: 4rem;left: -1rem;"></div>
+        <div class="bubble bubble-primary bubble--sm" style="top: 0rem;left: 0;"></div>
+        img.img-fluid.position-relative(src="assets/images/404_portada-01.svg", alt="")
+        .position-absolute(style="top: 4rem;right: -1rem;z-index:-1;transform: rotate(60deg);")
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
+            <path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+              <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+              </animate>
+            </path>
+          </svg>

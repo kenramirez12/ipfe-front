@@ -1,0 +1,93 @@
+extends ../config/template
+
+block main
+  .container
+    .row.align-items-center
+      .col-md-6
+        h1.
+          <span class="text-secondary font-weight-bold">INSTITUTO PERUANO DE</span>
+          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fomento Educativo</span>
+        p.lead.mr-4 Expertos en oportunidades educativas
+      .col-md-6.position-relative
+        <div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
+        <div class="bubble bubble-secondary bubble--sm delay-1" style="right: -1rem;top: 3rem;"></div>
+        <div class="bubble bubble-primary bubble--sm" style="bottom: 8rem;right: -4rem;"></div>
+        <div class="bubble bubble-primary delay-2" style="top: 4rem;right:0rem;"></div>
+        <div class="bubble bubble-primary bubble--sm delay-3" style="top: 4rem;"></div>
+        <div class="bubble bubble-secondary" style="bottom:2rem;left: -4rem;"></div>
+        img.img-fluid.position-relative(src="assets/images/nosotros_portada-01.svg", alt="")
+        .position-absolute(style="top:4rem;left:-3rem;transform:rotate(20deg);z-index:-1")
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
+            <path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+              <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+              </animate>
+            </path>
+          </svg>
+
+    .row.my-5.py-5.position-relative
+      <div class="bubble bubble-secondary bubble--sm" style="bottom: 0;left: -2rem;"></div>
+      <div class="bubble bubble-secondary delay-1" style="right: 1rem;bottom: -4rem;"></div>
+      <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 0;right: 5rem;"></div>
+      .col-md-8.mx-auto.mt-5
+        p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
+
+    include ../sections/testimonios-slider.pug
+              
+    .row.my-5.text-center.position-relative
+      <div class="bubble bubble-secondary delay-2" style="bottom: -2rem;left: -2rem;"></div>
+      <div class="bubble bubble-primary bubble--sm delay-1" style="left: -4rem;bottom: -3rem;"></div>
+      .col-md-8.mx-auto
+        h3.h1.text-secondary.font-weight-bold.mb-4 ¿Quiénes somos?
+        p.mb-5 Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.
+              
+    include ../sections/directorio-slider.pug
+
+    .row.my-5.text-center.position-relative.pb-5
+      <div class="bubble bubble-secondary bubble--xs delay-1" style="left: 50%;bottom: 0;"></div>
+      .col-md-10.mx-auto
+        h3.h1.text-secondary.font-weight-bold.mb-5 IPFE en cifras
+
+        .row
+          .col-md-4
+            .text-center.py-4
+              span.d-block.heading-font.text-primary.display-5.mb-3 s/. 1 044,990.20
+              span.lead Becas de Estudio
+          .col-md-4
+            .text-center.py-4
+              span.d-block.heading-font.text-secondary.display-5.mb-3 12,216
+              span.lead Recategorización
+          .col-md-4
+            .text-center.py-4
+              span.d-block.heading-font.text-primary.display-5.mb-3 s/. 269,721.55
+              span.lead Oportunidades educativas
+
+        .row
+          .col-md-4
+            .text-center.py-4
+              span.d-block.heading-font.text-secondary.display-5.mb-3 s/. 1 696,778.51
+              span.lead Becas para Empresas
+          .col-md-4
+            .text-center.py-4
+              span.d-block.heading-font.text-primary.display-5.mb-3 627
+              span.lead Créditos de estudio
+          .col-md-4
+            .text-center.py-4
+              span.d-block.heading-font.text-secondary.display-5.mb-3 s/. 5 757,184.14
+              span.lead Programas sociales
+    
+    .row.mb-5.py-5
+      .col-md-8.text-center.mx-auto
+        h3.h1.text-secondary.font-weight-bold.mb-4 Cómo lo hacemos?
+        p.mb-5 Desarrollamos cuatro procesos transversales de valor que nos aseguran un otorgamiento justo y equitativo de dichas oportunidades.
+      .col-12.position-relative.mb-5
+        .how-to-circle.position-absolute(style="top:1rem", data-prueba="Diseñamos")
+          .how-to-circle__icon: img(src="assets/images/palette-icon.svg", alt="")
+        .how-to-circle.position-absolute(style="bottom:-3rem;left:21%", data-prueba="Articulamos")
+          .how-to-circle__icon: img(src="assets/images/handshake-icon.svg", alt="")
+        .how-to-circle.position-absolute(style="left:50%;transform:translateX(-50%)", data-prueba="Seleccionamos")
+          .how-to-circle__icon: img(src="assets/images/candidates-icon.svg", alt="")
+        .how-to-circle.position-absolute(style="left:62%;bottom:-3rem", data-prueba="Acompañamos")
+          .how-to-circle__icon: img(src="assets/images/united-icon.svg", alt="")
+        .how-to-circle.position-absolute(style="top:1rem;right:1rem", data-prueba="Evaluamos")
+          .how-to-circle__icon: img(src="assets/images/exam-icon.svg", alt="")
+        img.w-100(src="assets/images/base-arrow.svg", alt="")

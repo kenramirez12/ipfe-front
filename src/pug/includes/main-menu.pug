@@ -1,5 +1,5 @@
-nav.main-menu(itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation")#main-menu
-  ul
+nav.main-nav.ml-auto.d-none.d-md-block
+  ul.main-menu.mb-0
     each page in pages
       li.main-menu__item(itemprop="url")
           a.main-menu__link(href=page.url itemprop="name")= page.title

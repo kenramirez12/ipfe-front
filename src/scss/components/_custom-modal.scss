@@ -1,0 +1,58 @@
+.modal-open .custom-modal {
+  // overflow-x: hidden;
+  // overflow-y: auto;
+}
+
+.custom-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1050;
+  overflow: hidden;
+
+  &.fade .custom-modal__dialog {
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  }
+
+  &.show {
+    z-index: 1050;
+
+    .custom-modal__dialog {
+      pointer-events: all;
+    }
+  }
+
+  &__dialog {
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
+    pointer-events: none;
+  }
+
+  &__bg {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    height:auto;
+    z-index:-1;
+  }
+
+  &__close-btn {
+    position: absolute;
+    right: -17rem;
+    top: -2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(.9);
+    }
+  }
+}

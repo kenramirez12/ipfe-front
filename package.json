@@ -1,17 +1,17 @@
 {
-  "name": "ed-boilerplate",
+  "name": "ipf-front",
   "version": "1.0.0",
-  "description": "Simple scafolding for statics web projects",
+  "description": "Estructura base front-end",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
     "pug": "gulp pug",
     "scripts": "gulp scripts",
     "images": "gulp images",
-    "sitemap": "gulp sitemap"
+    "sitemap": "gulp sitemap",
+    "postinstall": "gulp build"
   },
-  "author": "Alvaro Felipe",
-  "license": "GPL-2.0",
+  "author": "Ken Ramirez",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",

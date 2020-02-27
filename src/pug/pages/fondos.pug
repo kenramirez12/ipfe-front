@@ -1,0 +1,88 @@
+extends ../config/template
+
+block main
+  .container
+    .row.align-items-center
+      .col-md-6
+        h1.
+          <span class="text-secondary font-weight-bold">ADMINISTRACIÓN DE</span>
+          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fondos</span>
+        p.lead.mr-4.mb-4 Sé parte de nuestra misión
+        a.btn.btn-primary.px-4(href="#") Hacer una donación
+      .col-md-6.position-relative
+        <div class="bubble bubble-primary bubble--xs" style="bottom: 4rem;left: -15rem;"></div>
+        <div class="bubble bubble-primary bubble--sm delay-1" style="right: 0rem;top: 5rem;"></div>
+        <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 6rem;right: -4rem;"></div>
+        <div class="bubble bubble-secondary delay-2" style="top: 6rem;right: -4rem;"></div>
+        <div class="bubble bubble-primary bubble--sm delay-3" style="top: 4rem;left: -2rem;"></div>
+        <div class="bubble bubble-secondary delay-1" style="bottom: 0;left: -6rem;"></div>
+        img.img-fluid.position-relative(src="assets/images/fondos_portada-01.svg", alt="")
+        .position-absolute(style="top: 4rem;left: -3rem;z-index:-1;transform: rotate(30deg);")
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
+            <path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+              <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+              </animate>
+            </path>
+          </svg>
+
+    .row.my-5.pt-5.position-relative
+      <div class="bubble bubble-secondary bubble--sm" style="top: 50%;left: -2rem;"></div>
+      <div class="bubble bubble-secondary delay-1" style="bottom: -6rem;right: 0;"></div>
+      <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: -3rem;right: 4rem;"></div>
+      .col-md-8.mx-auto.text-center
+        p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
+              
+    .row.my-5.text-center.position-relative
+      .col-12
+        h3.h1.text-secondary.font-weight-bold.mb-5 Respaldo
+      .col-md-8.mx-auto.text-center
+        p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
+    
+    .row.mb-5.pb-5
+      .col-md-4
+        .p-3.text-center
+          img.respaldo-logo(src="assets/images/wiese-logo.png", alt="")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae esse aliquid ad! Delectus consequatur, iusto odit, assumenda aliquam nulla tenetur quasi quisquam eius molestiae magni. Facere fuga quae deserunt eveniet!
+      .col-md-4
+        .p-3.text-center
+          img.respaldo-logo(src="assets/images/bcp-logo.png", alt="")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae esse aliquid ad! Delectus consequatur, iusto odit, assumenda aliquam nulla tenetur quasi quisquam eius molestiae magni. Facere fuga quae deserunt eveniet!
+      .col-md-4
+        .p-3.text-center
+          img.respaldo-logo(src="assets/images/upc-logo.png", alt="")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae esse aliquid ad! Delectus consequatur, iusto odit, assumenda aliquam nulla tenetur quasi quisquam eius molestiae magni. Facere fuga quae deserunt eveniet!
+
+    .col-12
+      h3.h1.text-secondary.font-weight-bold.mb-4.text-center Modalidades de donación
+
+    include ../sections/modalidades-donacion-tabs.pug
+
+    .row.justify-content-center.my-5.pt-5
+      .col-10.text-center.mb-4
+        h3.h1.text-secondary.font-weight-bold.mb-3 Realiza una donación
+        p Seamos parte del cambio en la educación y ayudemos a más personas a cumplir sus sueños
+
+      .col-md-5.text-center
+        strong.text-secondary Importe a Donar:
+        <div class="input-group flex-nowrap w-auto my-2 mx-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text bg-white">USD ($):</span>
+          </div>
+          <input type="text" placeholder="20" class="form-control border-left-0 border-right-0 text-center text-secondary font-weight-bold" aria-label="Amount (to the nearest dollar)">
+          <div class="input-group-append">
+            <span class="input-group-text bg-white">
+              img(src="assets/images/share-icon.svg", alt="")
+            </span>
+          </div>
+        </div>
+
+        .bg-info.py-2.px-3.rounded.d-flex.align-items-center.mx-5.my-3
+          div: img(src="assets/images/heart-icon.svg", alt="")
+          p.text-left.ml-2.mb-0 Las donaciones se manejan de forma segura a través de <a href="#">Paypal</a>
+        
+        a.btn.btn-primary.w-100(href="#") Quiero Donar
+        a.font-weight-bold.d-block.mt-3(href="#") ¡Tú también puedes ser parte de nuestra misión!
+
+    include ../sections/confian-en-nosotros.pug
+
+    include ../sections/contactanos.pug

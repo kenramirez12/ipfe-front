@@ -1,0 +1,17 @@
+ul.primary-dots {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    
+    &::before {
+      content: '\2022';
+      color: $primary;
+      font-size: 2rem;
+      margin-right: .5rem;
+      line-height: .5em;
+    }
+  }
+}

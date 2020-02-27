@@ -1,0 +1,17 @@
+.hover\:decoration-none {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.rounded-1 {
+  border-radius: 1.25rem;
+}
+
+.input-group-text {
+  height: 50px;
+}

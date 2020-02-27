@@ -1,0 +1,71 @@
+.bubble {
+  --size: 90px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+  opacity: .2;
+  animation: moveAround 3s infinite linear;
+
+  &-50 {
+    opacity: .6;
+  }
+
+  &--xs {
+    --size: 30px;
+    animation: moveAround 3s infinite linear;
+  }
+
+  &--sm {
+    --size: 50px;
+    animation: moveAround 3s infinite linear;
+  }
+
+  &--lg {
+    --size: 120px;
+  }
+
+  &-primary {
+    background-color: $primary;
+    // background-color: rgba($primary, .2);
+  }
+
+  &-secondary {
+    background-color: $secondary;
+    // background-color: rgba($secondary, .2);
+  }
+
+  @keyframes moveAround {
+    from {
+      transform: rotate(0deg)
+                 translate(-8px)
+                 rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg)
+                 translate(-8px) 
+                 rotate(-360deg);
+    }
+  }
+
+  // @keyframes pulse {
+  //   0%, 100% {
+  //     transform: scale(.95);
+  //   }
+  //   50% {
+  //     transform: scale(1.04);
+  //   }
+  // }
+}
+
+.delay-1 {
+  animation-delay: .5s;
+}
+
+.delay-2 {
+  animation-delay: 1.25s;
+}
+
+.delay-3 {
+  animation-delay: 1.75s;
+}
