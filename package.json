@@ -8,8 +8,7 @@
     "pug": "gulp pug",
     "scripts": "gulp scripts",
     "images": "gulp images",
-    "sitemap": "gulp sitemap",
-    "postinstall": "gulp build"
+    "sitemap": "gulp sitemap"
   },
   "author": "Ken Ramirez",
   "devDependencies": {
