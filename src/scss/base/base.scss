@@ -7,8 +7,6 @@
 body {
   margin : 0;
   font-family : $font-family;
-  overflow-x: hidden;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,4 +21,9 @@ select {
 
 select::-ms-expand {
   display: none;
+}
+
+.page {
+  height: 100vh;
+  overflow-x: hidden;
 }
