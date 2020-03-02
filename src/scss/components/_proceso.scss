@@ -1,0 +1,11 @@
+.proceso-item {
+  width: 45%;
+
+  @include media-breakpoint-up('md') {
+    width: 30%;
+  }
+
+  @include media-breakpoint-up('lg') {
+    width: 20%;
+  }
+}

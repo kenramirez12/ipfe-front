@@ -15,9 +15,32 @@
   </head>
   <body>
     <div class="page" style="overflow-x:hidden">
+      <div class="responsive-menu" id="responsive-menu">
+        <div class="responsive-menu__container">
+          <div class="responsive-menu__content">
+            <div class="container d-flex align-items-center py-3"><a class="mr-3 d-md-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a></div>
+            <nav class="responsive-nav my-auto">
+              <ul class="responsive-main-menu mb-0">
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="estudiantes.html" itemprop="name">Estudiantes</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="empresas.html" itemprop="name">Empresas</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="talento.html" itemprop="name">Talento</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="fondos.html" itemprop="name">Fondo</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="blog.html" itemprop="name">Blog</a></li>
+              </ul>
+            </nav>
+            <div class="p-3">
+              <p class="text-muted mb-2"><span>Síguenos</span></p>
+              <div class="d-flex"><a class="mr-4" href="#"><img src="assets/images/facebook-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/linkedin-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/instagram-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/twitter-icon.svg" alt="" height="30"></a><a href="#"><img src="assets/images/youtube-icon.svg" alt="" height="30"></a></div>
+            </div>
+          </div>
+          <div class="responsive-menu__footer py-3 text-center"><span class="text-white">Powered by <a href="#" class="font-weight-bold text-white">Prodequa</a></span></div>
+        </div><img class="responsive-menu__bg" src="assets/images/menu_mobile.svg">
+      </div>
       <header class="main-header">
-        <div class="container d-flex align-items-center"><a class="mr-3 d-md-none" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
-          <nav class="main-nav ml-auto d-none d-md-block">
+        <div class="container d-flex align-items-center"><a class="mr-3 d-lg-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
+          <nav class="main-nav ml-auto d-none d-lg-block">
             <ul class="main-menu mb-0">
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
@@ -30,67 +53,75 @@
           </nav>
         </div>
       </header>
-      <div class="custom-modal fade" id="welcomeModal"><img class="custom-modal__bg" src="assets/images/pop_up.svg">
-        <div class="custom-modal__dialog position-relative"><img class="custom-modal__close-btn" data-modal="welcomeModal" src="assets/images/close-btn.svg"><div class="bubble bubble-50 bubble-secondary bubble--xs delay-1" style="right: -12rem;top: -8rem;"></div>
+      <div class="custom-modal fade" id="welcomeModal"><img class="custom-modal__bg d-md-none" src="assets/images/pop_up_mobile.svg"><img class="custom-modal__bg d-none d-md-block" src="assets/images/pop_up.svg">
+        <div class="custom-modal__dialog position-relative"><img class="custom-modal__close-btn" data-modal="welcomeModal" src="assets/images/close-btn.svg">
+          <div class="d-md-none"><div class="bubble bubble-50 bubble-primary bubble--xs" style="right: 6rem;top: -8rem;"></div>
+<div class="bubble bubble-50 bubble-secondary bubble--xs delay-2" style="top: -6rem;left: -1rem;"></div>
+<div class="bubble bubble-50 bubble-primary bubble--xs delay-2" style="bottom: -9rem;right: 6rem;"></div>
+<div class="bubble bubble-50 bubble--sm bubble-primary delay-3" style="bottom: -10rem;left: 0;"></div>
+<div class="bubble bubble-50 bubble-secondary bubble--xs" style="bottom: -8rem;left: -1rem;"></div>
+          </div>
+          <div class="d-none d-md-block"><div class="bubble bubble-50 bubble-secondary bubble--xs delay-1" style="right: -12rem;top: -8rem;"></div>
 <div class="bubble bubble-50 bubble-primary bubble--sm" style="bottom: 0rem;right: -22rem;"></div>
 <div class="bubble bubble-50 bubble-secondary delay-2" style="bottom: -12rem;right: -10rem;"></div>
 <div class="bubble bubble-50 bubble-primary delay-3" style="bottom: -6rem;left: -20rem;"></div>
 <div class="bubble bubble-50 bubble-secondary bubble--sm" style="bottom: -6rem;left: -16rem;"></div>
 <div class="bubble bubble-50 bubble-secondary bubble--sm" style="bottom: -6rem;left: -16rem;"></div>
 <div class="bubble bubble-50 bubble-primary bubble--sm" style="top: -6rem;left: -16rem;"></div>
+          </div>
           <div class="custom-modal__content text-center">
-            <h4 class="heading-font text-secondary display-3">Bienvenido</h4>
-            <p class="lead pt-4 pb-3">Queremos mostrarte todos los beneficios que IPFE tiene para ofrecerte</p>
+            <h4 class="heading-font text-secondary display-5 d-md-none">Bienvenido</h4>
+            <h4 class="heading-font text-secondary display-3 d-none d-md-block">Bienvenido</h4>
+            <p class="pt-4 pb-3 d-md-none">Queremos mostrarte todos los beneficios que IPFE tiene para ofrecerte</p>
+            <p class="lead pt-4 pb-3 d-none d-md-block">Queremos mostrarte todos los beneficios que IPFE tiene para ofrecerte</p>
             <div class="row">
-              <div class="col-6"><img class="w-100 mb-3" src="assets/images/estudiantes.jpg" alt=""><a class="btn btn-primary w-100" href="estudiantes.html">Estudiantes</a></div>
-              <div class="col-6"><img class="w-100 mb-3" src="assets/images/empresas.jpg" alt=""><a class="btn btn-secondary w-100" href="empresas.html">Empresas</a></div>
+              <div class="col-6"><img class="w-100 mb-3" src="assets/images/estudiantes.jpg" alt=""><a class="btn btn-sm btn-primary w-100 d-md-none" href="estudiantes.html">Estudiantes</a><a class="btn btn-primary w-100 d-none d-md-block" href="estudiantes.html">Estudiantes</a></div>
+              <div class="col-6"><img class="w-100 mb-3" src="assets/images/empresas.jpg" alt=""><a class="btn btn-sm btn-secondary w-100 d-md-none" href="empresas.html">Empresas</a><a class="btn btn-secondary w-100 d-none d-md-block" href="empresas.html">Empresas</a></div>
             </div>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6 position-relative order-md-1">
+          <div class="col-12 col-md-8 col-lg-6 mx-md-auto mx-lg-0 position-relative order-lg-1">
             <div class="bubble bubble-secondary delay-1" style="right:-3rem;top:6rem"></div>
             <div class="bubble bubble-secondary" style="bottom:4rem;right:0"></div>
             <div class="bubble bubble-primary bubble--sm delay-2" style="top:9rem;right:0rem"></div>
             <div class="bubble bubble-primary bubble--sm delay-3" style="top:12rem"></div>
             <div class="bubble bubble-primary bubble--sm" style="bottom:2rem;left:-1rem"></div><img class="img-fluid position-relative" src="assets/images/main-guy.svg" alt="">
-            <div class="position-absolute" style="top:8rem;left: 5rem;transform:rotate(45deg);z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
-<path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-<animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-</animate>
-</path>
-</svg>
-            </div>
+            <div class="hero-index__container"><img class="hero-index__img" src="assets/images/hero-index-plasma.svg"></div>
           </div>
-          <div class="col-md-6 mt-3 mt-md-0 text-center text-md-left">
-            <h1 class="d-md-none"><span class="text-secondary font-weight-bold h1">TALENTO</span>
+          <div class="col-lg-6 mt-3 mt-lg-0 text-center text-lg-left">
+            <h1 class="d-lg-none"><span class="text-secondary font-weight-bold h1">TALENTO</span>
 <span class="text-primary heading-font display-4 d-block mb-4">Exponencial</span>
             </h1>
-            <h1 class="d-none d-md-block"><span class="text-secondary font-weight-bold display-5">TALENTO</span>
+            <h1 class="d-none d-lg-block"><span class="text-secondary font-weight-bold display-5">TALENTO</span>
 <span class="text-primary heading-font display-2 d-block mb-5">Exponencial</span>
             </h1>
             <p class="mr-4">Transformamos la vida de las personas a través de la educación. ¡Conoce nuestros programas!</p>
-            <div class="d-flex justify-content-between mt-4"><a class="btn btn-primary px-4 px-sm-5" href="estudiantes.html">Estudiantes</a><a class="btn btn-secondary px-4 px-sm-5" href="empresas.html">Empresas</a></div>
+            <div class="d-flex justify-content-around mt-4"><a class="btn btn-primary px-4 px-sm-5" href="estudiantes.html">Estudiantes</a><a class="btn btn-secondary px-4 px-sm-5" href="empresas.html">Empresas</a></div>
           </div>
         </div>
-        <div class="row justify-content-center mt-5 pt-5 px-4 px-md-0position-relative">
+        <div class="row justify-content-center mt-5 pt-5 px-4 px-lg-0 position-relative">
           <div class="bubble bubble-secondary bubble--sm delay-1" style="top:-3rem;left:3rem"></div>
-          <div class="col-md-5 order-md-1">
-            <h3 class="h2 text-secondary font-weight-bold mb-3 d-md-none text-center">¿Quiénes somos?</h3><div class="embed-responsive embed-responsive-4by3 rounded-1">
+          <div class="col-lg-5 order-lg-1">
+            <h3 class="h2 text-secondary font-weight-bold mb-3 d-lg-none text-center">¿Quiénes somos?</h3><div class="embed-responsive embed-responsive-4by3 rounded-1">
 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aMXRRcLs4Qs" allowfullscreen></iframe>
 </div>
           </div>
-          <div class="col-md-5 text-center text-md-left">
-            <h3 class="h1 text-secondary font-weight-bold mb-5 d-none d-md-block">¿Quiénes somos?</h3>
-            <p class="my-4 mt-md-0 mb-md-5">Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.</p><a class="btn btn-primary px-5" href="#">Ver más</a>
+          <div class="col-lg-5 text-center text-lg-left">
+            <h3 class="h1 text-secondary font-weight-bold mb-5 d-none d-lg-block">¿Quiénes somos?</h3>
+            <p class="my-4 mt-lg-0 mb-lg-5">Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.</p><a class="btn btn-primary px-5" href="#">Ver más</a>
           </div>
         </div>
         <div class="row justify-content-center mt-5 position-relative">
-          <div class="col-md-10 d-flex flex-column flex-md-row mt-5 position-relative">
-            <div class="bubble bubble-secondary bubble--lg delay-1" style="right:-8rem;top:4rem"></div>
-            <div class="bubble bubble-primary delay-2" style="right:-4rem;top:2rem"></div>
+          <div class="col-md-10 d-flex flex-column flex-md-row mt-5 position-relative"><div class="d-md-none bubble bubble-secondary bubble--lg delay-1" style="right: -4rem;top:10rem;"></div>
+<div class="d-md-none bubble bubble-primary delay-2" style="right: 0rem;top:8rem;"></div>
+<div class="d-md-none bubble bubble-secondary bubble--lg delay-1" style="left: -4rem;bottom: 2rem;"></div>
+<div class="d-md-none bubble bubble-primary bubble--sm delay-1" style="left: 1rem;top: 10rem;"></div>
+<div class="d-md-none bubble bubble-primary delay-2" style="left: 0rem;bottom: 6rem;"></div>
+            <div class="d-none d-md-block bubble bubble-secondary bubble--lg delay-1" style="right:-8rem;top:4rem"></div>
+            <div class="d-none d-md-block bubble bubble-primary delay-2" style="right:-4rem;top:2rem"></div>
             <div class="indicator-counter mb-3 mb-md-0">
               <div class="indicator-counter__value">103,300</div>
               <div class="indicator-counter__label">Beneficiarios totales</div>
@@ -116,9 +147,9 @@
             <p class="mb-4 mb-md-3">Desarrollamos cuatro procesos transversales de valor que nos aseguran un otorgamiento justo y equitativo de dichas oportunidades.</p>
           </div>
           <div class="col-12 col-md-10 d-flex position-relative px-5 px-md-3">
-            <div class="bubble bubble-secondary bubble--sm delay-1" style="right:-3rem;top:6rem"></div>
-            <div class="bubble bubble-primary bubble--sm" style="bottom:-3rem;left:-6rem"></div>
-            <div class="bubble bubble-secondary delay-2" style="bottom:-2rem;left:-5rem"></div>
+            <div class="d-none d-md-block bubble bubble-secondary bubble--sm delay-1" style="right:-3rem;top:6rem"></div>
+            <div class="d-none d-md-block bubble bubble-primary bubble--sm" style="bottom:-3rem;left:-6rem"></div>
+            <div class="d-none d-md-block bubble bubble-secondary delay-2" style="bottom:-2rem;left:-5rem"></div>
             <div class="swiper-button-prev d-xl-none"></div>
             <div class="swiper-button-next d-xl-none"></div>
             <div class="programas-slider overflow-hidden">
@@ -156,11 +187,15 @@
           </div>
         </div>
         <div class="row align-items-center mb-5 pb-5">
-          <div class="col-md-5 offset-md-1 position-relative px-5 px-3">
-            <h3 class="h2 text-secondary font-weight-bold mb-4 d-md-none text-center">Fondo</h3>
-            <div class="bubble bubble-secondary bubble--xs delay-1" style="left:-6rem;bottom:8rem"></div>
-            <div class="bubble bubble-primary bubble--sm delay-2" style="right:-3rem;top:4rem"></div><img class="img-fluid position-relative" src="assets/images/fondo-01.svg" alt="">
-            <div class="position-absolute" style="top:3rem;left:-5rem;transform:rotate(1deg);z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="450" height="320">
+          <div class="col-12 d-lg-none">
+            <h3 class="h2 text-secondary font-weight-bold mb-4 text-center">Fondo</h3>
+          </div>
+          <div class="col-12 col-md-8 col-lg-5 mx-0 mx-md-auto mx-lg-0 offset-lg-1 position-relative px-5 px-3 order-lg-1">
+            <div class="d-lg-none bubble bubble-secondary bubble--xs delay-1" style="left:0;bottom:8rem"></div>
+            <div class="d-lg-none bubble bubble-primary bubble--sm delay-2" style="right:0;top:4rem"></div>
+            <div class="d-none d-lg-block bubble bubble-secondary bubble--xs delay-1" style="left:-6rem;bottom:8rem"></div>
+            <div class="d-none d-lg-block bubble bubble-primary bubble--sm delay-2" style="right:-3rem;top:4rem"></div><img class="img-fluid position-relative" src="assets/images/fondo-01.svg" alt="">
+            <div class="position-absolute" style="top:10%;left:-2rem;transform:rotate(1deg);z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="450" height="320">
 <path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
 <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
 </animate>
@@ -168,16 +203,20 @@
 </svg>
             </div>
           </div>
-          <div class="col-md-5 offset-md-1 order-md-1 text-center text-md-left">
-            <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-md-block">Fondo</h3>
-            <p class="mt-4 mt-md-0">Programas de responsabilidad social de instituciones educativas, entidades de la sociedad civil, entidades de gobierno y empresas en general.</p><a class="btn btn-secondary mt-3 mt-md-4 px-5" href="#">Entérate más</a>
+          <div class="col-lg-5 offset-lg-1 order-lg-1 text-center text-lg-left">
+            <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-lg-block">Fondo</h3>
+            <p class="mt-4 mt-lg-0">Programas de responsabilidad social de instituciones educativas, entidades de la sociedad civil, entidades de gobierno y empresas en general.</p><a class="btn btn-secondary mt-3 mt-lg-4 px-5" href="#">Entérate más</a>
           </div>
         </div>
-        <div class="row align-items-center mt-md-n5">
-          <div class="col-md-5 position-relative px-5 px-3 mb-4 mb-md-0">
-            <h3 class="h1 text-secondary font-weight-bold mb-4 d-md-none text-center">Asociados</h3>
-            <div class="bubble bubble-secondary bubble--xs delay-2" style="right:-4rem;bottom:5rem"></div><img class="img-fluid position-relative" src="assets/images/asociados-01.svg" alt="">
-            <div class="position-absolute" style="top:6rem;right:-5rem;transform:rotate(19deg);z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="450" height="320">
+        <div class="row align-items-center mt-lg-n5">
+          <div class="col-12 d-lg-none">
+            <h3 class="h2 text-secondary font-weight-bold mb-4 text-center">Asociados</h3>
+          </div>
+          <div class="col-12 col-md-8 col-lg-5 mx-0 mx-md-auto mx-lg-0 position-relative px-5 px-3 mb-4 mb-lg-0">
+            <div class="d-lg-none bubble bubble-secondary bubble--xs" style="right:0;bottom:5rem"></div>
+            <div class="d-lg-none bubble bubble-primary bubble--xs delay-2" style="left:0;top:5rem"></div>
+            <div class="d-none d-lg-block bubble bubble-secondary bubble--xs delay-2" style="right:-4rem;bottom:5rem"></div><img class="img-fluid position-relative" src="assets/images/asociados-01.svg" alt="">
+            <div class="position-absolute" style="top:6rem;right:-3rem;transform:rotate(19deg);z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="450" height="320">
 <path fill="rgba(10,83,126,.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
 <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
 </animate>
@@ -185,8 +224,8 @@
 </svg>
             </div>
           </div>
-          <div class="col-md-5 offset-md-1 text-center text-md-right">
-            <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-md-block">Asociados</h3>
+          <div class="col-lg-5 offset-lg-1 text-center text-lg-right">
+            <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-lg-block">Asociados</h3>
             <p>Colaboramos con más de 80 empresas en la gestión de sus programas de retención de talento y clima organizacional.</p><a class="btn btn-primary mt-4 px-5" href="#">Ver más</a>
           </div>
         </div>
@@ -282,7 +321,7 @@
           <div class="col-md-6">
             <div class="bubble bubble-secondary bubble--xs delay-2" style="bottom:2rem;right:0rem;"></div>
             <div class="bubble bubble-primary bubble--sm delay-3" style="bottom:0;right:0"></div><img class="img-fluid position-relative" src="assets/images/experiencia-01.svg" alt="">
-            <div class="position-absolute" style="top:3rem;left:6rem;transform:rotate(45deg);z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="420" height="300">
+            <div class="hero-experiencia__container"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="420" height="300">
 <path fill="rgba(10,83,126,.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
 <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
 </animate>

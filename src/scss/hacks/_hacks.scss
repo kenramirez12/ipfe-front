@@ -15,3 +15,37 @@
 .input-group-text {
   height: 50px;
 }
+
+.overflow-lg-visible {
+  @include media-breakpoint-up('lg') {
+    overflow: visible!important;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.custom-select-lg {
+  font-size: 1.2rem;
+  height: 54px;
+  line-height: 1em;
+}
+
+.text-biggest {
+  font-size:16rem;
+
+  @include media-breakpoint-up('md') {
+    font-size: 20rem;
+  }
+}
+
+.w-md-100 {
+  @include media-breakpoint-up('md') {
+    width: 100%;
+  }
+}

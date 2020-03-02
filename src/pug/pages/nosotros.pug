@@ -3,12 +3,7 @@ extends ../config/template
 block main
   .container
     .row.align-items-center
-      .col-md-6
-        h1.
-          <span class="text-secondary font-weight-bold">INSTITUTO PERUANO DE</span>
-          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fomento Educativo</span>
-        p.lead.mr-4 Expertos en oportunidades educativas
-      .col-md-6.position-relative
+      .col-md-6.position-relative.order-md-1
         <div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
         <div class="bubble bubble-secondary bubble--sm delay-1" style="right: -1rem;top: 3rem;"></div>
         <div class="bubble bubble-primary bubble--sm" style="bottom: 8rem;right: -4rem;"></div>
@@ -23,12 +18,21 @@ block main
               </animate>
             </path>
           </svg>
+      .col-md-6
+        h1.d-md-none.text-center.mt-3
+          <span class="text-secondary font-weight-bold">SOMOS</span>
+          <span class="text-primary heading-font display-3 d-block mt-1 mb-5">ipfe</span>
+        h1.d-none.d-md-block
+          <span class="text-secondary font-weight-bold">INSTITUTO PERUANO DE</span>
+          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fomento Educativo</span>
+        p.text-center.d-md-none Expertos en oportunidades educativas
+        p.lead.mr-4.text-left.d-none.d-md-block Expertos en oportunidades educativas
 
-    .row.my-5.py-5.position-relative
+    .row.my-5.py-md-5.position-relative
       <div class="bubble bubble-secondary bubble--sm" style="bottom: 0;left: -2rem;"></div>
       <div class="bubble bubble-secondary delay-1" style="right: 1rem;bottom: -4rem;"></div>
       <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 0;right: 5rem;"></div>
-      .col-md-8.mx-auto.mt-5
+      .col-md-8.mx-auto.mt-md-5
         p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
 
     include ../sections/testimonios-slider.pug
@@ -37,15 +41,17 @@ block main
       <div class="bubble bubble-secondary delay-2" style="bottom: -2rem;left: -2rem;"></div>
       <div class="bubble bubble-primary bubble--sm delay-1" style="left: -4rem;bottom: -3rem;"></div>
       .col-md-8.mx-auto
-        h3.h1.text-secondary.font-weight-bold.mb-4 ¿Quiénes somos?
-        p.mb-5 Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.
+        h3.h2.text-secondary.font-weight-bold.mb-4.text-center.d-md-none ¿Quiénes somos?
+        h3.h1.text-secondary.font-weight-bold.mb-4.d-none.d-md-block ¿Quiénes somos?
+        p.mb-5.px-3.px-md-0 Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.
               
     include ../sections/directorio-slider.pug
 
     .row.my-5.text-center.position-relative.pb-5
       <div class="bubble bubble-secondary bubble--xs delay-1" style="left: 50%;bottom: 0;"></div>
       .col-md-10.mx-auto
-        h3.h1.text-secondary.font-weight-bold.mb-5 IPFE en cifras
+        h3.h2.text-secondary.font-weight-bold.mb-3.d-md-none Resultados
+        h3.h1.text-secondary.font-weight-bold.mb-5.d-none.d-md-block IPFE en cifras
 
         .row
           .col-md-4
@@ -75,11 +81,14 @@ block main
               span.d-block.heading-font.text-secondary.display-5.mb-3 s/. 5 757,184.14
               span.lead Programas sociales
     
-    .row.mb-5.py-5
+    .row.pt-5.pb-2.pb-md-5
       .col-md-8.text-center.mx-auto
-        h3.h1.text-secondary.font-weight-bold.mb-4 Cómo lo hacemos?
-        p.mb-5 Desarrollamos cuatro procesos transversales de valor que nos aseguran un otorgamiento justo y equitativo de dichas oportunidades.
-      .col-12.position-relative.mb-5
+        h3.h2.text-secondary.font-weight-bold.mb-4.d-md-none Cómo lo hacemos?
+        h3.h1.text-secondary.font-weight-bold.mb-4.d-none.d-md-block Cómo lo hacemos?
+        p.mb-0.mb-md-3 Desarrollamos cuatro procesos transversales de valor que nos aseguran un otorgamiento justo y equitativo de dichas oportunidades.
+  div
+    .how-to.mb-5.p-4.p-md-4
+      .how-to__container
         .how-to-circle.position-absolute(style="top:1rem", data-prueba="Diseñamos")
           .how-to-circle__icon: img(src="assets/images/palette-icon.svg", alt="")
         .how-to-circle.position-absolute(style="bottom:-3rem;left:21%", data-prueba="Articulamos")

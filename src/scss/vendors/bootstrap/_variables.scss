@@ -414,8 +414,8 @@ $btn-line-height:             3.5rem;
 
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
 $btn-padding-x-sm:            $input-btn-padding-x-sm !default;
-$btn-font-size-sm:            $input-btn-font-size-sm !default;
-$btn-line-height-sm:          $input-btn-line-height-sm !default;
+$btn-font-size-sm:            16px;
+$btn-line-height-sm:          2.5rem;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
@@ -439,7 +439,7 @@ $btn-block-spacing-y:         .5rem !default;
 // $btn-border-radius:           $border-radius !default;
 $btn-border-radius:           2rem;
 $btn-border-radius-lg:        $border-radius-lg !default;
-$btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius-sm:        2rem;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 

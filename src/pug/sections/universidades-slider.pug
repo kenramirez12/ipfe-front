@@ -1,18 +1,19 @@
 .position-relative
   .row.justify-content-center.my-5
-    .col-10.text-center
-      h3.h1.text-secondary.font-weight-bold.mb-1 Universidades
-    .col-10.mb-4
+    .col-12.col-md-10.text-center
+      h3.h2.text-secondary.font-weight-bold.mb-1.d-md-none Universidades
+      h3.h1.text-secondary.font-weight-bold.mb-1.d-none.d-md-block Universidades
+    .col-12.col-md-10.mb-4
       <div id="universidades" class="tabcontent show">
         .position-relative.my-5
           .swiper-button-prev
           .swiper-button-next
-          .sponsors-slider.overflow-hidden
+          .sponsors-slider.overflow-hidden.mx-5.mx-md-0
             .swiper-wrapper.d-flex.align-items-center
-              .swiper-slide: img(src="assets/images/sponsors/logo-up.jpg", alt="")
-              .swiper-slide: img(src="assets/images/sponsors/sponsor01.jpg", alt="")
-              .swiper-slide: img(src="assets/images/sponsors/sponsor02.jpg", alt="")
-              .swiper-slide: img(src="assets/images/sponsors/upn.jpg", alt="")
-              .swiper-slide: img(src="assets/images/sponsors/sponsor02.jpg", alt="")
-              .swiper-slide: img(src="assets/images/sponsors/upn.jpg", alt="")
+              .swiper-slide: img.img-fluid(src="assets/images/sponsors/logo-up.jpg", alt="")
+              .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor01.jpg", alt="")
+              .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor02.jpg", alt="")
+              .swiper-slide: img.img-fluid(src="assets/images/sponsors/upn.jpg", alt="")
+              .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor02.jpg", alt="")
+              .swiper-slide: img.img-fluid(src="assets/images/sponsors/upn.jpg", alt="")
       </div>

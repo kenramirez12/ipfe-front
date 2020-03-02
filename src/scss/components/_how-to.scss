@@ -1,3 +1,15 @@
+.how-to {
+  overflow: hidden;
+  overflow-x: auto;
+
+  &__container {
+    display: flex;
+    position: relative;
+    width: 1140px;
+    margin: auto;
+  }
+}
+
 .how-to-circle {
   flex: 1;
   display: flex;
@@ -23,14 +35,10 @@
         transform: scale(.92);
       }
     }
-
-    &::after {
-      // opacity: 0;
-    }
   }
 
   &__icon {
-    --size: 190px;
+    --size: 150px;
     width: var(--size);
     height: var(--size);
     display: flex;
@@ -40,11 +48,19 @@
     margin-left: auto;
     margin-right: auto;
     transition: all 0.3s;
+    
+    @include media-breakpoint-up('xl') {
+      --size: 190px;
+    }
 
     img {
-      width: 100px;
+      width: 90px;
       display: block;
       margin: auto;
+
+      @include media-breakpoint-up('xl') {
+        width: 100px;
+      }
     }
   }
 

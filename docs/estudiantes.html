@@ -15,9 +15,32 @@
   </head>
   <body>
     <div class="page" style="overflow-x:hidden">
+      <div class="responsive-menu" id="responsive-menu">
+        <div class="responsive-menu__container">
+          <div class="responsive-menu__content">
+            <div class="container d-flex align-items-center py-3"><a class="mr-3 d-md-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a></div>
+            <nav class="responsive-nav my-auto">
+              <ul class="responsive-main-menu mb-0">
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="estudiantes.html" itemprop="name">Estudiantes</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="empresas.html" itemprop="name">Empresas</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="talento.html" itemprop="name">Talento</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="fondos.html" itemprop="name">Fondo</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="blog.html" itemprop="name">Blog</a></li>
+              </ul>
+            </nav>
+            <div class="p-3">
+              <p class="text-muted mb-2"><span>Síguenos</span></p>
+              <div class="d-flex"><a class="mr-4" href="#"><img src="assets/images/facebook-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/linkedin-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/instagram-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/twitter-icon.svg" alt="" height="30"></a><a href="#"><img src="assets/images/youtube-icon.svg" alt="" height="30"></a></div>
+            </div>
+          </div>
+          <div class="responsive-menu__footer py-3 text-center"><span class="text-white">Powered by <a href="#" class="font-weight-bold text-white">Prodequa</a></span></div>
+        </div><img class="responsive-menu__bg" src="assets/images/menu_mobile.svg">
+      </div>
       <header class="main-header">
-        <div class="container d-flex align-items-center"><a class="mr-3 d-md-none" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
-          <nav class="main-nav ml-auto d-none d-md-block">
+        <div class="container d-flex align-items-center"><a class="mr-3 d-lg-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
+          <nav class="main-nav ml-auto d-none d-lg-block">
             <ul class="main-menu mb-0">
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
@@ -32,14 +55,7 @@
       </header>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1>
-              <span class="text-secondary font-weight-bold">PROGRAMAS DE</span>
-              <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Estudiantes</span>
-            </h1>
-            <p class="lead mr-4 mb-4">Despega en tu carrera profesional</p><a class="btn btn-primary px-5 mr-4" href="#">Becas</a><a class="btn btn-secondary px-5" href="#">Créditos</a>
-          </div>
-          <div class="col-md-6 position-relative"><div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
+          <div class="col-md-6 position-relative order-md-1 text-center text-md-left"><div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
 <div class="bubble bubble-primary bubble--sm delay-1" style="right: -1rem;top: 3rem;"></div>
 <div class="bubble bubble-primary bubble--sm" style="top: 14rem;right: 0rem;"></div>
 <div class="bubble bubble-secondary delay-2" style="top: 4rem;right:0rem;"></div>
@@ -53,32 +69,42 @@
 </svg>
             </div>
           </div>
+          <div class="col-md-6 text-center text-md-left">
+            <h1>
+              <span class="text-secondary font-weight-bold">PROGRAMAS DE</span>
+              <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Estudiantes</span>
+            </h1>
+            <p class="mb-4 d-md-none">Despega en tu carrera profesional</p>
+            <p class="lead mr-4 mb-4 d-none d-md-block">Despega en tu carrera profesional</p><a class="btn btn-primary px-5 mr-3 mr-md-4" href="#">Becas</a><a class="btn btn-secondary px-5" href="#">Créditos</a>
+          </div>
         </div>
         <div class="row my-5 pb-5 position-relative"><div class="bubble bubble-secondary bubble--sm" style="top: 8rem;left: -2rem;"></div>
 <div class="bubble bubble-secondary delay-1" style="right: 1rem;bottom: -4rem;"></div>
 <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 0;right: 5rem;"></div>
           <div class="col-md-8 mx-auto text-center">
-            <h3 class="h1 text-secondary font-weight-bold mb-4">Becas</h3>
-            <p class="text-center">En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.</p>
+            <h3 class="h2 text-secondary font-weight-bold mt-5 mb-5 d-md-none">Becas de Posgrado</h3>
+            <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-md-block">Becas de Posgrado</h3>
+            <p class="text-center">Nuestro Programa de Becas de Estudios es un esfuerzo desarrollado e impulsado por IPFE en alianza con prestigiosas instituciones educativas nacionales e internacionales de calidad. A través del Programa de Becas, generamos oportunidades educativas para personas talentosas que deseen seguir desarrollándose profesionalmente.</p>
           </div>
         </div>
         <div class="position-relative">
           <div class="row justify-content-center my-5">
-            <div class="col-10 text-center">
-              <h3 class="h1 text-secondary font-weight-bold mb-1">Universidades</h3>
+            <div class="col-12 col-md-10 text-center">
+              <h3 class="h2 text-secondary font-weight-bold mb-1 d-md-none">Universidades</h3>
+              <h3 class="h1 text-secondary font-weight-bold mb-1 d-none d-md-block">Universidades</h3>
             </div>
-            <div class="col-10 mb-4"><div id="universidades" class="tabcontent show">
+            <div class="col-12 col-md-10 mb-4"><div id="universidades" class="tabcontent show">
               <div class="position-relative my-5">
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-                <div class="sponsors-slider overflow-hidden">
+                <div class="sponsors-slider overflow-hidden mx-5 mx-md-0">
                   <div class="swiper-wrapper d-flex align-items-center">
-                    <div class="swiper-slide"><img src="assets/images/sponsors/logo-up.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/images/sponsors/sponsor01.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/images/sponsors/upn.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/images/sponsors/upn.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/logo-up.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/upn.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/upn.jpg" alt=""></div>
                   </div>
                 </div>
               </div></div>
@@ -105,129 +131,164 @@
 </svg>
 </div>
           <div class="col-md-8 mx-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-5 pb-4">Becas más populares</h3>
+            <h3 class="h2 text-secondary font-weight-bold mb-5 pb-4 d-md-none">Becas más populares</h3>
+            <h3 class="h1 text-secondary font-weight-bold mb-5 pb-4 d-none d-md-block">Becas más populares</h3>
           </div>
-          <div class="row align-items-center">
-            <div class="col-md-4">
-              <div class="beca-item">
-                <div class="beca-item__thumbnail"><img src="assets/images/becas-img.jpg" alt=""></div>
-                <div class="beca-item__content">
-                  <h5 class="beca-item__title">Maestría en Finanzas</h5><strong class="beca-item__subtitle">CENTRUM</strong>
+          <div class="col-12 col-md-10 col-xl-12 mx-auto">
+            <div class="position-relative">
+              <div class="swiper-button-prev d-lg-none"></div>
+              <div class="swiper-button-next d-lg-none"></div>
+              <div class="row align-items-center becas-populares-slider overflow-hidden overflow-lg-visible">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide px-5 px-md-0">
+                    <div class="beca-item">
+                      <div class="beca-item__thumbnail"><img src="assets/images/becas-img.jpg" alt=""></div>
+                      <div class="beca-item__content">
+                        <h5 class="beca-item__title">Maestría en Finanzas</h5><strong class="beca-item__subtitle">CENTRUM</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide px-5 px-md-0">
+                    <div class="beca-item">
+                      <div class="beca-item__thumbnail"><img src="assets/images/becas-img.jpg" alt=""></div>
+                      <div class="beca-item__content">
+                        <h5 class="beca-item__title">Maestría en Finanzas</h5><strong class="beca-item__subtitle">CENTRUM</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide px-5 px-md-0">
+                    <div class="beca-item">
+                      <div class="beca-item__thumbnail"><img src="assets/images/becas-img.jpg" alt=""></div>
+                      <div class="beca-item__content">
+                        <h5 class="beca-item__title">Maestría en Finanzas</h5><strong class="beca-item__subtitle">CENTRUM</strong>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="beca-item">
-                <div class="beca-item__thumbnail"><img src="assets/images/becas-img.jpg" alt=""></div>
-                <div class="beca-item__content">
-                  <h5 class="beca-item__title">Maestría en Finanzas</h5><strong class="beca-item__subtitle">CENTRUM</strong>
-                </div>
-              </div>
+            <div class="row">
+              <div class="col-12 text-center mt-3"><a class="btn btn-primary px-5" href="#">Ver más</a></div>
             </div>
-            <div class="col-md-4">
-              <div class="beca-item">
-                <div class="beca-item__thumbnail"><img src="assets/images/becas-img.jpg" alt=""></div>
-                <div class="beca-item__content">
-                  <h5 class="beca-item__title">Maestría en Finanzas</h5><strong class="beca-item__subtitle">CENTRUM</strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 text-center mt-3"><a class="btn btn-primary px-5" href="#">Ver más</a></div>
           </div>
-        </div>
-        <div class="row my-5 py-5 position-relative"><div class="bubble bubble-primary bubble--sm" style="top: 3rem;left: 1rem;"></div>
+          <div class="row my-5 py-5 position-relative"><div class="bubble bubble-primary bubble--sm" style="top: 3rem;left: 1rem;"></div>
 <div class="bubble bubble-secondary delay-1" style="top: 5rem;left: -2rem;"></div>
-          <div class="col-md-8 mx-auto text-center">
-            <h3 class="h1 text-secondary font-weight-bold mb-4">Créditos</h3>
-            <p class="text-center">En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.</p>
+            <div class="col-md-8 mx-auto text-center">
+              <h3 class="h2 text-secondary font-weight-bold mb-4 d-md-none">Créditos</h3>
+              <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-md-block">Créditos</h3>
+              <p class="text-center">En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.</p>
+            </div>
           </div>
-        </div>
-        <div class="row my-5 text-center position-relative pb-5"><div class="bubble bubble-secondary" style="top: 3rem;right: 6rem;"></div>
+          <div class="row my-5 text-center position-relative pb-5"><div class="bubble bubble-secondary" style="top: 3rem;right: 6rem;"></div>
 <div class="bubble bubble-primary bubble--sm delay-1" style="bottom: 4rem;right: 6rem;"></div>
 <div class="bubble bubble-secondary bubble--sm delay-2" style="bottom: 0rem;left: 40%;"></div>
 <div class="bubble bubble-primary bubble--sm" style="bottom: 6rem;left: 0;"></div>
-          <div class="position-absolute" style="z-index:-1"><svg width="1160" height="658" viewBox="0 50 1160 658" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M350.771 227.098C446.259 303.982 423.055 391.19 378.728 482.545C334.4 573.9 316.239 606.021 267.204 615.096C203.701 626.848 85.9192 592.854 144.607 438.741C203.294 284.628 -40.4135 320.446 25.2758 233.865C55.5114 194.013 204.858 128.329 350.771 227.098Z" fill="#E7EEF3">
-<animate repeatCount="indefinite" attributeName="d" dur="10s" values="M350.771 227.098C446.259 303.982 423.055 391.19 378.728 482.545C334.4 573.9 316.239 606.021 267.204 615.096C203.701 626.848 85.9192 592.854 144.607 438.741C203.294 284.628 -40.4135 320.446 25.2758 233.865C55.5114 194.013 204.858 128.329 350.771 227.098Z;M362.497 211.499C457.985 288.383 399.37 416.5 386.996 441.999C374.623 467.499 304.531 543.925 255.496 553C191.992 564.752 145.496 526.5 145.496 427C145.496 327.5 -13.8776 324.26 32.2723 225.865C69.4966 146.5 216.584 112.73 362.497 211.499Z;M350.771 227.098C446.259 303.982 423.055 391.19 378.728 482.545C334.4 573.9 316.239 606.021 267.204 615.096C203.701 626.848 85.9192 592.854 144.607 438.741C203.294 284.628 -40.4135 320.446 25.2758 233.865C55.5114 194.013 204.858 128.329 350.771 227.098Z">
-</animate>
-</path>
-<path d="M631.157 303.525C659.777 156.735 785.383 102.684 885.226 127.985C985.069 153.286 1034.32 150.676 1067.79 194.678C1111.13 251.663 1070.51 347.656 948.908 355.468C784.893 366.005 942.047 577.209 828.058 602.05C774.813 613.653 611.221 490.638 631.157 303.525Z" fill="#FDE8E0">
-<animate repeatCount="indefinite" attributeName="d" dur="10s" values="M631.157 303.525C659.777 156.735 785.383 102.684 885.226 127.985C985.069 153.286 1034.32 150.676 1067.79 194.678C1111.13 251.663 1070.51 347.656 948.908 355.468C784.893 366.005 942.047 577.209 828.058 602.05C774.813 613.653 611.221 490.638 631.157 303.525Z;M619.997 278C648.617 131.21 756 111.035 798.499 101C840.998 90.9658 966.529 110.695 992.499 159.5C1050.5 268.5 850.521 264.761 904.5 374C982.095 531.032 943.499 547 819.998 547C765.504 547 600.061 465.113 619.997 278Z;M631.157 303.525C659.777 156.735 785.383 102.684 885.226 127.985C985.069 153.286 1034.32 150.676 1067.79 194.678C1111.13 251.663 1070.51 347.656 948.908 355.468C784.893 366.005 942.047 577.209 828.058 602.05C774.813 613.653 611.221 490.638 631.157 303.525Z">
-</animate>
-</path>
-<path d="M703.789 549.957C626.416 565.955 574.212 523.359 549.563 489.157C524.913 454.954 514.063 374.657 549.563 338.657C576.121 311.724 651.45 280.993 680.063 338.656C718.658 416.434 773.737 342.621 809.097 393.102C825.613 416.682 799.04 521.5 703.789 549.957Z" fill="#FDE8E0" style="mix-blend-mode:multiply">
-<animate repeatCount="indefinite" attributeName="d" dur="10s" values="M703.789 549.957C626.416 565.955 574.212 523.359 549.563 489.157C524.913 454.954 514.063 374.657 549.563 338.657C576.121 311.724 651.45 280.993 680.063 338.656C718.658 416.434 773.737 342.621 809.097 393.102C825.613 416.682 799.04 521.5 703.789 549.957Z;M710.997 565C630.497 589.05 564.997 570 528.997 507.5C492.997 445 493.997 374 543.497 329C602.997 274.909 639.101 414.049 689.497 374C764.997 314 816.094 323.468 816.094 385.102C816.094 428.5 806.247 536.543 710.997 565Z;M703.789 549.957C626.416 565.955 574.212 523.359 549.563 489.157C524.913 454.954 514.063 374.657 549.563 338.657C576.121 311.724 651.45 280.993 680.063 338.656C718.658 416.434 773.737 342.621 809.097 393.102C825.613 416.682 799.04 521.5 703.789 549.957Z">
-</animate>
-</path>
-<path d="M159.5 242C148 136.661 304.86 99.6065 349.721 130.403C394.582 161.199 419.469 168.91 428.013 196.839C439.078 233.009 404.063 254.798 339.691 254.798C262.5 254.798 295.746 363.449 234.706 354.919C206.194 350.934 168.47 324.161 159.5 242Z" fill="#E7EEF3" style="mix-blend-mode:multiply">
-<animate repeatCount="indefinite" attributeName="d" dur="10s" values="M159.5 242C148 136.661 304.86 99.6065 349.721 130.403C394.582 161.199 419.469 168.91 428.013 196.839C439.078 233.009 404.063 254.798 339.691 254.798C262.5 254.798 295.746 363.449 234.706 354.919C206.194 350.934 168.47 324.161 159.5 242Z;M144.497 171C170.997 66 295.497 82.4998 346.497 103.5C397.497 124.5 409.997 147.294 409.997 176.5C409.996 205.707 374.067 188.668 318.997 222C280.997 245 273.537 329.03 212.497 320.5C183.985 316.516 124.272 251.136 144.497 171Z;M159.5 242C148 136.661 304.86 99.6065 349.721 130.403C394.582 161.199 419.469 168.91 428.013 196.839C439.078 233.009 404.063 254.798 339.691 254.798C262.5 254.798 295.746 363.449 234.706 354.919C206.194 350.934 168.47 324.161 159.5 242Z">
-</animate>
-</path>
-</svg>
+            <div class="position-absolute" style="z-index:-1;left:50%;transform:translateX(-50%);width:100%;max-width:450px"><img class="d-lg-none img-fluid" src="assets/images/requisitos_mobile.svg"></div>
+            <div class="position-absolute" style="z-index:-1"><img class="d-none d-lg-block" src="assets/images/requisitos.svg"></div>
+            <div class="col-12 mx-auto">
+              <h3 class="h2 text-secondary font-weight-bold mb-lg-5 pb-5 d-md-none">Requisitos</h3>
+              <h3 class="h1 text-secondary font-weight-bold mb-lg-5 pb-5 d-none d-md-block">Requisitos</h3>
+              <div class="pt-md-5">
+                <div class="row flex-lg-nowrap pt-5">
+                  <div class="col-7 col-lg px-md-0">
+                    <div class="requisitos-item text-center py-4 mt-n5"><span class="heading-font text-primary h1 mb-3">1.</span>
+                      <p>Demostrar buen rendimiento académico</p>
+                    </div>
+                  </div>
+                  <div class="col-7 col-lg px-md-0 mt-lg-5 ml-auto ml-lg-0">
+                    <div class="requisitos-item text-center py-4 mt-n5 mt-lg-5"><span class="heading-font text-primary h1 mb-3">2.</span>
+                      <p>Tener constancia de la participación de 3 personas: Estudiante, aval y responsable del crédito</p>
+                    </div>
+                  </div>
+                  <div class="col-7 col-lg px-md-0">
+                    <div class="requisitos-item text-center py-4 mt-n5"><span class="heading-font text-primary h1 mb-3">3.</span>
+                      <p>Demostrar buen rendimiento académico</p>
+                    </div>
+                  </div>
+                  <div class="col-7 col-lg px-md-0 mt-lg-5 ml-auto ml-lg-0">
+                    <div class="requisitos-item text-center py-4 mt-n5 mt-lg-5"><span class="heading-font text-primary h1 mb-3">4.</span>
+                      <p>Demostrar buen rendimiento académico</p>
+                    </div>
+                  </div>
+                  <div class="col-7 col-lg px-md-0">
+                    <div class="requisitos-item text-center py-4 mt-n5"><span class="heading-font text-primary h1 mb-3">5.</span>
+                      <p>Demostrar buen rendimiento académico</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12 mx-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-5 pb-5">Requisitos</h3>
-            <div class="pt-5">
-              <div class="row flex-nowrap pt-5">
-                <div class="col px-0">
-                  <div class="requisitos-item text-center py-4 mt-n5"><span class="heading-font text-primary h1 mb-3">1.</span>
-                    <p>Demostrar buen rendimiento académico</p>
+          <div class="row w-100 pt-5 position-relative"><div class="bubble bubble-secondary bubble--xs" style="bottom:4rem;left: 30%;"></div>
+            <div class="col-md-8 text-center mx-auto">
+              <h3 class="h2 text-secondary font-weight-bold text-center d-md-none">Proceso</h3>
+              <h3 class="h1 text-secondary font-weight-bold mb-5 d-none d-md-block">Proceso</h3>
+            </div>
+            <div class="col-12 d-none d-lg-flex flex-nowrap mb-5 proceso-slider overflow-hidden">
+              <div class="swiper-wrapper d-flex">
+                <div class="proceso-item swiper-slide">
+                  <div class="how-to-circle px-0">
+                    <div class="how-to-circle__icon"><img src="assets/images/email-icon.png" alt=""></div>
+                    <p class="mt-4">Enviar un correo a creditos@ipfe.org.pe</p>
                   </div>
                 </div>
-                <div class="col px-0 mt-5">
-                  <div class="requisitos-item text-center py-4 mt-5"><span class="heading-font text-primary h1 mb-3">2.</span>
-                    <p>Tener constancia de la participación de 3 personas: Estudiante, aval y responsable del crédito</p>
+                <div class="proceso-item swiper-slide">
+                  <div class="how-to-circle px-0">
+                    <div class="how-to-circle__icon"><img src="assets/images/paper-icon.png" alt=""></div>
+                    <p class="mt-4">Llenar la Ficha de Solicitud de Crédito enviada en respuesta a su mensaje</p>
                   </div>
                 </div>
-                <div class="col px-0">
-                  <div class="requisitos-item text-center py-4 mt-n5"><span class="heading-font text-primary h1 mb-3">3.</span>
-                    <p>Demostrar buen rendimiento académico</p>
+                <div class="proceso-item swiper-slide">
+                  <div class="how-to-circle px-0">
+                    <div class="how-to-circle__icon"><img src="assets/images/check-icon.png" alt=""></div>
+                    <p class="mt-4">Pagar el derecho de evaluación (a los estudiantes de SENATI se les incluye el pago en la primera cuota de crédito)</p>
                   </div>
                 </div>
-                <div class="col px-0 mt-5">
-                  <div class="requisitos-item text-center py-4 mt-5"><span class="heading-font text-primary h1 mb-3">4.</span>
-                    <p>Demostrar buen rendimiento académico</p>
+                <div class="proceso-item swiper-slide">
+                  <div class="how-to-circle px-0">
+                    <div class="how-to-circle__icon"><img src="assets/images/contents-icon.png" alt=""></div>
+                    <p class="mt-4">Enviar los documentos que sustenten la necesidad económica al correo creditos@ipfe.org.pe</p>
                   </div>
                 </div>
-                <div class="col px-0">
-                  <div class="requisitos-item text-center py-4 mt-n5"><span class="heading-font text-primary h1 mb-3">5.</span>
-                    <p>Demostrar buen rendimiento académico</p>
+                <div class="proceso-item swiper-slide">
+                  <div class="how-to-circle px-0">
+                    <div class="how-to-circle__icon"><img src="assets/images/conversation-icon.png" alt=""></div>
+                    <p class="mt-4">Evaluación crediticia: se realiza una evaluación sobre la situación crediticia de los participantes del crédito</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row pt-5 position-relative"><div class="bubble bubble-secondary bubble--xs" style="bottom:4rem;left: 30%;"></div>
-          <div class="col-md-8 text-center mx-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-5">Proceso</h3>
-          </div>
-          <div class="col-12 d-flex flex-nowrap mb-5">
-            <div class="col">
+      </div>
+      <div>
+        <div class="col-12 d-lg-none d-flex flex-nowrap mb-5 proceso-slider overflow-hidden">
+          <div class="swiper-wrapper d-flex">
+            <div class="proceso-item swiper-slide">
               <div class="how-to-circle px-0">
                 <div class="how-to-circle__icon"><img src="assets/images/email-icon.png" alt=""></div>
                 <p class="mt-4">Enviar un correo a creditos@ipfe.org.pe</p>
               </div>
             </div>
-            <div class="col">
+            <div class="proceso-item swiper-slide">
               <div class="how-to-circle px-0">
                 <div class="how-to-circle__icon"><img src="assets/images/paper-icon.png" alt=""></div>
                 <p class="mt-4">Llenar la Ficha de Solicitud de Crédito enviada en respuesta a su mensaje</p>
               </div>
             </div>
-            <div class="col">
+            <div class="proceso-item swiper-slide">
               <div class="how-to-circle px-0">
                 <div class="how-to-circle__icon"><img src="assets/images/check-icon.png" alt=""></div>
                 <p class="mt-4">Pagar el derecho de evaluación (a los estudiantes de SENATI se les incluye el pago en la primera cuota de crédito)</p>
               </div>
             </div>
-            <div class="col">
+            <div class="proceso-item swiper-slide">
               <div class="how-to-circle px-0">
                 <div class="how-to-circle__icon"><img src="assets/images/contents-icon.png" alt=""></div>
                 <p class="mt-4">Enviar los documentos que sustenten la necesidad económica al correo creditos@ipfe.org.pe</p>
               </div>
             </div>
-            <div class="col">
+            <div class="proceso-item swiper-slide">
               <div class="how-to-circle px-0">
                 <div class="how-to-circle__icon"><img src="assets/images/conversation-icon.png" alt=""></div>
                 <p class="mt-4">Evaluación crediticia: se realiza una evaluación sobre la situación crediticia de los participantes del crédito</p>
@@ -235,14 +296,17 @@
             </div>
           </div>
         </div>
-        <div class="row text-center position-relative"><div class="bubble bubble-primary" style="top: 6rem;right: -4rem;"></div>
-<div class="bubble bubble-secondary bubble--sm delay-1" style="top: 10rem;right: 0rem;"></div>
-<div class="bubble bubble-secondary delay-2" style="right: 0;bottom: -6rem;"></div>
-<div class="bubble bubble-primary bubble--sm" style="right: 4rem;bottom: -3rem;"></div>
-<div class="bubble bubble-secondary bubble--sm delay-1" style="left: 2rem;bottom: 0;"></div>
-<div class="bubble bubble-primary delay-2" style="left: 0rem;top: 6rem;"></div>
-          <div class="col-10 mx-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-4">Preguntas frecuentes</h3><div class="accordion" id="accordionFAQ">
+      </div>
+      <div class="container">
+        <div class="row text-center position-relative"><div class="d-none d-md-block bubble bubble-primary" style="top: 6rem;right: -4rem;"></div>
+<div class="d-none d-md-block bubble bubble-secondary bubble--sm delay-1" style="top: 10rem;right: 0rem;"></div>
+<div class="d-none d-md-block bubble bubble-secondary delay-2" style="right: 0;bottom: -6rem;"></div>
+<div class="d-none d-md-block bubble bubble-primary bubble--sm" style="right: 4rem;bottom: -3rem;"></div>
+<div class="d-none d-md-block bubble bubble-secondary bubble--sm delay-1" style="left: 2rem;bottom: 0;"></div>
+<div class="d-none d-md-block bubble bubble-primary delay-2" style="left: 0rem;top: 6rem;"></div>
+          <div class="col-12 col-md-10 mx-auto">
+            <h3 class="h2 text-secondary font-weight-bold mb-4 d-md-none">Preguntas frecuentes</h3>
+            <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-md-block">Preguntas frecuentes</h3><div class="accordion" id="accordionFAQ">
 <div class="collapse-item">
 <div class="collapse-item-header" id="headingOne">
 <h2 class="mb-0">
@@ -277,8 +341,19 @@
           </div>
         </div>
         <div class="row my-5">
-          <div class="col-md-5 ml-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-0">Contáctanos</h3>
+          <div class="col-lg-6 position-relative order-lg-1 mb-3 mb-lg-0">
+            <h3 class="h2 text-secondary font-weight-bold mb-3 d-lg-none text-center">Contáctanos</h3><div class="bubble bubble-primary bubble--sm" style="top: 10rem;left: 4rem;"></div>
+<div class="bubble bubble-secondary bubble--sm delay-1" style="bottom: 5rem;right: -2rem;"></div><img class="img-fluid position-relative" src="assets/images/contacto-01.svg" alt="">
+            <div class="position-absolute" style="top:4rem;right:-8rem;z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
+<path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+<animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+</animate>
+</path>
+</svg>
+            </div>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h3 class="h1 text-secondary font-weight-bold mb-0 d-none d-md-block">Contáctanos</h3>
             <p class="text-secondary font-weight-bold">¡Empieza tu camino al éxito!</p>
             <form action="gracias.html">
               <input class="form-control mb-3" type="text" placeholder="Nombre:">
@@ -293,16 +368,6 @@
                 <button class="btn btn-primary px-4" type="submit">Enviar información</button>
               </div>
             </form>
-          </div>
-          <div class="col-md-6 position-relative"><div class="bubble bubble-primary bubble--sm" style="top: 10rem;left: 4rem;"></div>
-<div class="bubble bubble-secondary bubble--sm delay-1" style="bottom: 5rem;right: -2rem;"></div><img class="img-fluid position-relative" src="assets/images/contacto-01.svg" alt="">
-            <div class="position-absolute" style="top:4rem;right:-8rem;z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
-<path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-<animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-</animate>
-</path>
-</svg>
-            </div>
           </div>
         </div>
       </div>

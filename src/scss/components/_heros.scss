@@ -1,0 +1,29 @@
+.hero-index {
+  &__container {
+    position: absolute;
+    transform:rotate(45deg);
+    z-index:-1;
+    top:3rem;
+    left: 2rem;
+
+    @include media-breakpoint-up('xl') {
+      top:8rem;
+      left: 5rem;
+    }
+  }
+}
+
+.hero-experiencia {
+  &__container {
+    position: absolute;
+    top: 0;;
+    left:0;
+    transform:rotate(45deg);
+    z-index:-1;
+    
+    @include media-breakpoint-up('xl') {
+      top:3rem;
+      left:6rem;
+    }
+  }
+}

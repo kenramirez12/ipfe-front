@@ -15,9 +15,32 @@
   </head>
   <body>
     <div class="page" style="overflow-x:hidden">
+      <div class="responsive-menu" id="responsive-menu">
+        <div class="responsive-menu__container">
+          <div class="responsive-menu__content">
+            <div class="container d-flex align-items-center py-3"><a class="mr-3 d-md-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a></div>
+            <nav class="responsive-nav my-auto">
+              <ul class="responsive-main-menu mb-0">
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="estudiantes.html" itemprop="name">Estudiantes</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="empresas.html" itemprop="name">Empresas</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="talento.html" itemprop="name">Talento</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="fondos.html" itemprop="name">Fondo</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="blog.html" itemprop="name">Blog</a></li>
+              </ul>
+            </nav>
+            <div class="p-3">
+              <p class="text-muted mb-2"><span>Síguenos</span></p>
+              <div class="d-flex"><a class="mr-4" href="#"><img src="assets/images/facebook-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/linkedin-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/instagram-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/twitter-icon.svg" alt="" height="30"></a><a href="#"><img src="assets/images/youtube-icon.svg" alt="" height="30"></a></div>
+            </div>
+          </div>
+          <div class="responsive-menu__footer py-3 text-center"><span class="text-white">Powered by <a href="#" class="font-weight-bold text-white">Prodequa</a></span></div>
+        </div><img class="responsive-menu__bg" src="assets/images/menu_mobile.svg">
+      </div>
       <header class="main-header">
-        <div class="container d-flex align-items-center"><a class="mr-3 d-md-none" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
-          <nav class="main-nav ml-auto d-none d-md-block">
+        <div class="container d-flex align-items-center"><a class="mr-3 d-lg-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
+          <nav class="main-nav ml-auto d-none d-lg-block">
             <ul class="main-menu mb-0">
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
@@ -32,14 +55,7 @@
       </header>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1>
-              <span class="text-secondary font-weight-bold">FORTALECE TU</span>
-              <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Talento</span>
-            </h1>
-            <p class="lead mr-4 mb-4">Participa de nuestros programas</p>
-          </div>
-          <div class="col-md-6 position-relative"><div class="bubble bubble-primary bubble--xs" style="bottom: 4rem;left: -15rem;"></div>
+          <div class="col-md-6 position-relative order-md-1"><div class="bubble bubble-primary bubble--xs" style="bottom: 4rem;left: -15rem;"></div>
 <div class="bubble bubble-primary bubble--sm delay-1" style="right: -5rem;top: 5rem;"></div>
 <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 6rem;right: -4rem;"></div>
 <div class="bubble bubble-secondary delay-2" style="top: 6rem;right: -4rem;"></div>
@@ -53,12 +69,18 @@
 </svg>
             </div>
           </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h1 class="text-center text-md-left"><span class="text-secondary font-weight-bold">FORTALECE TU</span>
+<span class="text-primary heading-font display-3 d-block mt-2 mb-5">Talento</span>
+            </h1>
+            <p class="lead mr-4 mb-4 text-center text-md-left">Participa de nuestros programas</p>
+          </div>
         </div>
-        <div class="row my-5 pt-5 position-relative"><div class="bubble bubble-secondary bubble--sm" style="top: 50%;left: -2rem;"></div>
+        <div class="row my-5 pt-md-5 position-relative"><div class="bubble bubble-secondary bubble--sm" style="top: 50%;left: -2rem;"></div>
 <div class="bubble bubble-secondary delay-1" style="bottom: -6rem;right: 0;"></div>
 <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: -3rem;right: 4rem;"></div>
           <div class="col-md-8 mx-auto text-center">
-            <p class="text-center">En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.</p>
+            <p class="text-center">Este programa acompaña a nuestros beneficiarios durante el transcurso de sus estudios, mediante asesorías, seguimiento académico y apoyo psicológico, con la finalidad de fortalecer sus competencias personales, superar los obstáculos académicos y prepararse para una inserción laboral exitosa. Nuestro enfoque principal son los jóvenes de escasos recursos que llevan carreras técnicas.</p>
           </div>
         </div>
         <div class="row my-5 text-center position-relative">
@@ -67,17 +89,9 @@
           </div>
         </div>
         <div class="row mb-5 pb-5">
-          <div class="col-md-5 offset-md-1">
-            <h3 class="text-secondary font-weight-bold mb-4">Programa de Evaluación y Selección</h3>
-            <ul class="list-unstyled mb-5">
-              <li class="list-unstyled-item mb-4"><strong class="text-primary">1.</strong> Permite obtener indicadores del comportamiento de los postulantes en nuevos compromisos o proyectos.</li>
-              <li class="list-unstyled-item mb-4"><strong class="text-primary">2.</strong> Genera una línea base del estado de postulantes finalistas, y a partir de ello formulamos los planes de mejora a ejecutarse en el proceso del acompañamiento.</li>
-              <li class="list-unstyled-item mb-4"><strong class="text-primary">3.</strong> El programa está dirigido a estudiantes en etapa escolar, educación superior técnica y/o universitaria y profesionales.</li>
-              <li class="list-unstyled-item mb-4"><strong class="text-primary">4.</strong> Este programa puede ser ejecutado como un componente independiente a los programas de becas o créditos educativos que gestionamos para empresas socialmente responsables.</li>
-            </ul><a class="btn btn-primary px-5" href="#">Ver metodología</a>
-          </div>
-          <div class="col-md-5 offset-md-1 position-relative"><div class="bubble bubble-secondary bubble--sm" style="top: 2rem;right: -2rem;"></div>
-<div class="bubble bubble-primary bubble--sm delay-1" style="left: -2rem;bottom: 6rem;"></div><img class="img-fluid position-relative" src="assets/images/programa1_foto-01.svg" alt="">
+          <div class="col-md-5 offset-md-1 position-relative order-md-1"><div class="bubble bubble-secondary bubble--sm" style="top: 2rem;right: -2rem;"></div>
+<div class="bubble bubble-primary bubble--sm delay-1" style="left: -2rem;bottom: 6rem;"></div>
+            <h3 class="h4 text-center text-secondary font-weight-bold mb-4 d-md-none">Programa de Evaluación y Selección</h3><img class="img-fluid position-relative" src="assets/images/programa1_foto-01.svg" alt="">
             <div class="position-absolute" style="top: 4rem;right: -3rem;z-index:-1;transform: rotate(-5deg);"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
 <path fill="rgba(10, 83, 126, 0.1)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
 <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
@@ -86,10 +100,21 @@
 </svg>
             </div>
           </div>
+          <div class="col-md-5 offset-md-1">
+            <h3 class="text-secondary font-weight-bold mb-4 d-none d-md-block">Programa de Evaluación y Selección</h3>
+            <ul class="list-unstyled mb-5 mt-4 mt-md-0">
+              <li class="list-unstyled-item mb-4"><strong class="text-primary">1.</strong> Permite obtener indicadores del comportamiento de los postulantes en nuevos compromisos o proyectos.</li>
+              <li class="list-unstyled-item mb-4"><strong class="text-primary">2.</strong> Genera una línea base del estado de postulantes finalistas, y a partir de ello formulamos los planes de mejora a ejecutarse en el proceso del acompañamiento.</li>
+              <li class="list-unstyled-item mb-4"><strong class="text-primary">3.</strong> El programa está dirigido a estudiantes en etapa escolar, educación superior técnica y/o universitaria y profesionales.</li>
+              <li class="list-unstyled-item mb-4"><strong class="text-primary">4.</strong> Este programa puede ser ejecutado como un componente independiente a los programas de becas o créditos educativos que gestionamos para empresas socialmente responsables.</li>
+            </ul>
+            <div class="text-center text-md-left"><a class="btn btn-primary px-5" href="#">Ver metodología</a></div>
+          </div>
         </div>
         <div class="row mb-5 pb-5">
           <div class="col-md-5 position-relative"><div class="bubble bubble-secondary bubble--sm" style="top: 6rem;left: -2rem;"></div>
-<div class="bubble bubble-primary bubble--sm delay-1" style="right: 0rem;bottom: 0rem;"></div><img class="img-fluid position-relative" src="assets/images/programa2_foto-01.svg" alt="">
+<div class="bubble bubble-primary bubble--sm delay-1" style="right: 0rem;bottom: 0rem;"></div>
+            <h3 class="h4 text-center text-secondary font-weight-bold mb-4 d-md-none">Programa de Orientación Vocacional</h3><img class="img-fluid position-relative" src="assets/images/programa2_foto-01.svg" alt="">
             <div class="position-absolute" style="top: 4rem;right: -7rem;z-index:-1;transform: rotate(40deg);"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
 <path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
 <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
@@ -99,23 +124,21 @@
             </div>
           </div>
           <div class="col-md-5 offset-md-1">
-            <h3 class="text-secondary font-weight-bold mb-4">Programa de Orientación Vocacional</h3>
-            <p class="mb-3">El programa nos permite orientar a jóvenes estudiantes de educación secundaria en la elección de su carrera profesional acorde a sus habilidades, intereses, vocación y posibilidades que le asegure el éxito académico y social y el mayor nivel de satisfacción tanto personal como profesional.</p>
+            <h3 class="text-secondary font-weight-bold mb-4 d-none d-md-block">Programa de Orientación Vocacional</h3>
+            <p class="mb-3 mt-4 mt-md-0">El programa nos permite orientar a jóvenes estudiantes de educación secundaria en la elección de su carrera profesional acorde a sus habilidades, intereses, vocación y posibilidades que le asegure el éxito académico y social y el mayor nivel de satisfacción tanto personal como profesional.</p>
             <ul class="list-unstyled mb-4">
               <li class="list-unstyled-item mb-3"><strong class="text-secondary">1.</strong> Taller de Sensibilización.</li>
               <li class="list-unstyled-item mb-3"><strong class="text-secondary">2.</strong> Conocimiento de sí mismo – Perfil Psicológico</li>
               <li class="list-unstyled-item mb-3"><strong class="text-secondary">3.</strong> Información académica y profesional – Perfil profesiográfico</li>
               <li class="list-unstyled-item mb-3"><strong class="text-secondary">4.</strong> Entrega de Informe final al evaluado y familia.</li>
-            </ul><a class="btn btn-secondary px-5" href="#">Ver más</a>
+            </ul>
+            <div class="text-center text-md-left"><a class="btn btn-secondary px-5" href="#">Ver más</a></div>
           </div>
         </div>
         <div class="row mb-5 pb-5">
-          <div class="col-md-5 offset-md-1">
-            <h3 class="text-secondary font-weight-bold mb-4">Programa de Acompañamiento</h3>
-            <p class="mb-5">Es indispensable que jóvenes estudiantes reciban un acompañamiento especializado durante su permanencia en centros de estudio superior o técnico, con el objetivo de prevenir la deserción educativa, mejorar los niveles de adaptación y desarrollo competencias profesionales.</p><a class="btn btn-primary px-5" href="#">Ver Estrategias</a>
-          </div>
-          <div class="col-md-5 offset-md-1 position-relative"><div class="bubble bubble-secondary bubble--sm" style="top: 2rem;right: -2rem;"></div>
-<div class="bubble bubble-primary bubble--sm delay-1" style="left: -2rem;bottom: 6rem;"></div><img class="img-fluid position-relative" src="assets/images/programa3_foto-01.svg" alt="">
+          <div class="col-md-5 offset-md-1 position-relative order-md-1"><div class="bubble bubble-secondary bubble--sm" style="top: 2rem;right: -2rem;"></div>
+<div class="bubble bubble-primary bubble--sm delay-1" style="left: -2rem;bottom: 6rem;"></div>
+            <h3 class="h4 text-center text-secondary font-weight-bold mb-4 d-md-none">Programa de Acompañamiento</h3><img class="img-fluid position-relative" src="assets/images/programa3_foto-01.svg" alt="">
             <div class="position-absolute" style="top: 0rem;right: 1rem;z-index:-1;transform: rotate(155deg);"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
 <path fill="rgba(10, 83, 126, 0.1)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
 <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
@@ -124,10 +147,26 @@
 </svg>
             </div>
           </div>
+          <div class="col-md-5 offset-md-1">
+            <h3 class="text-secondary font-weight-bold mb-4 d-none d-md-block">Programa de Acompañamiento</h3>
+            <p class="mb-5 mt-4 mt-md-0">Es indispensable que jóvenes estudiantes reciban un acompañamiento especializado durante su permanencia en centros de estudio superior o técnico, con el objetivo de prevenir la deserción educativa, mejorar los niveles de adaptación y desarrollo competencias profesionales.</p>
+            <div class="text-center text-md-left"><a class="btn btn-primary px-5" href="#">Ver Estrategias</a></div>
+          </div>
         </div>
         <div class="row my-5">
-          <div class="col-md-5 ml-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-0">Contáctanos</h3>
+          <div class="col-lg-6 position-relative order-lg-1 mb-3 mb-lg-0">
+            <h3 class="h2 text-secondary font-weight-bold mb-3 d-lg-none text-center">Contáctanos</h3><div class="bubble bubble-primary bubble--sm" style="top: 10rem;left: 4rem;"></div>
+<div class="bubble bubble-secondary bubble--sm delay-1" style="bottom: 5rem;right: -2rem;"></div><img class="img-fluid position-relative" src="assets/images/contacto-01.svg" alt="">
+            <div class="position-absolute" style="top:4rem;right:-8rem;z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
+<path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+<animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+</animate>
+</path>
+</svg>
+            </div>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h3 class="h1 text-secondary font-weight-bold mb-0 d-none d-md-block">Contáctanos</h3>
             <p class="text-secondary font-weight-bold">¡Empieza tu camino al éxito!</p>
             <form action="gracias.html">
               <input class="form-control mb-3" type="text" placeholder="Nombre:">
@@ -142,16 +181,6 @@
                 <button class="btn btn-primary px-4" type="submit">Enviar información</button>
               </div>
             </form>
-          </div>
-          <div class="col-md-6 position-relative"><div class="bubble bubble-primary bubble--sm" style="top: 10rem;left: 4rem;"></div>
-<div class="bubble bubble-secondary bubble--sm delay-1" style="bottom: 5rem;right: -2rem;"></div><img class="img-fluid position-relative" src="assets/images/contacto-01.svg" alt="">
-            <div class="position-absolute" style="top:4rem;right:-8rem;z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
-<path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-<animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-</animate>
-</path>
-</svg>
-            </div>
           </div>
         </div>
       </div>

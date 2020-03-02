@@ -17,10 +17,6 @@
     transform: scale(1.07);
 
     .beca-item {
-      // &__thumbnail {
-      //   height: 460px;
-      // }
-
       &__btn {
         opacity: 1;
       }
@@ -32,6 +28,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include media-breakpoint-up('md') {
+      padding-bottom: 1.5rem;
+    }
   }
 
   &__title {

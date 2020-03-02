@@ -1,8 +1,13 @@
 .row.justify-content-center.my-5.pt-5
-  .col-10.text-center
-    h3.h1.text-secondary.font-weight-bold.mb-3 Confían en nosotros
-  .col-10.my-4
-    <div class="tab w-full">
+  .col-12.col-md-10.text-center
+    h3.h2.text-secondary.font-weight-bold.mb-3.d-md-none Confían en nosotros
+    h3.h1.text-secondary.font-weight-bold.mb-3.d-none.d-md-block Confían en nosotros
+  .col-12.col-md-10.my-4
+    select.custom-select.custom-select-lg.border-secondary.text-secondary.d-md-none(name="")
+      option(selected) Universidades
+      option Asociados
+      option Inversionistas
+    <div class="tab w-full d-none d-md-flex">
       <button class="tablinks active" onclick="openTab(event, 'universidades')">Universidades</button>
       <button class="tablinks" onclick="openTab(event, 'asociados')">Asociados</button>
       <button class="tablinks" onclick="openTab(event, 'inversionistas')">Inversionistas</button>
@@ -12,14 +17,14 @@
       .position-relative.my-5
         .swiper-button-prev
         .swiper-button-next
-        .sponsors-slider.overflow-hidden
+        .sponsors-slider.overflow-hidden.mx-5.mx-md-0
           .swiper-wrapper.d-flex.align-items-center
-            .swiper-slide: img(src="assets/images/sponsors/logo-up.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/sponsor01.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/sponsor02.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/upn.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/sponsor02.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/upn.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/logo-up.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor01.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor02.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/upn.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor02.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/upn.jpg", alt="")
     </div>
 
     <div id="asociados" class="tabcontent">
@@ -28,12 +33,12 @@
         .swiper-button-next
         .sponsors-slider.overflow-hidden
           .swiper-wrapper.d-flex.align-items-center
-            .swiper-slide: img(src="assets/images/sponsors/logo-up.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/sponsor01.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/sponsor02.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/upn.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/sponsor02.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/upn.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/logo-up.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor01.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor02.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/upn.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor02.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/upn.jpg", alt="")
     </div>
 
     <div id="inversionistas" class="tabcontent">
@@ -42,10 +47,10 @@
         .swiper-button-next
         .sponsors-slider.overflow-hidden
           .swiper-wrapper.d-flex.align-items-center
-            .swiper-slide: img(src="assets/images/sponsors/logo-up.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/sponsor01.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/sponsor02.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/upn.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/sponsor02.jpg", alt="")
-            .swiper-slide: img(src="assets/images/sponsors/upn.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/logo-up.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor01.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor02.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/upn.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/sponsor02.jpg", alt="")
+            .swiper-slide: img.img-fluid(src="assets/images/sponsors/upn.jpg", alt="")
     </div>

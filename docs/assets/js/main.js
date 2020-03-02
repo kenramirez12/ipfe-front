@@ -1,10 +1,52 @@
-// Welcome modal
-if(document.getElementById('welcomeModal')) {
-  setTimeout(() => {
-    document.body.classList.add('modal-open')
-    document.getElementById('welcomeModal').classList.add('show')
-  }, 2000);
+// Sticky header
+const header = document.querySelector('.main-header')
+
+document.querySelector('.page').addEventListener('scroll', function(e) {
+  const scrollTop = document.querySelector('.page').scrollTop
+  if(scrollTop > 500 && !header.classList.contains('sticky')) {
+    header.classList.add('sticky')
+  } else if(scrollTop <= 500 && header.classList.contains('sticky')) {
+    header.classList.remove('sticky')
+  }
+})
+// Responsive menu
+const toggleMenuBtns = document.querySelectorAll('.toggle-menu-btn')
+if(toggleMenuBtns.length > 0) {
+  toggleMenuBtns.forEach(item => {
+    item.addEventListener('click', function() {
+      const isOpened = document.getElementById('responsive-menu').classList.contains('show')
+      if(isOpened) {
+        closeResponsiveMenu()
+      } else {
+        openResponsiveMenu()
+      }
+    })
+  })
 }
+
+document.addEventListener('click', function(e) {
+  if(e.target.id == 'responsive-menu' && e.target.classList.contains('show')) {
+    closeResponsiveMenu()
+  }
+})
+
+const openResponsiveMenu = () => {
+  document.body.classList.add('modal-open')
+  document.getElementById('responsive-menu').classList.add('show')
+}
+
+const closeResponsiveMenu = () => {
+  document.body.classList.remove('modal-open')
+  document.getElementById('responsive-menu').classList.remove('show')
+}
+
+// Welcome modal
+// if(document.getElementById('welcomeModal')) {
+//   setTimeout(() => {
+//     document.body.classList.add('modal-open')
+//     document.getElementById('welcomeModal').classList.add('show')
+//   }, 2000);
+// }
 
 // Modals
 const closeModal = (modalId) => {
@@ -104,14 +146,19 @@ const testimonials = new Swiper('.testimonials-slider', {
 });
 
 const directorio = new Swiper('.directorio-slider', {
-  slidesPerView: 3,
-  spaceBetween: 50,
-  centeredSlides: true,
-  initialSlide: 2,
+  slidesPerView: 1,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      centeredSlides: true,
+      initialSlide: 2,
+    }
+  }
 });
 
 const programas = new Swiper('.programas-slider', {
@@ -134,7 +181,7 @@ const programas = new Swiper('.programas-slider', {
   }
 });
 
-const blgo = new Swiper('.blog-slider', {
+const blog = new Swiper('.blog-slider', {
   slidesPerView: 1,
   spaceBetween: 30,
   navigation: {
@@ -150,6 +197,36 @@ const blgo = new Swiper('.blog-slider', {
     },
     576: {
       slidesPerView: 1
+    }
+  }
+});
+
+const becasPopulares = new Swiper('.becas-populares-slider', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
+});
+
+const proceso = new Swiper('.proceso-slider', {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  breakpoints: {
+    992: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      slidesPerGroup: 1
     }
   }
 });

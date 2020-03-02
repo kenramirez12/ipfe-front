@@ -1,7 +1,13 @@
 .position-relative
-  .row.justify-content-center.my-5
-    .col-12.my-4.px-0
-      <div class="tab w-full">
+  .row.justify-content-center.mt-5.mb-md-0
+    .col-12.mt-4.mb-md-4.px-0
+      .d-md-none.px-4
+        select.custom-select.custom-select-lg.border-primary.text-primary(name="")
+          option(selected) Asociación
+          option Programas con Empresas
+          option Programas con Instituciones Educativas
+          option Proyectos Sociales
+      <div class="tab w-full d-none d-md-flex">
         <button class="tablinks active" onclick="openTab(event, 'asociacion')">Asociación</button>
         <button class="tablinks" onclick="openTab(event, 'programas-con-empresas')">Programas<br>con Empresas</button>
         <button class="tablinks" onclick="openTab(event, 'programas-con-instituciones')">Programa con<br>Instituciones Educativas</button>
@@ -9,33 +15,33 @@
       </div>
 
       <div id="asociacion" class="tabcontent show">
-        .row.justify-content-center.align-items-center.py-5.mt-5
-          .col-md-5
+        .row.justify-content-center.align-items-center.pt-md-5.pb-md-5.mt-5
+          .col-md-5.px-5.px-md-3
             img.w-100(src="assets/images/empresa-001.jpg", alt="")
           .col-md-5.p-5
-            p 01 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.
+            p.text-center.text-md-left 01 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.
       </div>
 
       <div id="programas-con-empresas" class="tabcontent">
-        .row.justify-content-center.align-items-center.py-5.mt-5
-          .col-md-5
+        .row.justify-content-center.align-items-center.pt-md-5.pb-md-5.mt-5
+          .col-md-5.px-5.px-md-3
             img.w-100(src="assets/images/empresa-001.jpg", alt="")
           .col-md-5.p-5
-            p 02 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.
+            p.text-center.text-md-left 02 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.
       </div>
 
       <div id="programas-con-instituciones" class="tabcontent">
-        .row.justify-content-center.align-items-center.py-5.mt-5
-          .col-md-5
+        .row.justify-content-center.align-items-center.pt-md-5.pb-md-5.mt-5
+          .col-md-5.px-5.px-md-3
             img.w-100(src="assets/images/empresa-001.jpg", alt="")
           .col-md-5.p-5
-            p 03 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.
+            p.text-center.text-md-left 03 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.
       </div>
 
       <div id="proyectos-sociales" class="tabcontent">
-        .row.justify-content-center.align-items-center.py-5.mt-5
-          .col-md-5
+        .row.justify-content-center.align-items-center.pt-md-5.pb-md-5.mt-5
+          .col-md-5.px-5.px-md-3
             img.w-100(src="assets/images/empresa-001.jpg", alt="")
           .col-md-5.p-5
-            p 04 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.
+            p.text-center.text-md-left 04 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.
       </div>

@@ -15,9 +15,32 @@
   </head>
   <body>
     <div class="page" style="overflow-x:hidden">
+      <div class="responsive-menu" id="responsive-menu">
+        <div class="responsive-menu__container">
+          <div class="responsive-menu__content">
+            <div class="container d-flex align-items-center py-3"><a class="mr-3 d-md-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a></div>
+            <nav class="responsive-nav my-auto">
+              <ul class="responsive-main-menu mb-0">
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="estudiantes.html" itemprop="name">Estudiantes</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="empresas.html" itemprop="name">Empresas</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="talento.html" itemprop="name">Talento</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="fondos.html" itemprop="name">Fondo</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="blog.html" itemprop="name">Blog</a></li>
+              </ul>
+            </nav>
+            <div class="p-3">
+              <p class="text-muted mb-2"><span>Síguenos</span></p>
+              <div class="d-flex"><a class="mr-4" href="#"><img src="assets/images/facebook-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/linkedin-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/instagram-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/twitter-icon.svg" alt="" height="30"></a><a href="#"><img src="assets/images/youtube-icon.svg" alt="" height="30"></a></div>
+            </div>
+          </div>
+          <div class="responsive-menu__footer py-3 text-center"><span class="text-white">Powered by <a href="#" class="font-weight-bold text-white">Prodequa</a></span></div>
+        </div><img class="responsive-menu__bg" src="assets/images/menu_mobile.svg">
+      </div>
       <header class="main-header">
-        <div class="container d-flex align-items-center"><a class="mr-3 d-md-none" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
-          <nav class="main-nav ml-auto d-none d-md-block">
+        <div class="container d-flex align-items-center"><a class="mr-3 d-lg-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
+          <nav class="main-nav ml-auto d-none d-lg-block">
             <ul class="main-menu mb-0">
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
@@ -32,14 +55,7 @@
       </header>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1>
-              <span class="text-secondary font-weight-bold">PROGRAMAS PARA</span>
-              <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Empresas</span>
-            </h1>
-            <p class="lead mr-4 mb-4">Retención de talento en organizaciones</p><a class="btn btn-primary px-5 mr-4" href="#">¡Quiero Asociarme!</a>
-          </div>
-          <div class="col-md-6 position-relative"><div class="bubble bubble-primary bubble--xs" style="bottom: 2rem;left: -15rem;"></div>
+          <div class="col-md-6 position-relative order-md-1"><div class="bubble bubble-primary bubble--xs" style="bottom: 2rem;left: -15rem;"></div>
 <div class="bubble bubble-primary bubble--sm delay-1" style="right: -5rem;top: 5rem;"></div>
 <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 6rem;right: -4rem;"></div>
 <div class="bubble bubble-secondary delay-2" style="top: 6rem;right: -4rem;"></div>
@@ -53,46 +69,64 @@
 </svg>
             </div>
           </div>
+          <div class="col-md-6 mt-4 mt-md-0 text-center text-md-left">
+            <h1 class="d-md-none text-center h2"><span class="text-secondary font-weight-bold">PROGRAMAS PARA</span>
+<span class="text-primary heading-font display-3 d-block mt-2 mb-5">Empresas</span>
+            </h1>
+            <h1 class="d-none d-md-block"><span class="text-secondary font-weight-bold">PROGRAMAS PARA</span>
+<span class="text-primary heading-font display-3 d-block mt-2 mb-5">Empresas</span>
+            </h1>
+            <p class="mb-4 d-md-none">Retención de talento en organizaciones</p>
+            <p class="lead mr-4 mb-4 d-none d-md-block">Retención de talento en organizaciones</p><a class="btn btn-primary px-5 mr-4" href="#">¡Quiero Asociarme!</a>
+          </div>
         </div>
         <div class="row my-5 pt-5 position-relative"><div class="bubble bubble-secondary bubble--sm delay-1" style="top:2rem;left:0;"></div>
           <div class="col-md-8 mx-auto text-center">
-            <p class="text-center">En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.</p>
+            <p class="text-center">Hemos diseñado un programa de beneficios especiales para colaboradores de nuestras empresas asociadas, la cual contempla desde créditos educativos con tasas preferenciales hasta becas de postgrado. Asimismo, colaboramos con dichas empresas en la gestión de sus programas de retención de talento y clima organizacional.</p>
           </div>
         </div>
         <div class="position-relative">
-          <div class="row justify-content-center my-5">
-            <div class="col-12 my-4 px-0"><div class="tab w-full">
+          <div class="row justify-content-center mt-5 mb-md-0">
+            <div class="col-12 mt-4 mb-md-4 px-0">
+              <div class="d-md-none px-4">
+                <select class="custom-select custom-select-lg border-primary text-primary" name="">
+                  <option selected>Asociación</option>
+                  <option>Programas con Empresas</option>
+                  <option>Programas con Instituciones Educativas</option>
+                  <option>Proyectos Sociales</option>
+                </select>
+              </div><div class="tab w-full d-none d-md-flex">
 <button class="tablinks active" onclick="openTab(event, 'asociacion')">Asociación</button>
 <button class="tablinks" onclick="openTab(event, 'programas-con-empresas')">Programas<br>con Empresas</button>
 <button class="tablinks" onclick="openTab(event, 'programas-con-instituciones')">Programa con<br>Instituciones Educativas</button>
 <button class="tablinks" onclick="openTab(event, 'proyectos-sociales')">Proyectos Sociales</button>
 </div>
 <div id="asociacion" class="tabcontent show">
-              <div class="row justify-content-center align-items-center py-5 mt-5">
-                <div class="col-md-5"><img class="w-100" src="assets/images/empresa-001.jpg" alt=""></div>
+              <div class="row justify-content-center align-items-center pt-md-5 pb-md-5 mt-5">
+                <div class="col-md-5 px-5 px-md-3"><img class="w-100" src="assets/images/empresa-001.jpg" alt=""></div>
                 <div class="col-md-5 p-5">
-                  <p>01 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.</p>
+                  <p class="text-center text-md-left">01 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.</p>
                 </div>
               </div></div>
 <div id="programas-con-empresas" class="tabcontent">
-              <div class="row justify-content-center align-items-center py-5 mt-5">
-                <div class="col-md-5"><img class="w-100" src="assets/images/empresa-001.jpg" alt=""></div>
+              <div class="row justify-content-center align-items-center pt-md-5 pb-md-5 mt-5">
+                <div class="col-md-5 px-5 px-md-3"><img class="w-100" src="assets/images/empresa-001.jpg" alt=""></div>
                 <div class="col-md-5 p-5">
-                  <p>02 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.</p>
+                  <p class="text-center text-md-left">02 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.</p>
                 </div>
               </div></div>
 <div id="programas-con-instituciones" class="tabcontent">
-              <div class="row justify-content-center align-items-center py-5 mt-5">
-                <div class="col-md-5"><img class="w-100" src="assets/images/empresa-001.jpg" alt=""></div>
+              <div class="row justify-content-center align-items-center pt-md-5 pb-md-5 mt-5">
+                <div class="col-md-5 px-5 px-md-3"><img class="w-100" src="assets/images/empresa-001.jpg" alt=""></div>
                 <div class="col-md-5 p-5">
-                  <p>03 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.</p>
+                  <p class="text-center text-md-left">03 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.</p>
                 </div>
               </div></div>
 <div id="proyectos-sociales" class="tabcontent">
-              <div class="row justify-content-center align-items-center py-5 mt-5">
-                <div class="col-md-5"><img class="w-100" src="assets/images/empresa-001.jpg" alt=""></div>
+              <div class="row justify-content-center align-items-center pt-md-5 pb-md-5 mt-5">
+                <div class="col-md-5 px-5 px-md-3"><img class="w-100" src="assets/images/empresa-001.jpg" alt=""></div>
                 <div class="col-md-5 p-5">
-                  <p>04 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.</p>
+                  <p class="text-center text-md-left">04 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam soluta dicta facere rem corporis veniam facilis suscipit eius delectus cumque esse distinctio possimus, animi aspernatur adipisci, officiis temporibus. Eveniet, quae.</p>
                 </div>
               </div></div>
             </div>
@@ -117,25 +151,25 @@
 </path>
 </svg>
 </div>
-          <div class="col-12">
+          <div class="col-12 d-none d-md-block">
             <h3 class="h1 text-secondary font-weight-bold mb-5">Beneficios</h3>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 mb-5 mb-md-0">
             <div class="card border-secondary rounded-1 overflow-hidden h-100">
               <div class="card-header bg-secondary text-white font-weight-bold h4 py-4">Beneficios para la empresa</div>
               <div class="card-body text-left d-flex">
                 <ul class="list-unstyled my-auto">
                   <li class="list-unstyled-item"><strong class="text-secondary">Retención del talento</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.</p>
+                    <p>Aportamos a los niveles de motivación de los colaboradores gracias a los beneficios educativos que otorgamos.</p>
                   </li>
-                  <li class="list-unstyled-item"><strong class="text-secondary">Retención del talento</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.</p>
+                  <li class="list-unstyled-item"><strong class="text-secondary">Bajos costos de gestión para programas de responsabilidad social</strong>
+                    <p>Colaboramos con el desarrollo de programas educativos para sus grupos de interés.</p>
                   </li>
-                  <li class="list-unstyled-item"><strong class="text-secondary">Retención del talento</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.</p>
+                  <li class="list-unstyled-item"><strong class="text-secondary">Ahorros en el presupuesto de capacitación a colaboradores</strong>
+                    <p>Administramos los fondos de capacitación mediante becas de estudios y convenios.</p>
                   </li>
-                  <li class="list-unstyled-item"><strong class="text-secondary">Retención del talento</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.</p>
+                  <li class="list-unstyled-item"><strong class="text-secondary">Beneficio tributario</strong>
+                    <p>Otorgamos certificado de donación para reducción del Impuesto a la Renta.</p>
                   </li>
                 </ul>
               </div>
@@ -146,11 +180,11 @@
               <div class="card-header bg-primary text-white font-weight-bold h4 py-4">Beneficios para el colaborador</div>
               <div class="card-body text-left d-flex">
                 <ul class="list-unstyled my-auto">
-                  <li class="list-unstyled-item"><strong class="text-primary">Retención del talento</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.</p>
+                  <li class="list-unstyled-item"><strong class="text-primary">Acceder a Becas de Estudios</strong>
+                    <p>Otorgamos becas de estudios en instituciones reconocidas en el Perú y en el extranjero, para los colaboradores y sus familiares directos. Las becas abarcan programas presenciales, flexibles y de modalidad virtual.</p>
                   </li>
-                  <li class="list-unstyled-item"><strong class="text-primary">Retención del talento</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.</p>
+                  <li class="list-unstyled-item"><strong class="text-primary">Acceder a Créditos Educativos</strong>
+                    <p>Otorgamos créditos para cubrir los porcentajes no cubiertos por las becas y diversos costos de estudios con tasas preferenciales, tanto p para los colaboradores como para sus familiares.</p>
                   </li>
                 </ul>
               </div>
@@ -164,61 +198,86 @@
 <div class="bubble bubble-primary bubble--sm" style="left: -1rem;top: 50%;"></div>
 <div class="bubble bubble-secondary bubble--xs" style="left: 0rem;top: 6rem;"></div>
           <div class="col-md-8 mx-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-3">¿Cómo asociarte a IPFE?</h3>
+            <h3 class="h2 text-secondary font-weight-bold mb-3 d-md-none">¿Cómo asociarte a IPFE?</h3>
+            <h3 class="h1 text-secondary font-weight-bold mb-3 d-none d-md-block">¿Cómo asociarte a IPFE?</h3>
             <p>Somos una institución que avala la continuidad de estudios mediante el financiamiento de los costos educativos en el nivel ténico superior.</p>
           </div>
-          <div class="col-md-11 mx-auto position-relative">
+          <div class="col-12 text-center mt-2 mb-4 d-md-none">
+            <div class="circle-icon"><img src="assets/images/large-handshake-icon.svg"></div>
+          </div>
+          <div class="col-12 d-flex d-md-none flex mb-3"><span class="d-block display-3 text-primary heading-font mr-4 flex-1">1.</span>
+            <p class="text-left flex-5">Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.</p>
+          </div>
+          <div class="col-12 d-flex d-md-none flex mb-3"><span class="d-block display-3 text-primary heading-font mr-4 flex-1">2.</span>
+            <p class="text-left flex-5">Enviar la ficha de inscripción como asociado de IPFE, la cual será enviada vía correo electrónico.</p>
+          </div>
+          <div class="col-12 d-flex d-md-none flex mb-3"><span class="d-block display-3 text-primary heading-font mr-4 flex-1">3.</span>
+            <p class="text-left flex-5">Realizar una donación simbólica a la cuenta recaudadora de IPFE: <strong>Banco Scotiabank 000 – 4955714</strong> para activar su participación por un año en nuestra red de asociados.</p>
+          </div>
+          <div class="col-12 d-flex d-md-none flex mb-3"><span class="d-block display-3 text-primary heading-font mr-4 flex-1">4.</span>
+            <p class="text-left flex-5">IPFE emitirá constancia de donación a la institución.</p>
+          </div>
+          <div class="col-12 d-flex d-md-none flex mb-3"><span class="d-block display-3 text-primary heading-font mr-4 flex-1">5.</span>
+            <p class="text-left flex-5">Programar charlas y eventos para difusión del Programa de Beneficios para Asociados.</p>
+          </div>
+          <div class="col-md-11 mx-auto position-relative d-none d-md-block">
             <div class="position-absolute" style="left:50%;transform:translateX(-50%);z-index:1">
-              <div class="circle-icon"><img src="assets/images/large-handshake-icon.svg" alt=""></div>
+              <div class="circle-icon"><img src="assets/images/large-handshake-icon.svg"></div>
             </div>
             <div class="row justify-content-between mt-5">
-              <div class="col-3"><span class="d-block h1 text-primary heading-font mb-3">1.</span>
+              <div class="col-4 col-xl-3 px-lg-4"><span class="d-block h1 text-primary heading-font mb-3">1.</span>
                 <p>Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.</p>
               </div>
-              <div class="col-3"><span class="d-block h1 text-primary heading-font mb-3">5.</span>
-                <p>Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-11 mx-auto">
-            <div class="row">
-              <div class="col-3 offset-md-1"><span class="d-block h1 text-primary heading-font mb-3">2.</span>
-                <p>Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.</p>
-              </div>
-              <div class="col-3 offset-md-4"><span class="d-block h1 text-primary heading-font mb-3">4.</span>
-                <p>Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.</p>
+              <div class="col-4 col-xl-3 px-lg-4"><span class="d-block h1 text-primary heading-font mb-3">5.</span>
+                <p>Programar charlas y eventos para difusión del Programa de Beneficios para Asociados.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-11 mx-auto">
+          <div class="col-md-11 mx-auto d-none d-md-block">
             <div class="row">
-              <div class="col-3 mx-auto"><span class="d-block h1 text-primary heading-font mb-3">3.</span>
-                <p>Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.</p>
+              <div class="col-4 col-xl-3 offset-md-1 px-lg-4"><span class="d-block h1 text-primary heading-font mb-3">2.</span>
+                <p>Enviar la ficha de inscripción como asociado de IPFE, la cual será enviada vía correo electrónico.</p>
+              </div>
+              <div class="col-4 col-xl-3 offset-md-2 offset-xl-4 px-lg-4"><span class="d-block h1 text-primary heading-font mb-3">4.</span>
+                <p>IPFE emitirá constancia de donación a la institución.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-11 mx-auto d-none d-md-block">
+            <div class="row">
+              <div class="col-5 col-xl-3 mx-auto px-lg-4"><span class="d-block h1 text-primary heading-font mb-3">3.</span>
+                <p>Realizar una donación simbólica a la cuenta recaudadora de IPFE: <strong>Banco Scotiabank 000 – 4955714</strong> para activar su participación por un año en nuestra red de asociados.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="row justify-content-center my-5">
-          <div class="col-10 text-center">
+          <div class="col-10 text-center d-none d-md-block">
             <h3 class="h1 text-secondary font-weight-bold mb-1">Empresas</h3>
           </div>
-          <div class="col-10 my-4"><div class="tab w-full">
+          <div class="col-12 col-md-10 my-4">
+            <select class="custom-select custom-select-lg border-secondary text-secondary d-md-none" name="">
+              <option selected>Ferreycorp</option>
+              <option>Belmond</option>
+              <option>Otros Asociados</option>
+            </select>
+            <div class="d-none d-md-block px-4"><div class="tab w-full">
 <button class="tablinks active" onclick="openTab(event, 'universidades')">Ferreycorp</button>
 <button class="tablinks" onclick="openTab(event, 'asociados')">Belmond</button>
 <button class="tablinks" onclick="openTab(event, 'inversionistas')">Otros Asociados</button>
 </div>
-<div id="universidades" class="tabcontent show">
+            </div><div id="universidades" class="tabcontent show">
             <div class="position-relative my-5">
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
-              <div class="sponsors-slider overflow-hidden">
+              <div class="sponsors-slider overflow-hidden mx-5 mx-md-0">
                 <div class="swiper-wrapper d-flex align-items-center">
-                  <div class="swiper-slide"><img src="assets/images/sponsors/logo-up.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/sponsor01.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/upn.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/upn.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/logo-up.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/upn.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/upn.jpg" alt=""></div>
                 </div>
               </div>
             </div></div>
@@ -226,14 +285,14 @@
             <div class="position-relative my-5">
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
-              <div class="sponsors-slider overflow-hidden">
+              <div class="sponsors-slider overflow-hidden mx-5 mx-md-0">
                 <div class="swiper-wrapper d-flex align-items-center">
-                  <div class="swiper-slide"><img src="assets/images/sponsors/logo-up.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/sponsor01.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/upn.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/upn.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/logo-up.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/upn.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/upn.jpg" alt=""></div>
                 </div>
               </div>
             </div></div>
@@ -241,22 +300,33 @@
             <div class="position-relative my-5">
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
-              <div class="sponsors-slider overflow-hidden">
+              <div class="sponsors-slider overflow-hidden mx-5 mx-md-0">
                 <div class="swiper-wrapper d-flex align-items-center">
-                  <div class="swiper-slide"><img src="assets/images/sponsors/logo-up.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/sponsor01.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/upn.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="assets/images/sponsors/upn.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/logo-up.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/upn.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/sponsor02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img-fluid" src="assets/images/sponsors/upn.jpg" alt=""></div>
                 </div>
               </div>
             </div></div>
           </div>
         </div>
         <div class="row my-5">
-          <div class="col-md-5 ml-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-0">Contáctanos</h3>
+          <div class="col-lg-6 position-relative order-lg-1 mb-3 mb-lg-0">
+            <h3 class="h2 text-secondary font-weight-bold mb-3 d-lg-none text-center">Contáctanos</h3><div class="bubble bubble-primary bubble--sm" style="top: 10rem;left: 4rem;"></div>
+<div class="bubble bubble-secondary bubble--sm delay-1" style="bottom: 5rem;right: -2rem;"></div><img class="img-fluid position-relative" src="assets/images/contacto-01.svg" alt="">
+            <div class="position-absolute" style="top:4rem;right:-8rem;z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
+<path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+<animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+</animate>
+</path>
+</svg>
+            </div>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h3 class="h1 text-secondary font-weight-bold mb-0 d-none d-md-block">Contáctanos</h3>
             <p class="text-secondary font-weight-bold">¡Empieza tu camino al éxito!</p>
             <form action="gracias.html">
               <input class="form-control mb-3" type="text" placeholder="Nombre:">
@@ -271,16 +341,6 @@
                 <button class="btn btn-primary px-4" type="submit">Enviar información</button>
               </div>
             </form>
-          </div>
-          <div class="col-md-6 position-relative"><div class="bubble bubble-primary bubble--sm" style="top: 10rem;left: 4rem;"></div>
-<div class="bubble bubble-secondary bubble--sm delay-1" style="bottom: 5rem;right: -2rem;"></div><img class="img-fluid position-relative" src="assets/images/contacto-01.svg" alt="">
-            <div class="position-absolute" style="top:4rem;right:-8rem;z-index:-1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
-<path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-<animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-</animate>
-</path>
-</svg>
-            </div>
           </div>
         </div>
       </div>

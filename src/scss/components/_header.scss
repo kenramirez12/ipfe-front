@@ -1,7 +1,35 @@
 .logo {
   height: 60px;
+  transition: all .2s;
 
   @include media-breakpoint-up('md') {
     height: 90px;
+  }
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: all 0.3s;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 5px rgba(0,0,0,.2);
+    z-index: 11;
+    
+    @include media-breakpoint-up('md') {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+
+      .logo {
+        height: 80px;
+      }
+    }
   }
 }

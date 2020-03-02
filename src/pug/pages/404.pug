@@ -3,11 +3,7 @@ extends ../config/template
 block main
   .container
     .row.align-items-center
-      .col-md-6
-        span.d-block.text-primary.heading-font(style="font-size:20rem") 404
-        <span class="text-secondary font-weight-bold h2 d-block mt-1 mb-4">Página no encontrada</span>
-        a.btn.btn-primary.px-5.mr-4(href="index.html") Volver al inicio
-      .col-md-6.position-relative
+      .col-md-6.position-relative.order-md-1
         <div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-1" style="right: -4rem;bottom: 0rem;"></div>
         <div class="bubble bubble-secondary" style="bottom: 0;left: 0rem;"></div>
@@ -22,3 +18,8 @@ block main
               </animate>
             </path>
           </svg>
+      .col-md-6.text-center.mt-n4.mt-md-0
+        span.d-block.text-primary.heading-font.text-biggest 404
+        <span class="text-secondary font-weight-bold h3 d-block d-md-none mt-1 mb-4">Página no encontrada</span>
+        <span class="text-secondary font-weight-bold h2 d-none d-md-block mt-1 mb-4">Página no encontrada</span>
+        a.btn.btn-primary.px-5.mr-4(href="index.html") Volver al inicio

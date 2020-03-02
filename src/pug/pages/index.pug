@@ -2,71 +2,87 @@ extends ../config/template
 
 block main
   .custom-modal.fade#welcomeModal
-    img.custom-modal__bg(src="assets/images/pop_up.svg")
+    img.custom-modal__bg.d-md-none(src="assets/images/pop_up_mobile.svg")
+    img.custom-modal__bg.d-none.d-md-block(src="assets/images/pop_up.svg")
     .custom-modal__dialog.position-relative
       img.custom-modal__close-btn(data-modal="welcomeModal" src="assets/images/close-btn.svg")
-      <div class="bubble bubble-50 bubble-secondary bubble--xs delay-1" style="right: -12rem;top: -8rem;"></div>
-      <div class="bubble bubble-50 bubble-primary bubble--sm" style="bottom: 0rem;right: -22rem;"></div>
-      <div class="bubble bubble-50 bubble-secondary delay-2" style="bottom: -12rem;right: -10rem;"></div>
-      <div class="bubble bubble-50 bubble-primary delay-3" style="bottom: -6rem;left: -20rem;"></div>
-      <div class="bubble bubble-50 bubble-secondary bubble--sm" style="bottom: -6rem;left: -16rem;"></div>
-      <div class="bubble bubble-50 bubble-secondary bubble--sm" style="bottom: -6rem;left: -16rem;"></div>
-      <div class="bubble bubble-50 bubble-primary bubble--sm" style="top: -6rem;left: -16rem;"></div>
+      //- Mobile
+      div.d-md-none
+        <div class="bubble bubble-50 bubble-primary bubble--xs" style="right: 6rem;top: -8rem;"></div>
+        <div class="bubble bubble-50 bubble-secondary bubble--xs delay-2" style="top: -6rem;left: -1rem;"></div>
+        <div class="bubble bubble-50 bubble-primary bubble--xs delay-2" style="bottom: -9rem;right: 6rem;"></div>
+        <div class="bubble bubble-50 bubble--sm bubble-primary delay-3" style="bottom: -10rem;left: 0;"></div>
+        <div class="bubble bubble-50 bubble-secondary bubble--xs" style="bottom: -8rem;left: -1rem;"></div>
+      //- Desktop
+      div.d-none.d-md-block
+        <div class="bubble bubble-50 bubble-secondary bubble--xs delay-1" style="right: -12rem;top: -8rem;"></div>
+        <div class="bubble bubble-50 bubble-primary bubble--sm" style="bottom: 0rem;right: -22rem;"></div>
+        <div class="bubble bubble-50 bubble-secondary delay-2" style="bottom: -12rem;right: -10rem;"></div>
+        <div class="bubble bubble-50 bubble-primary delay-3" style="bottom: -6rem;left: -20rem;"></div>
+        <div class="bubble bubble-50 bubble-secondary bubble--sm" style="bottom: -6rem;left: -16rem;"></div>
+        <div class="bubble bubble-50 bubble-secondary bubble--sm" style="bottom: -6rem;left: -16rem;"></div>
+        <div class="bubble bubble-50 bubble-primary bubble--sm" style="top: -6rem;left: -16rem;"></div>
       .custom-modal__content.text-center
-        h4.heading-font.text-secondary.display-3 Bienvenido
-        p.lead.pt-4.pb-3 Queremos mostrarte todos los beneficios que IPFE tiene para ofrecerte
+        h4.heading-font.text-secondary.display-5.d-md-none Bienvenido
+        h4.heading-font.text-secondary.display-3.d-none.d-md-block Bienvenido
+        p.pt-4.pb-3.d-md-none Queremos mostrarte todos los beneficios que IPFE tiene para ofrecerte
+        p.lead.pt-4.pb-3.d-none.d-md-block Queremos mostrarte todos los beneficios que IPFE tiene para ofrecerte
         .row
           .col-6
             img.w-100.mb-3(src="assets/images/estudiantes.jpg", alt="")
-            a.btn.btn-primary.w-100(href="estudiantes.html") Estudiantes
+            a.btn.btn-sm.btn-primary.w-100.d-md-none(href="estudiantes.html") Estudiantes
+            a.btn.btn-primary.w-100.d-none.d-md-block(href="estudiantes.html") Estudiantes
           .col-6
             img.w-100.mb-3(src="assets/images/empresas.jpg", alt="")
-            a.btn.btn-secondary.w-100(href="empresas.html") Empresas
+            a.btn.btn-sm.btn-secondary.w-100.d-md-none(href="empresas.html") Empresas
+            a.btn.btn-secondary.w-100.d-none.d-md-block(href="empresas.html") Empresas
 
   .container
     .row.align-items-center
-      .col-md-6.position-relative.order-md-1
+      .col-12.col-md-8.col-lg-6.mx-md-auto.mx-lg-0.position-relative.order-lg-1
         .bubble.bubble-secondary.delay-1(style="right:-3rem;top:6rem")
         .bubble.bubble-secondary(style="bottom:4rem;right:0")
         .bubble.bubble-primary.bubble--sm.delay-2(style="top:9rem;right:0rem")
         .bubble.bubble-primary.bubble--sm.delay-3(style="top:12rem")
         .bubble.bubble-primary.bubble--sm(style="bottom:2rem;left:-1rem")
         img.img-fluid.position-relative(src="assets/images/main-guy.svg", alt="")
-        .position-absolute(style="top:8rem;left: 5rem;transform:rotate(45deg);z-index:-1")
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
-            <path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-              <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
-              </animate>
-            </path>
-          </svg>
-      .col-md-6.mt-3.mt-md-0.text-center.text-md-left
-          h1.d-md-none
+        .hero-index__container
+          img.hero-index__img(src="assets/images/hero-index-plasma.svg")
+      .col-lg-6.mt-3.mt-lg-0.text-center.text-lg-left
+          h1.d-lg-none
             <span class="text-secondary font-weight-bold h1">TALENTO</span>
             <span class="text-primary heading-font display-4 d-block mb-4">Exponencial</span>
-          h1.d-none.d-md-block
+          h1.d-none.d-lg-block
             <span class="text-secondary font-weight-bold display-5">TALENTO</span>
             <span class="text-primary heading-font display-2 d-block mb-5">Exponencial</span>
           p.mr-4 Transformamos la vida de las personas a través de la educación. ¡Conoce nuestros programas!
-          .d-flex.justify-content-between.mt-4
+          .d-flex.justify-content-around.mt-4
             a.btn.btn-primary.px-4.px-sm-5(href="estudiantes.html") Estudiantes
             a.btn.btn-secondary.px-4.px-sm-5(href="empresas.html") Empresas
 
-    .row.justify-content-center.mt-5.pt-5.px-4.px-md-0position-relative
+    .row.justify-content-center.mt-5.pt-5.px-4.px-lg-0.position-relative
       .bubble.bubble-secondary.bubble--sm.delay-1(style="top:-3rem;left:3rem")
-      .col-md-5.order-md-1
-        h3.h2.text-secondary.font-weight-bold.mb-3.d-md-none.text-center ¿Quiénes somos?
+      .col-lg-5.order-lg-1
+        h3.h2.text-secondary.font-weight-bold.mb-3.d-lg-none.text-center ¿Quiénes somos?
         <div class="embed-responsive embed-responsive-4by3 rounded-1">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aMXRRcLs4Qs" allowfullscreen></iframe>
         </div>
-      .col-md-5.text-center.text-md-left
-        h3.h1.text-secondary.font-weight-bold.mb-5.d-none.d-md-block ¿Quiénes somos?
-        p.my-4.mt-md-0.mb-md-5 Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.
+      .col-lg-5.text-center.text-lg-left
+        h3.h1.text-secondary.font-weight-bold.mb-5.d-none.d-lg-block ¿Quiénes somos?
+        p.my-4.mt-lg-0.mb-lg-5 Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.
         a.btn.btn-primary.px-5(href="#") Ver más
     
     .row.justify-content-center.mt-5.position-relative
       .col-md-10.d-flex.flex-column.flex-md-row.mt-5.position-relative
-        .bubble.bubble-secondary.bubble--lg.delay-1(style="right:-8rem;top:4rem")
-        .bubble.bubble-primary.delay-2(style="right:-4rem;top:2rem")
+        //- Mobile
+        <div class="d-md-none bubble bubble-secondary bubble--lg delay-1" style="right: -4rem;top:10rem;"></div>
+        <div class="d-md-none bubble bubble-primary delay-2" style="right: 0rem;top:8rem;"></div>
+        <div class="d-md-none bubble bubble-secondary bubble--lg delay-1" style="left: -4rem;bottom: 2rem;"></div>
+        <div class="d-md-none bubble bubble-primary bubble--sm delay-1" style="left: 1rem;top: 10rem;"></div>
+        <div class="d-md-none bubble bubble-primary delay-2" style="left: 0rem;bottom: 6rem;"></div>
+        //- Desktop
+        .d-none.d-md-block.bubble.bubble-secondary.bubble--lg.delay-1(style="right:-8rem;top:4rem")
+        .d-none.d-md-block.bubble.bubble-primary.delay-2(style="right:-4rem;top:2rem")
         .indicator-counter.mb-3.mb-md-0
           .indicator-counter__value 103,300
           .indicator-counter__label Beneficiarios totales

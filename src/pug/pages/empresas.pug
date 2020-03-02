@@ -3,13 +3,7 @@ extends ../config/template
 block main
   .container
     .row.align-items-center
-      .col-md-6
-        h1.
-          <span class="text-secondary font-weight-bold">PROGRAMAS PARA</span>
-          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Empresas</span>
-        p.lead.mr-4.mb-4 Retención de talento en organizaciones
-        a.btn.btn-primary.px-5.mr-4(href="#") ¡Quiero Asociarme!
-      .col-md-6.position-relative
+      .col-md-6.position-relative.order-md-1
         <div class="bubble bubble-primary bubble--xs" style="bottom: 2rem;left: -15rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-1" style="right: -5rem;top: 5rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 6rem;right: -4rem;"></div>
@@ -24,11 +18,21 @@ block main
               </animate>
             </path>
           </svg>
+      .col-md-6.mt-4.mt-md-0.text-center.text-md-left
+        h1.d-md-none.text-center.h2
+          <span class="text-secondary font-weight-bold">PROGRAMAS PARA</span>
+          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Empresas</span>
+        h1.d-none.d-md-block
+          <span class="text-secondary font-weight-bold">PROGRAMAS PARA</span>
+          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Empresas</span>
+        p.mb-4.d-md-none Retención de talento en organizaciones
+        p.lead.mr-4.mb-4.d-none.d-md-block Retención de talento en organizaciones
+        a.btn.btn-primary.px-5.mr-4(href="#") ¡Quiero Asociarme!
 
     .row.my-5.pt-5.position-relative
       <div class="bubble bubble-secondary bubble--sm delay-1" style="top:2rem;left:0;"></div>
       .col-md-8.mx-auto.text-center
-        p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
+        p.text-center Hemos diseñado un programa de beneficios especiales para colaboradores de nuestras empresas asociadas, la cual contempla desde créditos educativos con tasas preferenciales hasta becas de postgrado. Asimismo, colaboramos con dichas empresas en la gestión de sus programas de retención de talento y clima organizacional.
 
     include ../sections/empresas-tabs.pug
               
@@ -52,37 +56,37 @@ block main
         </path>
         </svg>
       </div>
-      .col-12
+      .col-12.d-none.d-md-block
         h3.h1.text-secondary.font-weight-bold.mb-5 Beneficios
 
-      .col-md-6
+      .col-md-6.mb-5.mb-md-0
         .card.border-secondary.rounded-1.overflow-hidden.h-100
           .card-header.bg-secondary.text-white.font-weight-bold.h4.py-4 Beneficios para la empresa
           .card-body.text-left.d-flex
             ul.list-unstyled.my-auto
               li.list-unstyled-item
                 strong.text-secondary Retención del talento
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.
+                p Aportamos a los niveles de motivación de los colaboradores gracias a los beneficios educativos que otorgamos.
               li.list-unstyled-item
-                strong.text-secondary Retención del talento
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.
+                strong.text-secondary Bajos costos de gestión para programas de responsabilidad social
+                p Colaboramos con el desarrollo de programas educativos para sus grupos de interés.
               li.list-unstyled-item
-                strong.text-secondary Retención del talento
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.
+                strong.text-secondary Ahorros en el presupuesto de capacitación a colaboradores
+                p Administramos los fondos de capacitación mediante becas de estudios y convenios.
               li.list-unstyled-item
-                strong.text-secondary Retención del talento
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.
+                strong.text-secondary Beneficio tributario
+                p Otorgamos certificado de donación para reducción del Impuesto a la Renta.
       .col-md-6
         .card.border-primary.rounded-1.overflow-hidden.h-100
           .card-header.bg-primary.text-white.font-weight-bold.h4.py-4 Beneficios para el colaborador
           .card-body.text-left.d-flex
             ul.list-unstyled.my-auto
               li.list-unstyled-item
-                strong.text-primary Retención del talento
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.
+                strong.text-primary Acceder a Becas de Estudios
+                p Otorgamos becas de estudios en instituciones reconocidas en el Perú y en el extranjero, para los colaboradores y sus familiares directos. Las becas abarcan programas presenciales, flexibles y de modalidad virtual.
               li.list-unstyled-item
-                strong.text-primary Retención del talento
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, vitae iure voluptate hic harum quam sit voluptatibus deserunt est quia aspernatur veniam.
+                strong.text-primary Acceder a Créditos Educativos
+                p Otorgamos créditos para cubrir los porcentajes no cubiertos por las becas y diversos costos de estudios con tasas preferenciales, tanto p para los colaboradores como para sus familiares.
 
     .row.my-5.py-5.text-center.position-relative
       <div class="bubble bubble-primary bubble--sm delay-2" style="top: -3rem;right: -8rem;"></div>
@@ -92,32 +96,53 @@ block main
       <div class="bubble bubble-primary bubble--sm" style="left: -1rem;top: 50%;"></div>
       <div class="bubble bubble-secondary bubble--xs" style="left: 0rem;top: 6rem;"></div>
       .col-md-8.mx-auto
-        h3.h1.text-secondary.font-weight-bold.mb-3 ¿Cómo asociarte a IPFE?
+        h3.h2.text-secondary.font-weight-bold.mb-3.d-md-none ¿Cómo asociarte a IPFE?
+        h3.h1.text-secondary.font-weight-bold.mb-3.d-none.d-md-block ¿Cómo asociarte a IPFE?
         p Somos una institución que avala la continuidad de estudios mediante el financiamiento de los costos educativos en el nivel ténico superior.
-      .col-md-11.mx-auto.position-relative
+
+      .col-12.text-center.mt-2.mb-4.d-md-none
+        .circle-icon
+            img(src="assets/images/large-handshake-icon.svg")
+      .col-12.d-flex.d-md-none.flex.mb-3
+        span.d-block.display-3.text-primary.heading-font.mr-4.flex-1 1.
+        p.text-left.flex-5 Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.
+      .col-12.d-flex.d-md-none.flex.mb-3
+        span.d-block.display-3.text-primary.heading-font.mr-4.flex-1 2.
+        p.text-left.flex-5 Enviar la ficha de inscripción como asociado de IPFE, la cual será enviada vía correo electrónico.
+      .col-12.d-flex.d-md-none.flex.mb-3
+        span.d-block.display-3.text-primary.heading-font.mr-4.flex-1 3.
+        p.text-left.flex-5 Realizar una donación simbólica a la cuenta recaudadora de IPFE: <strong>Banco Scotiabank 000 – 4955714</strong> para activar su participación por un año en nuestra red de asociados.
+      .col-12.d-flex.d-md-none.flex.mb-3
+        span.d-block.display-3.text-primary.heading-font.mr-4.flex-1 4.
+        p.text-left.flex-5 IPFE emitirá constancia de donación a la institución.
+      .col-12.d-flex.d-md-none.flex.mb-3
+        span.d-block.display-3.text-primary.heading-font.mr-4.flex-1 5.
+        p.text-left.flex-5 Programar charlas y eventos para difusión del Programa de Beneficios para Asociados.
+
+      .col-md-11.mx-auto.position-relative.d-none.d-md-block
         .position-absolute(style="left:50%;transform:translateX(-50%);z-index:1")
           .circle-icon
-            img(src="assets/images/large-handshake-icon.svg", alt="")
+            img(src="assets/images/large-handshake-icon.svg")
         .row.justify-content-between.mt-5
-          .col-3
+          .col-4.col-xl-3.px-lg-4
             span.d-block.h1.text-primary.heading-font.mb-3 1.
             p Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.
-          .col-3
+          .col-4.col-xl-3.px-lg-4
             span.d-block.h1.text-primary.heading-font.mb-3 5.
-            p Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.
-      .col-md-11.mx-auto
+            p Programar charlas y eventos para difusión del Programa de Beneficios para Asociados.
+      .col-md-11.mx-auto.d-none.d-md-block
         .row
-          .col-3.offset-md-1
+          .col-4.col-xl-3.offset-md-1.px-lg-4
             span.d-block.h1.text-primary.heading-font.mb-3 2.
-            p Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.
-          .col-3.offset-md-4
+            p Enviar la ficha de inscripción como asociado de IPFE, la cual será enviada vía correo electrónico.
+          .col-4.col-xl-3.offset-md-2.offset-xl-4.px-lg-4
             span.d-block.h1.text-primary.heading-font.mb-3 4.
-            p Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.
-      .col-md-11.mx-auto
+            p IPFE emitirá constancia de donación a la institución.
+      .col-md-11.mx-auto.d-none.d-md-block
         .row
-          .col-3.mx-auto
+          .col-5.col-xl-3.mx-auto.px-lg-4
             span.d-block.h1.text-primary.heading-font.mb-3 3.
-            p Solicitar a IPFE una visita o reunión de presentación institucional y beneficios para asociados.
+            p Realizar una donación simbólica a la cuenta recaudadora de IPFE: <strong>Banco Scotiabank 000 – 4955714</strong> para activar su participación por un año en nuestra red de asociados.
 
     include ../sections/empresas-slider.pug
 

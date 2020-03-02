@@ -3,14 +3,7 @@ extends ../config/template
 block main
   .container
     .row.align-items-center
-      .col-md-6
-        h1.
-          <span class="text-secondary font-weight-bold">PROGRAMAS DE</span>
-          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Estudiantes</span>
-        p.lead.mr-4.mb-4 Despega en tu carrera profesional
-        a.btn.btn-primary.px-5.mr-4(href="#") Becas
-        a.btn.btn-secondary.px-5(href="#") Créditos
-      .col-md-6.position-relative
+      .col-md-6.position-relative.order-md-1.text-center.text-md-left
         <div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-1" style="right: -1rem;top: 3rem;"></div>
         <div class="bubble bubble-primary bubble--sm" style="top: 14rem;right: 0rem;"></div>
@@ -25,14 +18,23 @@ block main
               </animate>
             </path>
           </svg>
+      .col-md-6.text-center.text-md-left
+        h1.
+          <span class="text-secondary font-weight-bold">PROGRAMAS DE</span>
+          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Estudiantes</span>
+        p.mb-4.d-md-none Despega en tu carrera profesional
+        p.lead.mr-4.mb-4.d-none.d-md-block Despega en tu carrera profesional
+        a.btn.btn-primary.px-5.mr-3.mr-md-4(href="#") Becas
+        a.btn.btn-secondary.px-5(href="#") Créditos
 
     .row.my-5.pb-5.position-relative
       <div class="bubble bubble-secondary bubble--sm" style="top: 8rem;left: -2rem;"></div>
       <div class="bubble bubble-secondary delay-1" style="right: 1rem;bottom: -4rem;"></div>
       <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 0;right: 5rem;"></div>
       .col-md-8.mx-auto.text-center
-        h3.h1.text-secondary.font-weight-bold.mb-4 Becas
-        p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
+        h3.h2.text-secondary.font-weight-bold.mt-5.mb-5.d-md-none Becas de Posgrado
+        h3.h1.text-secondary.font-weight-bold.mb-4.d-none.d-md-block Becas de Posgrado
+        p.text-center Nuestro Programa de Becas de Estudios es un esfuerzo desarrollado e impulsado por IPFE en alianza con prestigiosas instituciones educativas nacionales e internacionales de calidad. A través del Programa de Becas, generamos oportunidades educativas para personas talentosas que deseen seguir desarrollándose profesionalmente.
 
     include ../sections/universidades-slider.pug
               
@@ -57,114 +59,136 @@ block main
         </svg>
       </div>
       .col-md-8.mx-auto
-        h3.h1.text-secondary.font-weight-bold.mb-5.pb-4 Becas más populares
-      .row.align-items-center
-        .col-md-4
-          .beca-item
-            .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
-            .beca-item__content
-              h5.beca-item__title Maestría en Finanzas
-              strong.beca-item__subtitle CENTRUM
-              //- a.btn.btn-primary.beca-item__btn(href="#") Ver más
-        .col-md-4
-          .beca-item
-            .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
-            .beca-item__content
-              h5.beca-item__title Maestría en Finanzas
-              strong.beca-item__subtitle CENTRUM
-              //- a.btn.btn-primary.beca-item__btn(href="#") Ver más
-        .col-md-4
-          .beca-item
-            .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
-            .beca-item__content
-              h5.beca-item__title Maestría en Finanzas
-              strong.beca-item__subtitle CENTRUM
-              //- a.btn.btn-primary.beca-item__btn(href="#") Ver más
-        .col-12.text-center.mt-3
-          a.btn.btn-primary.px-5(href="#") Ver más
+        h3.h2.text-secondary.font-weight-bold.mb-5.pb-4.d-md-none Becas más populares
+        h3.h1.text-secondary.font-weight-bold.mb-5.pb-4.d-none.d-md-block Becas más populares
+      .col-12.col-md-10.col-xl-12.mx-auto
+        .position-relative
+          .swiper-button-prev.d-lg-none
+          .swiper-button-next.d-lg-none
+          .row.align-items-center.becas-populares-slider.overflow-hidden.overflow-lg-visible
+            .swiper-wrapper
+              .swiper-slide.px-5.px-md-0
+                .beca-item
+                  .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
+                  .beca-item__content
+                    h5.beca-item__title Maestría en Finanzas
+                    strong.beca-item__subtitle CENTRUM
+                    //- a.btn.btn-primary.beca-item__btn(href="#") Ver más
+              .swiper-slide.px-5.px-md-0
+                .beca-item
+                  .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
+                  .beca-item__content
+                    h5.beca-item__title Maestría en Finanzas
+                    strong.beca-item__subtitle CENTRUM
+                    //- a.btn.btn-primary.beca-item__btn(href="#") Ver más
+              .swiper-slide.px-5.px-md-0
+                .beca-item
+                  .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
+                  .beca-item__content
+                    h5.beca-item__title Maestría en Finanzas
+                    strong.beca-item__subtitle CENTRUM
+                    //- a.btn.btn-primary.beca-item__btn(href="#") Ver más
+        .row
+          .col-12.text-center.mt-3
+            a.btn.btn-primary.px-5(href="#") Ver más
 
-    .row.my-5.py-5.position-relative
-      <div class="bubble bubble-primary bubble--sm" style="top: 3rem;left: 1rem;"></div>
-      <div class="bubble bubble-secondary delay-1" style="top: 5rem;left: -2rem;"></div>
-      .col-md-8.mx-auto.text-center
-        h3.h1.text-secondary.font-weight-bold.mb-4 Créditos
-        p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
+      .row.my-5.py-5.position-relative
+        <div class="bubble bubble-primary bubble--sm" style="top: 3rem;left: 1rem;"></div>
+        <div class="bubble bubble-secondary delay-1" style="top: 5rem;left: -2rem;"></div>
+        .col-md-8.mx-auto.text-center
+          h3.h2.text-secondary.font-weight-bold.mb-4.d-md-none Créditos
+          h3.h1.text-secondary.font-weight-bold.mb-4.d-none.d-md-block Créditos
+          p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
 
-    .row.my-5.text-center.position-relative.pb-5
-      <div class="bubble bubble-secondary" style="top: 3rem;right: 6rem;"></div>
-      <div class="bubble bubble-primary bubble--sm delay-1" style="bottom: 4rem;right: 6rem;"></div>
-      <div class="bubble bubble-secondary bubble--sm delay-2" style="bottom: 0rem;left: 40%;"></div>
-      <div class="bubble bubble-primary bubble--sm" style="bottom: 6rem;left: 0;"></div>
-      .position-absolute(style="z-index:-1")
-        <svg width="1160" height="658" viewBox="0 50 1160 658" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M350.771 227.098C446.259 303.982 423.055 391.19 378.728 482.545C334.4 573.9 316.239 606.021 267.204 615.096C203.701 626.848 85.9192 592.854 144.607 438.741C203.294 284.628 -40.4135 320.446 25.2758 233.865C55.5114 194.013 204.858 128.329 350.771 227.098Z" fill="#E7EEF3">
-            <animate repeatCount="indefinite" attributeName="d" dur="10s" values="M350.771 227.098C446.259 303.982 423.055 391.19 378.728 482.545C334.4 573.9 316.239 606.021 267.204 615.096C203.701 626.848 85.9192 592.854 144.607 438.741C203.294 284.628 -40.4135 320.446 25.2758 233.865C55.5114 194.013 204.858 128.329 350.771 227.098Z;M362.497 211.499C457.985 288.383 399.37 416.5 386.996 441.999C374.623 467.499 304.531 543.925 255.496 553C191.992 564.752 145.496 526.5 145.496 427C145.496 327.5 -13.8776 324.26 32.2723 225.865C69.4966 146.5 216.584 112.73 362.497 211.499Z;M350.771 227.098C446.259 303.982 423.055 391.19 378.728 482.545C334.4 573.9 316.239 606.021 267.204 615.096C203.701 626.848 85.9192 592.854 144.607 438.741C203.294 284.628 -40.4135 320.446 25.2758 233.865C55.5114 194.013 204.858 128.329 350.771 227.098Z">
-            </animate>
-          </path>
-          <path d="M631.157 303.525C659.777 156.735 785.383 102.684 885.226 127.985C985.069 153.286 1034.32 150.676 1067.79 194.678C1111.13 251.663 1070.51 347.656 948.908 355.468C784.893 366.005 942.047 577.209 828.058 602.05C774.813 613.653 611.221 490.638 631.157 303.525Z" fill="#FDE8E0">
-            <animate repeatCount="indefinite" attributeName="d" dur="10s" values="M631.157 303.525C659.777 156.735 785.383 102.684 885.226 127.985C985.069 153.286 1034.32 150.676 1067.79 194.678C1111.13 251.663 1070.51 347.656 948.908 355.468C784.893 366.005 942.047 577.209 828.058 602.05C774.813 613.653 611.221 490.638 631.157 303.525Z;M619.997 278C648.617 131.21 756 111.035 798.499 101C840.998 90.9658 966.529 110.695 992.499 159.5C1050.5 268.5 850.521 264.761 904.5 374C982.095 531.032 943.499 547 819.998 547C765.504 547 600.061 465.113 619.997 278Z;M631.157 303.525C659.777 156.735 785.383 102.684 885.226 127.985C985.069 153.286 1034.32 150.676 1067.79 194.678C1111.13 251.663 1070.51 347.656 948.908 355.468C784.893 366.005 942.047 577.209 828.058 602.05C774.813 613.653 611.221 490.638 631.157 303.525Z">
-            </animate>
-          </path>
-          <path d="M703.789 549.957C626.416 565.955 574.212 523.359 549.563 489.157C524.913 454.954 514.063 374.657 549.563 338.657C576.121 311.724 651.45 280.993 680.063 338.656C718.658 416.434 773.737 342.621 809.097 393.102C825.613 416.682 799.04 521.5 703.789 549.957Z" fill="#FDE8E0" style="mix-blend-mode:multiply">
-            <animate repeatCount="indefinite" attributeName="d" dur="10s" values="M703.789 549.957C626.416 565.955 574.212 523.359 549.563 489.157C524.913 454.954 514.063 374.657 549.563 338.657C576.121 311.724 651.45 280.993 680.063 338.656C718.658 416.434 773.737 342.621 809.097 393.102C825.613 416.682 799.04 521.5 703.789 549.957Z;M710.997 565C630.497 589.05 564.997 570 528.997 507.5C492.997 445 493.997 374 543.497 329C602.997 274.909 639.101 414.049 689.497 374C764.997 314 816.094 323.468 816.094 385.102C816.094 428.5 806.247 536.543 710.997 565Z;M703.789 549.957C626.416 565.955 574.212 523.359 549.563 489.157C524.913 454.954 514.063 374.657 549.563 338.657C576.121 311.724 651.45 280.993 680.063 338.656C718.658 416.434 773.737 342.621 809.097 393.102C825.613 416.682 799.04 521.5 703.789 549.957Z">
-            </animate>
-          </path>
-          <path d="M159.5 242C148 136.661 304.86 99.6065 349.721 130.403C394.582 161.199 419.469 168.91 428.013 196.839C439.078 233.009 404.063 254.798 339.691 254.798C262.5 254.798 295.746 363.449 234.706 354.919C206.194 350.934 168.47 324.161 159.5 242Z" fill="#E7EEF3" style="mix-blend-mode:multiply">
-            <animate repeatCount="indefinite" attributeName="d" dur="10s" values="M159.5 242C148 136.661 304.86 99.6065 349.721 130.403C394.582 161.199 419.469 168.91 428.013 196.839C439.078 233.009 404.063 254.798 339.691 254.798C262.5 254.798 295.746 363.449 234.706 354.919C206.194 350.934 168.47 324.161 159.5 242Z;M144.497 171C170.997 66 295.497 82.4998 346.497 103.5C397.497 124.5 409.997 147.294 409.997 176.5C409.996 205.707 374.067 188.668 318.997 222C280.997 245 273.537 329.03 212.497 320.5C183.985 316.516 124.272 251.136 144.497 171Z;M159.5 242C148 136.661 304.86 99.6065 349.721 130.403C394.582 161.199 419.469 168.91 428.013 196.839C439.078 233.009 404.063 254.798 339.691 254.798C262.5 254.798 295.746 363.449 234.706 354.919C206.194 350.934 168.47 324.161 159.5 242Z">
-            </animate>
-          </path>
-        </svg>
-      .col-12.mx-auto
-        h3.h1.text-secondary.font-weight-bold.mb-5.pb-5 Requisitos
-        
-        .pt-5
-          .row.flex-nowrap.pt-5
-            .col.px-0
-              .requisitos-item.text-center.py-4.mt-n5
-                span.heading-font.text-primary.h1.mb-3 1.
-                p Demostrar buen rendimiento académico
-            .col.px-0.mt-5
-              .requisitos-item.text-center.py-4.mt-5
-                span.heading-font.text-primary.h1.mb-3 2.
-                p Tener constancia de la participación de 3 personas: Estudiante, aval y responsable del crédito
-            .col.px-0
-              .requisitos-item.text-center.py-4.mt-n5
-                span.heading-font.text-primary.h1.mb-3 3.
-                p Demostrar buen rendimiento académico
-            .col.px-0.mt-5
-              .requisitos-item.text-center.py-4.mt-5
-                span.heading-font.text-primary.h1.mb-3 4.
-                p Demostrar buen rendimiento académico
-            .col.px-0
-              .requisitos-item.text-center.py-4.mt-n5
-                span.heading-font.text-primary.h1.mb-3 5.
-                p Demostrar buen rendimiento académico
-    
-    .row.pt-5.position-relative
-      <div class="bubble bubble-secondary bubble--xs" style="bottom:4rem;left: 30%;"></div>
-      .col-md-8.text-center.mx-auto
-        h3.h1.text-secondary.font-weight-bold.mb-5 Proceso
-      .col-12.d-flex.flex-nowrap.mb-5
-        .col
+      .row.my-5.text-center.position-relative.pb-5
+        <div class="bubble bubble-secondary" style="top: 3rem;right: 6rem;"></div>
+        <div class="bubble bubble-primary bubble--sm delay-1" style="bottom: 4rem;right: 6rem;"></div>
+        <div class="bubble bubble-secondary bubble--sm delay-2" style="bottom: 0rem;left: 40%;"></div>
+        <div class="bubble bubble-primary bubble--sm" style="bottom: 6rem;left: 0;"></div>
+        .position-absolute(style="z-index:-1;left:50%;transform:translateX(-50%);width:100%;max-width:450px")
+          img.d-lg-none.img-fluid(src="assets/images/requisitos_mobile.svg")
+        .position-absolute(style="z-index:-1")
+          img.d-none.d-lg-block(src="assets/images/requisitos.svg")
+        .col-12.mx-auto
+          h3.h2.text-secondary.font-weight-bold.mb-lg-5.pb-5.d-md-none Requisitos
+          h3.h1.text-secondary.font-weight-bold.mb-lg-5.pb-5.d-none.d-md-block Requisitos
+          
+          .pt-md-5
+            .row.flex-lg-nowrap.pt-5
+              .col-7.col-lg.px-md-0
+                .requisitos-item.text-center.py-4.mt-n5
+                  span.heading-font.text-primary.h1.mb-3 1.
+                  p Demostrar buen rendimiento académico
+              .col-7.col-lg.px-md-0.mt-lg-5.ml-auto.ml-lg-0
+                .requisitos-item.text-center.py-4.mt-n5.mt-lg-5
+                  span.heading-font.text-primary.h1.mb-3 2.
+                  p Tener constancia de la participación de 3 personas: Estudiante, aval y responsable del crédito
+              .col-7.col-lg.px-md-0
+                .requisitos-item.text-center.py-4.mt-n5
+                  span.heading-font.text-primary.h1.mb-3 3.
+                  p Demostrar buen rendimiento académico
+              .col-7.col-lg.px-md-0.mt-lg-5.ml-auto.ml-lg-0
+                .requisitos-item.text-center.py-4.mt-n5.mt-lg-5
+                  span.heading-font.text-primary.h1.mb-3 4.
+                  p Demostrar buen rendimiento académico
+              .col-7.col-lg.px-md-0
+                .requisitos-item.text-center.py-4.mt-n5
+                  span.heading-font.text-primary.h1.mb-3 5.
+                  p Demostrar buen rendimiento académico
+      
+      .row.w-100.pt-5.position-relative
+        <div class="bubble bubble-secondary bubble--xs" style="bottom:4rem;left: 30%;"></div>
+        .col-md-8.text-center.mx-auto
+          h3.h2.text-secondary.font-weight-bold.text-center.d-md-none Proceso
+          h3.h1.text-secondary.font-weight-bold.mb-5.d-none.d-md-block Proceso
+        .col-12.d-none.d-lg-flex.flex-nowrap.mb-5.proceso-slider.overflow-hidden
+          .swiper-wrapper.d-flex
+            .proceso-item.swiper-slide
+              .how-to-circle.px-0
+                .how-to-circle__icon: img(src="assets/images/email-icon.png", alt="")
+                p.mt-4 Enviar un correo a creditos@ipfe.org.pe
+            .proceso-item.swiper-slide
+              .how-to-circle.px-0
+                .how-to-circle__icon: img(src="assets/images/paper-icon.png", alt="")
+                p.mt-4 Llenar la Ficha de Solicitud de Crédito enviada en respuesta a su mensaje
+            .proceso-item.swiper-slide
+              .how-to-circle.px-0
+                .how-to-circle__icon: img(src="assets/images/check-icon.png", alt="")
+                p.mt-4 Pagar el derecho de evaluación (a los estudiantes de SENATI se les incluye el pago en la primera cuota de crédito)
+            .proceso-item.swiper-slide
+              .how-to-circle.px-0
+                .how-to-circle__icon: img(src="assets/images/contents-icon.png", alt="")
+                p.mt-4 Enviar los documentos que sustenten la necesidad económica al correo creditos@ipfe.org.pe
+            .proceso-item.swiper-slide
+              .how-to-circle.px-0
+                .how-to-circle__icon: img(src="assets/images/conversation-icon.png", alt="")
+                p.mt-4 Evaluación crediticia: se realiza una evaluación sobre la situación crediticia de los participantes del crédito
+  
+  div
+    .col-12.d-lg-none.d-flex.flex-nowrap.mb-5.proceso-slider.overflow-hidden
+      .swiper-wrapper.d-flex
+        .proceso-item.swiper-slide
           .how-to-circle.px-0
             .how-to-circle__icon: img(src="assets/images/email-icon.png", alt="")
             p.mt-4 Enviar un correo a creditos@ipfe.org.pe
-        .col
+        .proceso-item.swiper-slide
           .how-to-circle.px-0
             .how-to-circle__icon: img(src="assets/images/paper-icon.png", alt="")
             p.mt-4 Llenar la Ficha de Solicitud de Crédito enviada en respuesta a su mensaje
-        .col
+        .proceso-item.swiper-slide
           .how-to-circle.px-0
             .how-to-circle__icon: img(src="assets/images/check-icon.png", alt="")
             p.mt-4 Pagar el derecho de evaluación (a los estudiantes de SENATI se les incluye el pago en la primera cuota de crédito)
-        .col
+        .proceso-item.swiper-slide
           .how-to-circle.px-0
             .how-to-circle__icon: img(src="assets/images/contents-icon.png", alt="")
             p.mt-4 Enviar los documentos que sustenten la necesidad económica al correo creditos@ipfe.org.pe
-        .col
+        .proceso-item.swiper-slide
           .how-to-circle.px-0
             .how-to-circle__icon: img(src="assets/images/conversation-icon.png", alt="")
             p.mt-4 Evaluación crediticia: se realiza una evaluación sobre la situación crediticia de los participantes del crédito
+
+  .container
 
     include ../sections/preguntas-frecuentes.pug
     

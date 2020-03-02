@@ -7,7 +7,7 @@
   position: absolute;
   top: 50%;
   width: 30px;
-  transform: translate(-50%);
+  transform: translate(-50%, 15px);
 
   &::after {
     font-size: 2rem;
@@ -42,8 +42,10 @@
   .swiper-slide {
     transition: all 0.3s;
   }
-  
-  .swiper-slide-active {
-    transform: scale(1.15);
+
+  @include media-breakpoint-up('md') {
+    .swiper-slide-active {
+      transform: scale(1.15);
+    }
   }
 }

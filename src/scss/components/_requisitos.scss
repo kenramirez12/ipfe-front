@@ -1,5 +1,5 @@
 .requisitos-item {
-  --size: 210px;
+  --size: 200px;
   width: var(--size);
   height: var(--size);
   display: flex;
@@ -11,7 +11,18 @@
   margin-left: auto;
   margin-right: auto;
   padding: .8rem;
+  font-size: 85%;
   transition: all 0.3s;
+
+  @include media-breakpoint-up('lg  ') {
+    --size: 180px;
+  }
+
+  @include media-breakpoint-up('xl') {
+    --size: 210px;
+    font-size: 1rem;
+  }
+
 
   &:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);

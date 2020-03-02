@@ -3,13 +3,7 @@ extends ../config/template
 block main
   .container
     .row.align-items-center
-      .col-md-6
-        h1.
-          <span class="text-secondary font-weight-bold">ADMINISTRACIÓN DE</span>
-          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fondos</span>
-        p.lead.mr-4.mb-4 Sé parte de nuestra misión
-        a.btn.btn-primary.px-4(href="#") Hacer una donación
-      .col-md-6.position-relative
+      .col-md-6.position-relative.order-md-1
         <div class="bubble bubble-primary bubble--xs" style="bottom: 4rem;left: -15rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-1" style="right: 0rem;top: 5rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 6rem;right: -4rem;"></div>
@@ -24,42 +18,54 @@ block main
               </animate>
             </path>
           </svg>
+      .col-md-6
+        h1.text-center.text-md-left
+          <span class="text-secondary font-weight-bold h2 d-md-none">ADMINISTRACIÓN DE</span>
+          <span class="text-secondary font-weight-bold d-none d-md-block">ADMINISTRACIÓN DE</span>
+          <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fondos</span>
+        p.mb-4.d-md-none.text-center Sé parte de nuestra misión
+        p.lead.mr-4.mb-4.d-none.d-md-block Sé parte de nuestra misión
+        .text-center.text-md-left
+          a.btn.btn-primary.px-4(href="#") Hacer una donación
 
     .row.my-5.pt-5.position-relative
       <div class="bubble bubble-secondary bubble--sm" style="top: 50%;left: -2rem;"></div>
       <div class="bubble bubble-secondary delay-1" style="bottom: -6rem;right: 0;"></div>
       <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: -3rem;right: 4rem;"></div>
       .col-md-8.mx-auto.text-center
-        p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
+        p.text-center En IPFE, gestionamos fondos destinados al otorgamiento de becas y créditos educativos, dirigidos a personas que deseen culminar sus estudios y necesiten financiamiento. Estos fondos se desarrollan a través de programas de responsabilidad social de instituciones educativas, entidades de la sociedad civil, entidades de gobierno y empresas en general.
               
     .row.my-5.text-center.position-relative
       .col-12
-        h3.h1.text-secondary.font-weight-bold.mb-5 Respaldo
+        h3.h2.text-secondary.font-weight-bold.mb-5.d-md-none Respaldo
+        h3.h1.text-secondary.font-weight-bold.mb-5.d-none.d-md-block Respaldo
       .col-md-8.mx-auto.text-center
-        p.text-center En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.
+        p.text-center IPFE mantiene alianzas con reconocidas instituciones, organizaciones y empresas, nacionales e internacionales. A través de estas alianzas, gestionamos programas orientados a becas y créditos educativos.
     
     .row.mb-5.pb-5
       .col-md-4
         .p-3.text-center
           img.respaldo-logo(src="assets/images/wiese-logo.png", alt="")
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae esse aliquid ad! Delectus consequatur, iusto odit, assumenda aliquam nulla tenetur quasi quisquam eius molestiae magni. Facere fuga quae deserunt eveniet!
+          p El nivel de desarrollo de una sociedad está estrechamente ligado a la calidad de su sistema educativo, por tal motivo en alianza con la Fundación Wiese, IPFE gestiona el Fondo de Créditos Educativos Fundación Wiese – IPFE para el otorgamiento de créditos a estudiantes de carreras técnicas en SENATI.
       .col-md-4
         .p-3.text-center
           img.respaldo-logo(src="assets/images/bcp-logo.png", alt="")
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae esse aliquid ad! Delectus consequatur, iusto odit, assumenda aliquam nulla tenetur quasi quisquam eius molestiae magni. Facere fuga quae deserunt eveniet!
+          p Gestionamos el Programa de Becas y Crédito Estudios dirigido a estudiantes talentosos de escasos recursos en universidades de primer nivel contemplando un sólido componente de acompañamiento al beneficiario.
       .col-md-4
         .p-3.text-center
           img.respaldo-logo(src="assets/images/upc-logo.png", alt="")
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae esse aliquid ad! Delectus consequatur, iusto odit, assumenda aliquam nulla tenetur quasi quisquam eius molestiae magni. Facere fuga quae deserunt eveniet!
+          p Gestionamos el Programa de Becas y Recategorizaciones de la Universidad Peruana de Ciencias Aplicadas UPC, para brindar a sus estudiantes la posibilidad de acceder a escalas de pago acordes con su economía.
 
     .col-12
-      h3.h1.text-secondary.font-weight-bold.mb-4.text-center Modalidades de donación
+      h3.h2.text-secondary.font-weight-bold.mb-4.text-center.d-md-none Modalidades de donación
+      h3.h1.text-secondary.font-weight-bold.mb-4.text-center.d-none.d-md-block Modalidades de donación
 
     include ../sections/modalidades-donacion-tabs.pug
 
-    .row.justify-content-center.my-5.pt-5
-      .col-10.text-center.mb-4
-        h3.h1.text-secondary.font-weight-bold.mb-3 Realiza una donación
+    .row.justify-content-center.mb-5.mt-md-5.pt-md-5
+      .col-12.col-md-10.text-center.mb-4
+        h3.h2.text-secondary.font-weight-bold.mb-3.d-md-none Realiza una donación
+        h3.h1.text-secondary.font-weight-bold.mb-3.d-none.d-md-block Realiza una donación
         p Seamos parte del cambio en la educación y ayudemos a más personas a cumplir sus sueños
 
       .col-md-5.text-center
@@ -76,7 +82,7 @@ block main
           </div>
         </div>
 
-        .bg-info.py-2.px-3.rounded.d-flex.align-items-center.mx-5.my-3
+        .bg-info.py-2.px-3.rounded.d-flex.align-items-center.mx-3.mx-md-5.my-3
           div: img(src="assets/images/heart-icon.svg", alt="")
           p.text-left.ml-2.mb-0 Las donaciones se manejan de forma segura a través de <a href="#">Paypal</a>
         

@@ -15,9 +15,32 @@
   </head>
   <body>
     <div class="page" style="overflow-x:hidden">
+      <div class="responsive-menu" id="responsive-menu">
+        <div class="responsive-menu__container">
+          <div class="responsive-menu__content">
+            <div class="container d-flex align-items-center py-3"><a class="mr-3 d-md-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a></div>
+            <nav class="responsive-nav my-auto">
+              <ul class="responsive-main-menu mb-0">
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="estudiantes.html" itemprop="name">Estudiantes</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="empresas.html" itemprop="name">Empresas</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="talento.html" itemprop="name">Talento</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="fondos.html" itemprop="name">Fondo</a></li>
+                <li class="responsive-main-menu__item" itemprop="url"><a class="responsive-main-menu__link" href="blog.html" itemprop="name">Blog</a></li>
+              </ul>
+            </nav>
+            <div class="p-3">
+              <p class="text-muted mb-2"><span>Síguenos</span></p>
+              <div class="d-flex"><a class="mr-4" href="#"><img src="assets/images/facebook-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/linkedin-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/instagram-icon.svg" alt="" height="30"></a><a class="mr-4" href="#"><img src="assets/images/twitter-icon.svg" alt="" height="30"></a><a href="#"><img src="assets/images/youtube-icon.svg" alt="" height="30"></a></div>
+            </div>
+          </div>
+          <div class="responsive-menu__footer py-3 text-center"><span class="text-white">Powered by <a href="#" class="font-weight-bold text-white">Prodequa</a></span></div>
+        </div><img class="responsive-menu__bg" src="assets/images/menu_mobile.svg">
+      </div>
       <header class="main-header">
-        <div class="container d-flex align-items-center"><a class="mr-3 d-md-none" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
-          <nav class="main-nav ml-auto d-none d-md-block">
+        <div class="container d-flex align-items-center"><a class="mr-3 d-lg-none toggle-menu-btn" href="#"><img src="assets/images/responsive-menu-icon.svg" alt=""></a><a href="index.html"><img class="logo" src="assets/images/logo.png" alt=""></a>
+          <nav class="main-nav ml-auto d-none d-lg-block">
             <ul class="main-menu mb-0">
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="index.html" itemprop="name">Inicio</a></li>
               <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
@@ -32,14 +55,7 @@
       </header>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <h1>
-              <span class="text-secondary font-weight-bold">INSTITUTO PERUANO DE</span>
-              <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fomento Educativo</span>
-            </h1>
-            <p class="lead mr-4">Expertos en oportunidades educativas</p>
-          </div>
-          <div class="col-md-6 position-relative"><div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
+          <div class="col-md-6 position-relative order-md-1"><div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
 <div class="bubble bubble-secondary bubble--sm delay-1" style="right: -1rem;top: 3rem;"></div>
 <div class="bubble bubble-primary bubble--sm" style="bottom: 8rem;right: -4rem;"></div>
 <div class="bubble bubble-primary delay-2" style="top: 4rem;right:0rem;"></div>
@@ -53,11 +69,21 @@
 </svg>
             </div>
           </div>
+          <div class="col-md-6">
+            <h1 class="d-md-none text-center mt-3"><span class="text-secondary font-weight-bold">SOMOS</span>
+<span class="text-primary heading-font display-3 d-block mt-1 mb-5">ipfe</span>
+            </h1>
+            <h1 class="d-none d-md-block"><span class="text-secondary font-weight-bold">INSTITUTO PERUANO DE</span>
+<span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fomento Educativo</span>
+            </h1>
+            <p class="text-center d-md-none">Expertos en oportunidades educativas</p>
+            <p class="lead mr-4 text-left d-none d-md-block">Expertos en oportunidades educativas</p>
+          </div>
         </div>
-        <div class="row my-5 py-5 position-relative"><div class="bubble bubble-secondary bubble--sm" style="bottom: 0;left: -2rem;"></div>
+        <div class="row my-5 py-md-5 position-relative"><div class="bubble bubble-secondary bubble--sm" style="bottom: 0;left: -2rem;"></div>
 <div class="bubble bubble-secondary delay-1" style="right: 1rem;bottom: -4rem;"></div>
 <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 0;right: 5rem;"></div>
-          <div class="col-md-8 mx-auto mt-5">
+          <div class="col-md-8 mx-auto mt-md-5">
             <p class="text-center">En IPFE tenemos la convicción de que la educación transforma vidas y por ello enfocamos todas nuestras acciones, recursos y energía en el crecimiento de nuestro Fondo de Crédito Educativo. Esto nos permite brindar oportunidades de financiamiento a jóvenes de escasos recursos, quienes, sin esta ayuda, no podrían estudiar.</p>
           </div>
         </div>
@@ -69,23 +95,27 @@
               <div class="testimonials-slider overflow-hidden">
                 <div class="swiper-wrapper d-flex align-items-center">
                   <div class="swiper-slide">
-                    <div class="row align-items-center">
-                      <div class="col-6 pr-4">
-                        <h3 class="h1 text-secondary font-weight-bold mb-4">Casos</h3>
+                    <div class="row align-items-center flex-column flex-md-row">
+                      <div class="col-10 col-md-6 order-md-1 mb-4 mb-md-0">
+                        <h3 class="h1 text-secondary font-weight-bold mb-4 d-md-none text-center">Casos</h3><img class="img-fluid" src="assets/images/testimonio.jpg" alt="">
+                      </div>
+                      <div class="col-10 col-md-6 pr-md-4 text-center text-md-left">
+                        <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-md-block">Casos</h3>
                         <p class="mb-4">"Gracias a IPFE, hoy puedo cursar la carrera con la que soñé y en un futuro me permitirá acceder a nuevas oportunidades”</p>
                         <p class="text-secondary font-weight-light">– Ánthony Francois Torres Vicente – Ingeniería Mecatrónica – TEC de Monterrey – México</p><a class="btn btn-primary px-4 mt-4" href="#">Postula una beca</a>
                       </div>
-                      <div class="col-6"><img class="img-fluid" src="assets/images/testimonio.jpg" alt=""></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="row align-items-center">
-                      <div class="col-6 pr-4">
-                        <h3 class="h1 text-secondary font-weight-bold mb-4">Casos</h3>
-                        <p class="mb-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam cumque reiciendis ab dignissimos est deserunt cupiditate"</p>
+                    <div class="row align-items-center flex-column flex-md-row">
+                      <div class="col-10 col-md-6 order-md-1 mb-4 mb-md-0">
+                        <h3 class="h1 text-secondary font-weight-bold mb-4 d-md-none text-center">Casos</h3><img class="img-fluid" src="assets/images/testimonio.jpg" alt="">
+                      </div>
+                      <div class="col-10 col-md-6 pr-md-4 text-center text-md-left">
+                        <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-md-block">Casos</h3>
+                        <p class="mb-4">"Gracias a IPFE, hoy puedo cursar la carrera con la que soñé y en un futuro me permitirá acceder a nuevas oportunidades”</p>
                         <p class="text-secondary font-weight-light">– Ánthony Francois Torres Vicente – Ingeniería Mecatrónica – TEC de Monterrey – México</p><a class="btn btn-primary px-4 mt-4" href="#">Postula una beca</a>
                       </div>
-                      <div class="col-6"><img class="img-fluid" src="assets/images/testimonio.jpg" alt=""></div>
                     </div>
                   </div>
                 </div>
@@ -96,8 +126,9 @@
         <div class="row my-5 text-center position-relative"><div class="bubble bubble-secondary delay-2" style="bottom: -2rem;left: -2rem;"></div>
 <div class="bubble bubble-primary bubble--sm delay-1" style="left: -4rem;bottom: -3rem;"></div>
           <div class="col-md-8 mx-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-4">¿Quiénes somos?</h3>
-            <p class="mb-5">Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.</p>
+            <h3 class="h2 text-secondary font-weight-bold mb-4 text-center d-md-none">¿Quiénes somos?</h3>
+            <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-md-block">¿Quiénes somos?</h3>
+            <p class="mb-5 px-3 px-md-0">Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.</p>
           </div>
         </div>
         <div class="custom-modal fade" id="directorioModal"><img class="custom-modal__bg" src="assets/images/pop_up.svg">
@@ -176,10 +207,14 @@
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
               <div class="directorio-slider overflow-hidden">
-                <div class="swiper-wrapper d-flex align-items-center"><a class="swiper-slide directorio-item open-modal" href="#" data-modal="directorioModal"><img class="w-100 img-fluid" src="assets/images/directorio.jpg" alt="">
-                    <div class="d-block py-3"><span class="h5 font-weight-bold">Luis A. Ducassi Wiese</span><span class="font-weight-bold text-secondary d-block mb-1">Fundación Augusto N. Wiese</span><span class="h5 text-primary">Presidente</span></div></a><a class="swiper-slide directorio-item open-modal" href="#" data-modal="directorioModal"><img class="w-100 img-fluid" src="assets/images/directorio.jpg" alt="">
-                    <div class="d-block py-3"><span class="h5 font-weight-bold">Luis A. Ducassi Wiese</span><span class="font-weight-bold text-secondary d-block mb-1">Fundación Augusto N. Wiese</span><span class="h5 text-primary">Presidente</span></div></a><a class="swiper-slide directorio-item open-modal" href="#" data-modal="directorioModal"><img class="w-100 img-fluid" src="assets/images/directorio.jpg" alt="">
-                    <div class="d-block py-3"><span class="h5 font-weight-bold">Luis A. Ducassi Wiese</span><span class="font-weight-bold text-secondary d-block mb-1">Fundación Augusto N. Wiese</span><span class="h5 text-primary">Presidente</span></div></a><a class="swiper-slide directorio-item open-modal" href="#" data-modal="directorioModal"><img class="w-100 img-fluid" src="assets/images/directorio.jpg" alt="">
+                <div class="swiper-wrapper d-flex align-items-center"><a class="swiper-slide directorio-item open-modal" href="#" data-modal="directorioModal">
+                    <div class="px-5 px-md-0"><img class="w-100 img-fluid rounded-1" src="assets/images/directorio.jpg" alt=""></div>
+                    <div class="d-block py-3"><span class="h5 font-weight-bold">Luis A. Ducassi Wiese</span><span class="font-weight-bold text-secondary d-block mb-1">Fundación Augusto N. Wiese</span><span class="h5 text-primary">Presidente</span></div></a><a class="swiper-slide directorio-item open-modal" href="#" data-modal="directorioModal">
+                    <div class="px-5 px-md-0"><img class="w-100 img-fluid rounded-1" src="assets/images/directorio.jpg" alt=""></div>
+                    <div class="d-block py-3"><span class="h5 font-weight-bold">Luis A. Ducassi Wiese</span><span class="font-weight-bold text-secondary d-block mb-1">Fundación Augusto N. Wiese</span><span class="h5 text-primary">Presidente</span></div></a><a class="swiper-slide directorio-item open-modal" href="#" data-modal="directorioModal">
+                    <div class="px-5 px-md-0"><img class="w-100 img-fluid rounded-1" src="assets/images/directorio.jpg" alt=""></div>
+                    <div class="d-block py-3"><span class="h5 font-weight-bold">Luis A. Ducassi Wiese</span><span class="font-weight-bold text-secondary d-block mb-1">Fundación Augusto N. Wiese</span><span class="h5 text-primary">Presidente</span></div></a><a class="swiper-slide directorio-item open-modal" href="#" data-modal="directorioModal">
+                    <div class="px-5 px-md-0"><img class="w-100 img-fluid rounded-1" src="assets/images/directorio.jpg" alt=""></div>
                     <div class="d-block py-3"><span class="h5 font-weight-bold">Luis A. Ducassi Wiese</span><span class="font-weight-bold text-secondary d-block mb-1">Fundación Augusto N. Wiese</span><span class="h5 text-primary">Presidente</span></div></a></div>
               </div>
             </div>
@@ -187,7 +222,8 @@
         </div>
         <div class="row my-5 text-center position-relative pb-5"><div class="bubble bubble-secondary bubble--xs delay-1" style="left: 50%;bottom: 0;"></div>
           <div class="col-md-10 mx-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-5">IPFE en cifras</h3>
+            <h3 class="h2 text-secondary font-weight-bold mb-3 d-md-none">Resultados</h3>
+            <h3 class="h1 text-secondary font-weight-bold mb-5 d-none d-md-block">IPFE en cifras</h3>
             <div class="row">
               <div class="col-md-4">
                 <div class="text-center py-4"><span class="d-block heading-font text-primary display-5 mb-3">s/. 1 044,990.20</span><span class="lead">Becas de Estudio</span></div>
@@ -212,12 +248,17 @@
             </div>
           </div>
         </div>
-        <div class="row mb-5 py-5">
+        <div class="row pt-5 pb-2 pb-md-5">
           <div class="col-md-8 text-center mx-auto">
-            <h3 class="h1 text-secondary font-weight-bold mb-4">Cómo lo hacemos?</h3>
-            <p class="mb-5">Desarrollamos cuatro procesos transversales de valor que nos aseguran un otorgamiento justo y equitativo de dichas oportunidades.</p>
+            <h3 class="h2 text-secondary font-weight-bold mb-4 d-md-none">Cómo lo hacemos?</h3>
+            <h3 class="h1 text-secondary font-weight-bold mb-4 d-none d-md-block">Cómo lo hacemos?</h3>
+            <p class="mb-0 mb-md-3">Desarrollamos cuatro procesos transversales de valor que nos aseguran un otorgamiento justo y equitativo de dichas oportunidades.</p>
           </div>
-          <div class="col-12 position-relative mb-5">
+        </div>
+      </div>
+      <div>
+        <div class="how-to mb-5 p-4 p-md-4">
+          <div class="how-to__container">
             <div class="how-to-circle position-absolute" style="top:1rem" data-prueba="Diseñamos">
               <div class="how-to-circle__icon"><img src="assets/images/palette-icon.svg" alt=""></div>
             </div>
