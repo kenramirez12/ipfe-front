@@ -3,7 +3,7 @@ extends ../config/template
 block main
   .container
     .row.align-items-center
-      .col-md-6.position-relative.order-md-1
+      .col-lg-6.position-relative.order-lg-1
         <div class="bubble bubble-primary bubble--xs" style="bottom: 2rem;left: -15rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-1" style="right: -5rem;top: 5rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 6rem;right: -4rem;"></div>
@@ -11,22 +11,29 @@ block main
         <div class="bubble bubble-primary bubble--sm delay-3" style="top: 4rem;"></div>
         <div class="bubble bubble-secondary" style="bottom: 6rem;left: -6rem;"></div>
         img.img-fluid.position-relative(src="assets/images/empresas_portada-01.svg", alt="")
-        .position-absolute(style="top: 4rem;right: 2rem;z-index:-1;transform: rotate(59deg);")
+        .position-absolute.d-md-none(style="top: 4rem;right: -2rem;z-index:-1;transform: rotate(59deg);")
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="400" height="280">
+            <path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+              <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
+              </animate>
+            </path>
+          </svg>
+        .position-absolute.d-none.d-md-block(style="top: 4rem;right: 2rem;z-index:-1;transform: rotate(59deg);")
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="160 90 450 450" preserveAspectRatio="xMaxyMax meet" width="490" height="360">
             <path fill="rgba(242, 103, 50, 0.15)" d="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
               <animate repeatCount="indefinite" attributeName="d" dur="3s" values="M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z;M 120 260 C 140 220 190 130 360 100 C 520 90 620 200 640 240 C 680 320 640 420 540 400 C 440 380 440 360 360 380 C 260 420 230 520 180 520 C 100 520 80 440 100 320 Z;M 120 330 C 140 280 190 130 360 100 C 520 90 690 290 680 350 C 680 400 620 460 530 430 C 435 400 440 360 390 370 C 260 420 230 520 160 490 C 120 465 100 420 120 330 Z">
               </animate>
             </path>
           </svg>
-      .col-md-6.mt-4.mt-md-0.text-center.text-md-left
-        h1.d-md-none.text-center.h2
+      .col-lg-6.mt-4.mt-lg-0.text-center.text-lg-left
+        h1.d-lg-none.text-center.h2
           <span class="text-secondary font-weight-bold">PROGRAMAS PARA</span>
           <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Empresas</span>
-        h1.d-none.d-md-block
+        h1.d-none.d-lg-block
           <span class="text-secondary font-weight-bold">PROGRAMAS PARA</span>
           <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Empresas</span>
-        p.mb-4.d-md-none Retención de talento en organizaciones
-        p.lead.mr-4.mb-4.d-none.d-md-block Retención de talento en organizaciones
+        p.mb-4.d-lg-none Retención de talento en organizaciones
+        p.lead.mr-4.mb-4.d-none.d-lg-block Retención de talento en organizaciones
         a.btn.btn-primary.px-5.mr-4(href="#") ¡Quiero Asociarme!
 
     .row.my-5.pt-5.position-relative
@@ -89,12 +96,16 @@ block main
                 p Otorgamos créditos para cubrir los porcentajes no cubiertos por las becas y diversos costos de estudios con tasas preferenciales, tanto p para los colaboradores como para sus familiares.
 
     .row.my-5.py-5.text-center.position-relative
-      <div class="bubble bubble-primary bubble--sm delay-2" style="top: -3rem;right: -8rem;"></div>
-      <div class="bubble bubble-secondary delay-1" style="right: -2rem;top: 4rem;"></div>
-      <div class="bubble bubble-primary bubble--sm" style="right: -3rem;top: 50%;"></div>
-      <div class="bubble bubble-secondary" style="left: 0rem;top: 50%;"></div>
-      <div class="bubble bubble-primary bubble--sm" style="left: -1rem;top: 50%;"></div>
-      <div class="bubble bubble-secondary bubble--xs" style="left: 0rem;top: 6rem;"></div>
+      <div class="bubble bubble-primary bubble--xs delay-2 d-md-none" style="top: 12rem;right: 1rem;"></div>
+      <div class="bubble bubble-secondary bubble--xs delay-1 d-md-none" style="left: 2rem;top: 20rem;"></div>
+      <div class="bubble bubble-secondary bubble--sm delay-2 d-md-none" style="bottom: -3rem;left: 2rem;"></div>
+      <div class="bubble bubble-primary bubble--xs delay-1 d-md-none" style="left: 1rem;bottom: -1rem;"></div>
+      <div class="bubble bubble-primary bubble--sm delay-2 d-none d-md-block" style="top: -3rem;right: -8rem;"></div>
+      <div class="bubble bubble-secondary delay-1 d-none d-md-block" style="right: -2rem;top: 4rem;"></div>
+      <div class="bubble bubble-primary bubble--sm d-none d-md-block" style="right: -3rem;top: 50%;"></div>
+      <div class="bubble bubble-secondary d-none d-md-block" style="left: 0rem;top: 50%;"></div>
+      <div class="bubble bubble-primary bubble--sm d-none d-md-block" style="left: -1rem;top: 50%;"></div>
+      <div class="bubble bubble-secondary bubble--xs d-none d-md-block" style="left: 0rem;top: 6rem;"></div>
       .col-md-8.mx-auto
         h3.h2.text-secondary.font-weight-bold.mb-3.d-md-none ¿Cómo asociarte a IPFE?
         h3.h1.text-secondary.font-weight-bold.mb-3.d-none.d-md-block ¿Cómo asociarte a IPFE?
@@ -132,10 +143,10 @@ block main
             p Programar charlas y eventos para difusión del Programa de Beneficios para Asociados.
       .col-md-11.mx-auto.d-none.d-md-block
         .row
-          .col-4.col-xl-3.offset-md-1.px-lg-4
+          .col-4.col-xl-3.offset-md-1.px-lg-4.mt-md-3.mt-md-0
             span.d-block.h1.text-primary.heading-font.mb-3 2.
             p Enviar la ficha de inscripción como asociado de IPFE, la cual será enviada vía correo electrónico.
-          .col-4.col-xl-3.offset-md-2.offset-xl-4.px-lg-4
+          .col-4.col-xl-3.offset-md-2.offset-xl-4.px-lg-4.mt-md-3.mt-md-0
             span.d-block.h1.text-primary.heading-font.mb-3 4.
             p IPFE emitirá constancia de donación a la institución.
       .col-md-11.mx-auto.d-none.d-md-block

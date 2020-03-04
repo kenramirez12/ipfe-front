@@ -3,7 +3,7 @@ extends ../config/template
 block main
   .container
     .row.align-items-center
-      .col-md-6.position-relative.order-md-1
+      .col-lg-6.position-relative.order-lg-1
         <div class="bubble bubble-primary bubble--xs" style="bottom: 4rem;left: -15rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-1" style="right: 0rem;top: 5rem;"></div>
         <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 6rem;right: -4rem;"></div>
@@ -18,14 +18,14 @@ block main
               </animate>
             </path>
           </svg>
-      .col-md-6
-        h1.text-center.text-md-left
-          <span class="text-secondary font-weight-bold h2 d-md-none">ADMINISTRACIÓN DE</span>
-          <span class="text-secondary font-weight-bold d-none d-md-block">ADMINISTRACIÓN DE</span>
+      .col-lg-6
+        h1.text-center.text-lg-left
+          <span class="text-secondary font-weight-bold h2 d-lg-none">ADMINISTRACIÓN DE</span>
+          <span class="text-secondary font-weight-bold d-none d-lg-block">ADMINISTRACIÓN DE</span>
           <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fondos</span>
-        p.mb-4.d-md-none.text-center Sé parte de nuestra misión
-        p.lead.mr-4.mb-4.d-none.d-md-block Sé parte de nuestra misión
-        .text-center.text-md-left
+        p.mb-4.d-lg-none.text-center Sé parte de nuestra misión
+        p.lead.mr-4.mb-4.d-none.d-lg-block Sé parte de nuestra misión
+        .text-center.text-lg-left
           a.btn.btn-primary.px-4(href="#") Hacer una donación
 
     .row.my-5.pt-5.position-relative
@@ -74,12 +74,7 @@ block main
           <div class="input-group-prepend">
             <span class="input-group-text bg-white">USD ($):</span>
           </div>
-          <input type="text" placeholder="20" class="form-control border-left-0 border-right-0 text-center text-secondary font-weight-bold" aria-label="Amount (to the nearest dollar)">
-          <div class="input-group-append">
-            <span class="input-group-text bg-white">
-              img(src="assets/images/share-icon.svg", alt="")
-            </span>
-          </div>
+          <input type="text" placeholder="20" class="form-control border-left-0 text-center text-secondary font-weight-bold" aria-label="Amount (to the nearest dollar)">
         </div>
 
         .bg-info.py-2.px-3.rounded.d-flex.align-items-center.mx-3.mx-md-5.my-3

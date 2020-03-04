@@ -3,7 +3,7 @@ extends ../config/template
 block main
   .container
     .row.align-items-center
-      .col-md-6.position-relative.order-md-1
+      .col-lg-6.position-relative.order-lg-1
         <div class="bubble bubble-primary bubble--xs" style="bottom: 6rem;left: -12rem;"></div>
         <div class="bubble bubble-secondary bubble--sm delay-1" style="right: -1rem;top: 3rem;"></div>
         <div class="bubble bubble-primary bubble--sm" style="bottom: 8rem;right: -4rem;"></div>
@@ -18,18 +18,18 @@ block main
               </animate>
             </path>
           </svg>
-      .col-md-6
-        h1.d-md-none.text-center.mt-3
+      .col-lg-6
+        h1.d-lg-none.text-center.mt-3
           <span class="text-secondary font-weight-bold">SOMOS</span>
           <span class="text-primary heading-font display-3 d-block mt-1 mb-5">ipfe</span>
-        h1.d-none.d-md-block
+        h1.d-none.d-lg-block
           <span class="text-secondary font-weight-bold">INSTITUTO PERUANO DE</span>
           <span class="text-primary heading-font display-3 d-block mt-2 mb-5">Fomento Educativo</span>
-        p.text-center.d-md-none Expertos en oportunidades educativas
-        p.lead.mr-4.text-left.d-none.d-md-block Expertos en oportunidades educativas
+        p.text-center.d-lg-none Expertos en oportunidades educativas
+        p.lead.mr-4.text-left.d-none.d-lg-block Expertos en oportunidades educativas
 
     .row.my-5.py-md-5.position-relative
-      <div class="bubble bubble-secondary bubble--sm" style="bottom: 0;left: -2rem;"></div>
+      <div class="bubble bubble-secondary bubble--sm d-none d-md-block" style="bottom: 0;left: -2rem;"></div>
       <div class="bubble bubble-secondary delay-1" style="right: 1rem;bottom: -4rem;"></div>
       <div class="bubble bubble-primary bubble--sm delay-2" style="bottom: 0;right: 5rem;"></div>
       .col-md-8.mx-auto.mt-md-5
@@ -47,41 +47,80 @@ block main
               
     include ../sections/directorio-slider.pug
 
-    .row.my-5.text-center.position-relative.pb-5
+    .row.mt-5.text-center.position-relative
       <div class="bubble bubble-secondary bubble--xs delay-1" style="left: 50%;bottom: 0;"></div>
       .col-md-10.mx-auto
         h3.h2.text-secondary.font-weight-bold.mb-3.d-md-none Resultados
         h3.h1.text-secondary.font-weight-bold.mb-5.d-none.d-md-block IPFE en cifras
-
-        .row
-          .col-md-4
+    
+    .row.mb-5.pb-5.d-none.d-lg-flex
+      .col-md-11.mx-auto.position-relative.d-none.d-md-block
+        .position-absolute(style="left:50%;transform:translateX(-50%);z-index:1")
+          .circle-icon
+            img(style="width:180px" src="assets/images/student-svg.svg")
+        .row.justify-content-between.mt-5
+          .col-4.col-xl-3.px-lg-4
             .text-center.py-4
-              span.d-block.heading-font.text-primary.display-5.mb-3 s/. 1 044,990.20
+              span.d-block.heading-font.text-primary.h1.mb-3 s/. 1 044,990.20
               span.lead Becas de Estudio
-          .col-md-4
+          .col-4.col-xl-3.px-lg-4
             .text-center.py-4
-              span.d-block.heading-font.text-secondary.display-5.mb-3 12,216
-              span.lead Recategorización
-          .col-md-4
-            .text-center.py-4
-              span.d-block.heading-font.text-primary.display-5.mb-3 s/. 269,721.55
+              span.d-block.heading-font.text-primary.h1.mb-3 s/. 269,721.55
               span.lead Oportunidades educativas
-
+      .col-md-11.mx-auto.d-none.d-md-block
         .row
+          .col-4.col-xl-3.offset-md-1.px-lg-4.mt-md-3.mt-md-0
+            .text-center.py-4
+              span.d-block.heading-font.text-secondary.h1.mb-3 12,216
+              span.lead Recategorización
+          .col-4.col-xl-3.offset-md-2.offset-xl-4.px-lg-4.mt-md-3.mt-md-0
+            .text-center.py-4
+              span.d-block.heading-font.text-secondary.h1.mb-3 s/. 5 757,184.14
+              span.lead Programas sociales
+      .col-md-11.mx-auto.d-none.d-md-block
+        .row.justify-content-center
           .col-md-4
             .text-center.py-4
-              span.d-block.heading-font.text-secondary.display-5.mb-3 s/. 1 696,778.51
+              span.d-block.heading-font.text-secondary.h1.mb-3 s/. 1 696,778.51
               span.lead Becas para Empresas
           .col-md-4
             .text-center.py-4
-              span.d-block.heading-font.text-primary.display-5.mb-3 627
+              span.d-block.heading-font.text-primary.h1.mb-3 627
               span.lead Créditos de estudio
-          .col-md-4
-            .text-center.py-4
-              span.d-block.heading-font.text-secondary.display-5.mb-3 s/. 5 757,184.14
-              span.lead Programas sociales
+
+    .row.mb-5.pb-5.d-lg-none
+      .row
+        .col-md-4
+          .text-center.py-4
+            span.d-block.heading-font.text-primary.display-5.mb-3 s/. 1 044,990.20
+            span.lead Becas de Estudio
+        .col-md-4
+          .text-center.py-4
+            span.d-block.heading-font.text-secondary.display-5.mb-3 12,216
+            span.lead Recategorización
+        .col-md-4
+          .text-center.py-4
+            span.d-block.heading-font.text-primary.display-5.mb-3 s/. 269,721.55
+            span.lead Oportunidades educativas
+
+      .row
+        .col-md-4
+          .text-center.py-4
+            span.d-block.heading-font.text-secondary.display-5.mb-3 s/. 1 696,778.51
+            span.lead Becas para Empresas
+        .col-md-4
+          .text-center.py-4
+            span.d-block.heading-font.text-primary.display-5.mb-3 627
+            span.lead Créditos de estudio
+        .col-md-4
+          .text-center.py-4
+            span.d-block.heading-font.text-secondary.display-5.mb-3 s/. 5 757,184.14
+            span.lead Programas sociales
     
-    .row.pt-5.pb-2.pb-md-5
+    .row.pt-5.pb-2.pb-md-5.position-relative
+      <div class="bubble bubble-primary bubble--xs d-md-none" style="top: 0rem;left: 0rem;"></div>
+      <div class="bubble bubble-primary bubble--sm d-md-none delay-1" style="top: 16rem;right: 0rem;"></div>
+      <div class="bubble bubble-secondary bubble--xs d-md-none delay-2" style="top: 15rem;right: 2rem;"></div>
       .col-md-8.text-center.mx-auto
         h3.h2.text-secondary.font-weight-bold.mb-4.d-md-none Cómo lo hacemos?
         h3.h1.text-secondary.font-weight-bold.mb-4.d-none.d-md-block Cómo lo hacemos?

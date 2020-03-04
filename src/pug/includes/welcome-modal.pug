@@ -1,0 +1,35 @@
+.custom-modal.fade#welcomeModal
+  img.custom-modal__bg.d-md-none(src="assets/images/pop_up_mobile.svg")
+  img.custom-modal__bg.d-none.d-md-block(src="assets/images/pop_up.svg")
+  .custom-modal__dialog.position-relative
+    img.custom-modal__close-btn(data-modal="welcomeModal" src="assets/images/close-btn.svg")
+    //- Mobile
+    div.d-md-none
+      <div class="bubble bubble-50 bubble-primary bubble--xs" style="right: 6rem;top: -8rem;"></div>
+      <div class="bubble bubble-50 bubble-secondary bubble--xs delay-2" style="top: -6rem;left: -1rem;"></div>
+      <div class="bubble bubble-50 bubble-primary bubble--xs delay-2" style="bottom: -9rem;right: 6rem;"></div>
+      <div class="bubble bubble-50 bubble--sm bubble-primary delay-3" style="bottom: -10rem;left: 0;"></div>
+      <div class="bubble bubble-50 bubble-secondary bubble--xs" style="bottom: -8rem;left: -1rem;"></div>
+    //- Desktop
+    div.d-none.d-md-block
+      <div class="bubble bubble-50 bubble-secondary bubble--xs delay-1" style="right: -12rem;top: -8rem;"></div>
+      <div class="bubble bubble-50 bubble-primary bubble--sm" style="bottom: 0rem;right: -22rem;"></div>
+      <div class="bubble bubble-50 bubble-secondary delay-2" style="bottom: -12rem;right: -10rem;"></div>
+      <div class="bubble bubble-50 bubble-primary delay-3" style="bottom: -6rem;left: -20rem;"></div>
+      <div class="bubble bubble-50 bubble-secondary bubble--sm" style="bottom: -6rem;left: -16rem;"></div>
+      <div class="bubble bubble-50 bubble-secondary bubble--sm" style="bottom: -6rem;left: -16rem;"></div>
+      <div class="bubble bubble-50 bubble-primary bubble--sm" style="top: -6rem;left: -16rem;"></div>
+    .custom-modal__content.text-center
+      h4.heading-font.text-secondary.display-5.d-md-none Bienvenido
+      h4.heading-font.text-secondary.display-3.d-none.d-md-block Bienvenido
+      p.pt-4.pb-3.d-md-none Queremos mostrarte todos los beneficios que IPFE tiene para ofrecerte
+      p.lead.pt-4.pb-3.d-none.d-md-block Queremos mostrarte todos los beneficios que IPFE tiene para ofrecerte
+      .row
+        .col-6
+          img.w-100.mb-3(src="assets/images/estudiantes.jpg", alt="")
+          a.btn.btn-sm.btn-primary.w-100.d-md-none(href="estudiantes.html") Estudiantes
+          a.btn.btn-primary.w-100.d-none.d-md-block(href="estudiantes.html") Estudiantes
+        .col-6
+          img.w-100.mb-3(src="assets/images/empresas.jpg", alt="")
+          a.btn.btn-sm.btn-secondary.w-100.d-md-none(href="empresas.html") Empresas
+          a.btn.btn-secondary.w-100.d-none.d-md-block(href="empresas.html") Empresas
