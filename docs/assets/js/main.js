@@ -41,12 +41,12 @@ const closeResponsiveMenu = () => {
 }
 
 // Welcome modal
-// if(document.getElementById('welcomeModal')) {
-//   setTimeout(() => {
-//     document.body.classList.add('modal-open')
-//     document.getElementById('welcomeModal').classList.add('show')
-//   }, 2000);
-// }
+if(document.getElementById('welcomeModal')) {
+  setTimeout(() => {
+    document.body.classList.add('modal-open')
+    document.getElementById('welcomeModal').classList.add('show')
+  }, 2000);
+}
 
 // Modals
 const closeModal = (modalId) => {
