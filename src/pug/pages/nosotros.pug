@@ -56,35 +56,35 @@ block main
     .row.mb-5.pb-5.d-none.d-lg-flex
       .col-md-11.mx-auto.position-relative.d-none.d-md-block
         .position-absolute(style="left:50%;transform:translateX(-50%);z-index:1")
-          .circle-icon
+          .circle-icon(data-animation="zoom-in")
             img(style="width:180px" src="assets/images/student-svg.svg")
         .row.justify-content-between.mt-5
           .col-4.col-xl-3.px-lg-4
-            .text-center.py-4
+            .text-center.py-4(data-animation="fade-down")
               span.d-block.heading-font.text-primary.h1.mb-3 s/. 1 044,990.20
               span.lead Becas de Estudio
           .col-4.col-xl-3.px-lg-4
-            .text-center.py-4
+            .text-center.py-4(data-animation="fade-down" data-animation-delay="600")
               span.d-block.heading-font.text-primary.h1.mb-3 s/. 269,721.55
               span.lead Oportunidades educativas
       .col-md-11.mx-auto.d-none.d-md-block
         .row
           .col-4.col-xl-3.offset-md-1.px-lg-4.mt-md-3.mt-md-0
-            .text-center.py-4
+            .text-center.py-4(data-animation="fade-down" data-animation-delay="")
               span.d-block.heading-font.text-secondary.h1.mb-3 12,216
               span.lead Recategorización
           .col-4.col-xl-3.offset-md-2.offset-xl-4.px-lg-4.mt-md-3.mt-md-0
-            .text-center.py-4
+            .text-center.py-4(data-animation="fade-down" data-animation-delay="400")
               span.d-block.heading-font.text-secondary.h1.mb-3 s/. 5 757,184.14
               span.lead Programas sociales
       .col-md-11.mx-auto.d-none.d-md-block
         .row.justify-content-center
           .col-md-4
-            .text-center.py-4
+            .text-center.py-4(data-animation="fade-down" data-animation-delay="")
               span.d-block.heading-font.text-secondary.h1.mb-3 s/. 1 696,778.51
               span.lead Becas para Empresas
           .col-md-4
-            .text-center.py-4
+            .text-center.py-4(data-animation="fade-down" data-animation-delay="100")
               span.d-block.heading-font.text-primary.h1.mb-3 627
               span.lead Créditos de estudio
 
@@ -128,14 +128,19 @@ block main
   div
     .how-to.mb-5.p-4.p-md-4
       .how-to__container
-        .how-to-circle.position-absolute(style="top:1rem", data-prueba="Diseñamos")
+        .how-to-circle.position-absolute(style="top:1rem", data-prueba="Diseñamos" data-animation="fade-down" data-animation-delay="")
           .how-to-circle__icon: img(src="assets/images/palette-icon.svg", alt="")
-        .how-to-circle.position-absolute(style="bottom:-3rem;left:21%", data-prueba="Articulamos")
+        .how-to-circle.position-absolute(style="bottom:-3rem;left:21%", data-prueba="Articulamos" data-animation="fade-down" data-animation-delay="50")
           .how-to-circle__icon: img(src="assets/images/handshake-icon.svg", alt="")
-        .how-to-circle.position-absolute(style="left:50%;transform:translateX(-50%)", data-prueba="Seleccionamos")
+        .how-to-circle.position-absolute(style="left:50%;transform:translateX(-50%)", data-prueba="Seleccionamos" data-animation="fade-down" data-animation-delay="150")
           .how-to-circle__icon: img(src="assets/images/candidates-icon.svg", alt="")
-        .how-to-circle.position-absolute(style="left:62%;bottom:-3rem", data-prueba="Acompañamos")
+        .how-to-circle.position-absolute(style="left:62%;bottom:-3rem", data-prueba="Acompañamos" data-animation="fade-down" data-animation-delay="150")
           .how-to-circle__icon: img(src="assets/images/united-icon.svg", alt="")
-        .how-to-circle.position-absolute(style="top:1rem;right:1rem", data-prueba="Evaluamos")
+        .how-to-circle.position-absolute(style="top:1rem;right:1rem", data-prueba="Evaluamos" data-animation="fade-down" data-animation-delay="350")
           .how-to-circle__icon: img(src="assets/images/exam-icon.svg", alt="")
-        img.w-100(src="assets/images/base-arrow.svg", alt="")
+        //- img.w-100(src="assets/images/base-arrow.svg", alt="")
+        <svg width="1288" height="327" viewBox="0 0 1288 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path data-animation="zig-zag-path" d="M5 20L371.551 320L652.915 66.9321L908.119 297.576L1280.25 10.3389" stroke="#F26732" stroke-width="10" stroke-linecap="round">
+          </path>
+          <path data-animation="zig-zag-end-path" d="M1234 0C1231.24 0 1229 2.23858 1229 5C1229 7.76142 1231.24 10 1234 10V0ZM1282.98 5H1287.98V0H1282.98V5ZM1277.98 50.9153C1277.98 53.6767 1280.22 55.9153 1282.98 55.9153C1285.74 55.9153 1287.98 53.6767 1287.98 50.9153H1277.98ZM1234 10H1282.98V0H1234V10ZM1277.98 5V50.9153H1287.98V5H1277.98Z" fill="#F26732"/>
+        </svg>

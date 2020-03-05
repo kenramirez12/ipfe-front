@@ -1,7 +1,33 @@
+// Is on screen
+const windowHeight = document.documentElement.clientHeight
+const toAnimate = document.querySelectorAll('[data-animation]')
+toAnimate.forEach(item => {
+  item.classList.add(item.dataset.animation)
+})
+
+const isOnScreen = (el) => {
+  // if(el.getBoundingClientRect().top <= (windowHeight / 1.2) && !el.classList.contains('show')) {
+  //   el.classList.add('show')
+  // }
+  if(el.getBoundingClientRect().top <= (windowHeight / 1.2)) {
+    if(!el.classList.contains('show')) {
+      el.classList.add('show')
+    }
+  } else {
+    if(el.classList.contains('show')) {
+      el.classList.remove('show')
+    }
+  }
+}
+
 // Sticky header
 const header = document.querySelector('.main-header')
 
 document.querySelector('.page').addEventListener('scroll', function(e) {
+  toAnimate.forEach(item => {
+    isOnScreen(item)
+  })
+
   const scrollTop = document.querySelector('.page').scrollTop
   if(scrollTop > 500 && !header.classList.contains('sticky')) {
     header.classList.add('sticky')
