@@ -97,28 +97,12 @@ block main
         .swiper-button-next.d-lg-none
         .blog-slider.overflow-hidden
           .swiper-wrapper.d-flex.align-items-center
-            .swiper-slide
-              .entry-item
-                a(href="#" class="hover:decoration-none")
-                  img(src="assets/images/blog.jpg", alt="" class="entry-item__thumbnail")
+            each val in [1, 2, 3]
+              .swiper-slide
+                .entry-item
+                  a(href="#" class="hover:decoration-none")
+                    img(src="assets/images/blog.jpg", alt="" class="entry-item__thumbnail")
 
-                .entry-item__content
-                  a(href="#" class="hover:decoration-none"): h4.entry-item__title Conoce los pasos para posutlar a una beca en Perú
-                  a.entry-item__link(href="#" class="hover:decoration-none") Leer <img class="ml-1" height="10" src="assets/images/arrow-primary.svg" alt="">
-            .swiper-slide
-              .entry-item
-                a(href="#" class="hover:decoration-none")
-                  img(src="assets/images/blog.jpg", alt="" class="entry-item__thumbnail")
-
-                .entry-item__content
-                  a(href="#" class="hover:decoration-none"): h4.entry-item__title Conoce los pasos para posutlar a una beca en Perú
-                  a.entry-item__link(href="#" class="hover:decoration-none") Leer <img class="ml-1" height="10" src="assets/images/arrow-primary.svg" alt="">      
-            .swiper-slide
-              .entry-item
-                a(href="#" class="hover:decoration-none")
-                  img(src="assets/images/blog.jpg", alt="" class="entry-item__thumbnail")
-
-                .entry-item__content
-                  a(href="#" class="hover:decoration-none"): h4.entry-item__title Conoce los pasos para posutlar a una beca en Perú
-                  a.entry-item__link(href="#" class="hover:decoration-none") Leer <img class="ml-1" height="10" src="assets/images/arrow-primary.svg" alt="">
-                  
+                  .entry-item__content
+                    a(href="#" class="hover:decoration-none"): h4.entry-item__title Conoce los pasos para posutlar a una beca en Perú
+                    a.entry-item__link(href="#" class="hover:decoration-none") Leer <img class="ml-1" height="10" src="assets/images/arrow-primary.svg" alt="">

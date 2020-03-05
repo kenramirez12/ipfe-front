@@ -65,32 +65,22 @@ block main
         h3.h1.text-secondary.font-weight-bold.mb-5.pb-4.d-none.d-md-block Becas más populares
       .col-12.col-md-10.col-xl-12.mx-auto
         .position-relative
-          .swiper-button-prev.d-lg-none
-          .swiper-button-next.d-lg-none
+          .swiper-button-prev.d-lg-none(style="top:35%")
+          .swiper-button-next.d-lg-none(style="top:35%")
           .row.align-items-center.becas-populares-slider.overflow-hidden.overflow-lg-visible
             .swiper-wrapper
-              .swiper-slide.px-5.px-md-0
-                .beca-item
-                  .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
-                  .beca-item__content
-                    h5.beca-item__title Maestría en Finanzas
-                    strong.beca-item__subtitle CENTRUM
-                    //- a.btn.btn-primary.beca-item__btn(href="#") Ver más
-              .swiper-slide.px-5.px-md-0
-                .beca-item
-                  .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
-                  .beca-item__content
-                    h5.beca-item__title Maestría en Finanzas
-                    strong.beca-item__subtitle CENTRUM
-                    //- a.btn.btn-primary.beca-item__btn(href="#") Ver más
-              .swiper-slide.px-5.px-md-0
-                .beca-item
-                  .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
-                  .beca-item__content
-                    h5.beca-item__title Maestría en Finanzas
-                    strong.beca-item__subtitle CENTRUM
-                    //- a.btn.btn-primary.beca-item__btn(href="#") Ver más
-        .row
+              each item in [1, 2, 3]
+                .swiper-slide.px-5.px-md-0
+                  .beca-item
+                    .beca-item__plasma
+                      span 50%
+                      div
+                        img.beca-item__plasma-bg(src="assets/images/small_plasma_primary.svg")
+                        img.beca-item__plasma-bg(src="assets/images/small_plasma_secondary.svg")
+                    .beca-item__thumbnail: img(src="assets/images/becas-img.jpg", alt="")
+                    .beca-item__content
+                      h5.beca-item__title Maestría en Finanzas
+                      strong.beca-item__subtitle CENTRUM
           .col-12.text-center.mt-3
             a.btn.btn-primary.px-5(href="#") Ver más
 

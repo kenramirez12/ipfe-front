@@ -1,6 +1,78 @@
 .beca-item {
   transition: all 0.3s;
 
+  &:hover {
+    .beca-item__plasma {
+      &::before {
+        background-color: $secondary;
+      }
+
+      &::after {
+        background-color: $primary;
+      }
+    }
+
+    .beca-item__plasma-bg {
+      &:first-child {
+        display: block;
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  &__plasma-bg:first-child {
+    display: none;
+  }
+
+  &__plasma {
+    position: absolute;
+    top: 1rem;
+    right: 3.5rem;
+
+    @include media-breakpoint-up('md') {
+      right: 1rem;
+    }
+
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      --size: 16px;
+      width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      opacity: .8;
+      animation: moveAround 3s infinite linear;
+    }
+
+    &::before {
+      background-color: $primary;
+      bottom: 1rem;
+      left: 1rem;
+    }
+
+    &::after {
+      background-color: $secondary;
+      animation-delay: 2s;
+      top: 1rem;
+      left: -1rem;
+    }
+
+    span {
+      position: absolute;
+      top: 22%;
+      left: 38%;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.3rem;
+      z-index: 1;
+    }
+  }
+
   &__thumbnail {
     border-radius: 1rem;
     overflow: hidden;

@@ -1,5 +1,6 @@
 .custom-modal.fade#directorioModal
-  img.custom-modal__bg(src="assets/images/pop_up.svg")
+  img.custom-modal__bg.d-md-none(src="assets/images/pop_up_mobile.svg")
+  img.custom-modal__bg.d-none.d-md-block(src="assets/images/pop_up.svg")
   .custom-modal__dialog.position-relative
     img.custom-modal__close-btn(data-modal="directorioModal" src="assets/images/close-btn.svg")
     <div class="bubble bubble-50 bubble-secondary bubble--xs delay-1" style="right: -12rem;top: -8rem;"></div>
@@ -15,36 +16,18 @@
         .swiper-button-next
         .directorio-details-slider.overflow-hidden
           .swiper-wrapper.d-flex.align-items-center
-            .swiper-slide
-              .row.align-items-center
-                .col-6
-                  img.w-100.img-fluid(src="assets/images/directorio.jpg", alt="")
-                .col-6.text-left
-                  .d-block.py-3
-                    span.h5.font-weight-bold Luis A. Ducassi Wiese
-                    span.font-weight-bold.text-secondary.d-block.mb-1 Fundación Augusto N. Wiese
-                    span.h5.text-primary Presidente
-                    p.mt-3.mb-0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo fugiat iste autem doloremque perferendis labore fugit aspernatur illo id dolor omnis tenetur amet, cumque unde, odit ipsa ullam reiciendis?
-            .swiper-slide
-              .row.align-items-center
-                .col-6
-                  img.w-100.img-fluid(src="assets/images/directorio.jpg", alt="")
-                .col-6.text-left
-                  .d-block.py-3
-                    span.h5.font-weight-bold José Bernal Helguero
-                    span.font-weight-bold.text-secondary.d-block.mb-1 Asociado Persona Natural
-                    span.h5.text-primary Vicepresidente
-                    p.mt-3.mb-0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo fugiat iste autem doloremque perferendis labore fugit aspernatur illo id dolor omnis tenetur amet, cumque unde, odit ipsa ullam reiciendis?
-            .swiper-slide
-              .row.align-items-center
-                .col-6
-                  img.w-100.img-fluid(src="assets/images/directorio.jpg", alt="")
-                .col-6.text-left
-                  .d-block.py-3
-                    span.h5.font-weight-bold Luis A. Ducassi Wiese
-                    span.font-weight-bold.text-secondary.d-block.mb-1 Fundación Augusto N. Wiese
-                    span.h5.text-primary Presidente
-                    p.mt-3.mb-0.small Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo fugiat iste autem doloremque perferendis labore fugit aspernatur illo id dolor omnis tenetur amet, cumque unde, odit ipsa ullam reiciendis?
+            each item in [1, 2, 3]
+              .swiper-slide
+                .row.align-items-center.justify-content-center
+                  .col-6.col-md-6
+                    img.w-100.img-fluid.rounded-1(src="assets/images/directorio.jpg", alt="")
+                  .col-md-6.text-center.text-md-left
+                    .d-block.py-3
+                      span.h5.font-weight-bold Luis A. Ducassi Wiese
+                      span.font-weight-bold.text-secondary.d-block.mb-1 Fundación Augusto N. Wiese
+                      span.h5.text-primary Presidente
+                      p.mt-3.mb-0.small.d-md-none Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo fugiat iste autem doloremque perferendis labore fugit aspernatur illo id dolor omnis tenetur amet, cumque unde, odit ipsa ullam reiciendis?
+                      p.mt-3.mb-0.d-none.d-md-block Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quo fugiat iste autem doloremque perferendis labore fugit aspernatur illo id dolor omnis tenetur amet, cumque unde, odit ipsa ullam reiciendis?
 
 .row.my-5.text-center.position-relative
   <div class="bubble bubble-primary bubble--sm" style="top: 0rem;right: 0rem;"></div>
@@ -87,31 +70,14 @@
     h3.h1.text-secondary.font-weight-bold.mb-1 Directorio
   .col-md-10.mx-auto
     .position-relative.mb-5
-      .swiper-button-prev
-      .swiper-button-next
+      .swiper-button-prev(style="top:37%")
+      .swiper-button-next(style="top:37%")
       .directorio-slider.overflow-hidden
         .swiper-wrapper.d-flex.align-items-center
-          a.swiper-slide.directorio-item.open-modal(href="#" data-modal="directorioModal")
-            div.px-5.px-md-0: img.w-100.img-fluid.rounded-1(src="assets/images/directorio.jpg", alt="")
-            .d-block.py-3
-              span.h5.font-weight-bold Luis A. Ducassi Wiese
-              span.font-weight-bold.text-secondary.d-block.mb-1 Fundación Augusto N. Wiese
-              span.h5.text-primary Presidente
-          a.swiper-slide.directorio-item.open-modal(href="#" data-modal="directorioModal")
-            div.px-5.px-md-0: img.w-100.img-fluid.rounded-1(src="assets/images/directorio.jpg", alt="")
-            .d-block.py-3
-              span.h5.font-weight-bold Luis A. Ducassi Wiese
-              span.font-weight-bold.text-secondary.d-block.mb-1 Fundación Augusto N. Wiese
-              span.h5.text-primary Presidente
-          a.swiper-slide.directorio-item.open-modal(href="#" data-modal="directorioModal")
-            div.px-5.px-md-0: img.w-100.img-fluid.rounded-1(src="assets/images/directorio.jpg", alt="")
-            .d-block.py-3
-              span.h5.font-weight-bold Luis A. Ducassi Wiese
-              span.font-weight-bold.text-secondary.d-block.mb-1 Fundación Augusto N. Wiese
-              span.h5.text-primary Presidente
-          a.swiper-slide.directorio-item.open-modal(href="#" data-modal="directorioModal")
-            div.px-5.px-md-0: img.w-100.img-fluid.rounded-1(src="assets/images/directorio.jpg", alt="")
-            .d-block.py-3
-              span.h5.font-weight-bold Luis A. Ducassi Wiese
-              span.font-weight-bold.text-secondary.d-block.mb-1 Fundación Augusto N. Wiese
-              span.h5.text-primary Presidente
+          each item in [1, 2, 3, 4]
+            a.swiper-slide.directorio-item.open-modal(href="#" data-modal="directorioModal")
+              div.px-5.px-md-0: img.w-100.img-fluid.rounded-1(src="assets/images/directorio.jpg", alt="")
+              .d-block.py-3
+                span.h5.font-weight-bold Luis A. Ducassi Wiese
+                span.font-weight-bold.text-secondary.d-block.mb-1 Fundación Augusto N. Wiese
+                span.h5.text-primary Presidente
