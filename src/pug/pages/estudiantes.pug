@@ -61,14 +61,14 @@ block main
         </svg>
       </div>
       .col-md-8.mx-auto
-        h3.h2.text-secondary.font-weight-bold.mb-5.pb-4.d-md-none Becas más populares
-        h3.h1.text-secondary.font-weight-bold.mb-5.pb-4.d-none.d-md-block Becas más populares
+        h3.h2.text-secondary.font-weight-bold.mb-5.d-md-none Becas más populares
+        h3.h1.text-secondary.font-weight-bold.mb-5.d-none.d-md-block Becas más populares
       .col-12.col-md-10.col-xl-12.mx-auto
         .position-relative
           .swiper-button-prev.d-lg-none(style="top:35%")
           .swiper-button-next.d-lg-none(style="top:35%")
           .row.align-items-center.becas-populares-slider.overflow-hidden.overflow-lg-visible
-            .swiper-wrapper
+            .swiper-wrapper.pt-4
               each item in [1, 2, 3]
                 .swiper-slide.px-5.px-md-0
                   .beca-item

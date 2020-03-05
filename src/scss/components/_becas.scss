@@ -1,4 +1,5 @@
 .beca-item {
+  position: relative;
   transition: all 0.3s;
 
   &:hover {
@@ -30,11 +31,7 @@
   &__plasma {
     position: absolute;
     top: 1rem;
-    right: 3.5rem;
-
-    @include media-breakpoint-up('md') {
-      right: 1rem;
-    }
+    right: 1rem;
 
     &::before,
     &::after {
