@@ -1,4 +1,6 @@
 extends ../config/template
+append config
+  -pageName = 'fondo'
 
 block main
   .container
@@ -26,7 +28,7 @@ block main
         p.mb-4.d-lg-none.text-center Sé parte de nuestra misión
         p.lead.mr-4.mb-4.d-none.d-lg-block Sé parte de nuestra misión
         .text-center.text-lg-left
-          a.btn.btn-primary.px-4(href="#") Hacer una donación
+          a.btn.btn-primary.px-4(href="#donacion") Hacer una donación
 
     .row.my-5.pt-5.position-relative
       <div class="bubble bubble-secondary bubble--sm" style="top: 50%;left: -2rem;"></div>
@@ -62,7 +64,7 @@ block main
 
     include ../sections/modalidades-donacion-tabs.pug
 
-    .row.justify-content-center.mb-5.mt-md-5.pt-md-5
+    .row.justify-content-center.mb-5.mt-md-5.pt-md-5#donacion
       .col-12.col-md-10.text-center.mb-4
         h3.h2.text-secondary.font-weight-bold.mb-3.d-md-none Realiza una donación
         h3.h1.text-secondary.font-weight-bold.mb-3.d-none.d-md-block Realiza una donación

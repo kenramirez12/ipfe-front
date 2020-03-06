@@ -6,26 +6,62 @@ toAnimate.forEach(item => {
 })
 
 const isOnScreen = (el) => {
-  // if(el.getBoundingClientRect().top <= (windowHeight / 1.2) && !el.classList.contains('show')) {
-  //   el.classList.add('show')
-  // }
-  if(el.getBoundingClientRect().top <= (windowHeight / 1.2)) {
-    if(!el.classList.contains('show')) {
-      el.classList.add('show')
-    }
-  } else {
-    if(el.classList.contains('show')) {
-      el.classList.remove('show')
-    }
-  }
+  return el.getBoundingClientRect().top <= (windowHeight / 1.2) && !el.classList.contains('show')
 }
+
+const showItem = (el) => {
+  el.classList.add('show')
+}
+
+const formatMillion = (number) => {
+  const toString = number.toString()
+  const centecimas = toString.slice(-3)
+  const milecimas = toString.slice(-6, -3)
+  const millones = toString.slice(0, -6)
+
+  return `${millones} ${milecimas},${centecimas}`
+}
+
+function animateValue(el, start, end, duration, prefix = null) {
+  var range = end - start;
+  var current = start;
+  var increment = end > start? 1 : -1;
+  var stepTime = Math.abs(Math.floor(duration / range));
+  // var obj = document.querySelector(el)
+  var timer = setInterval(function() {
+      current += increment;
+      
+      const toSetNumber = current.toString().length > 6 ? formatMillion(current) : Number(current).toLocaleString()
+      el.innerHTML = prefix ? `${prefix} ${toSetNumber}` : toSetNumber;
+
+      if (current == end) {
+          clearInterval(timer);
+      }
+  }, stepTime);
+}
+
+const toCount = document.querySelectorAll('[data-count]')
 
 // Sticky header
 const header = document.querySelector('.main-header')
 
 document.querySelector('.page').addEventListener('scroll', function(e) {
   toAnimate.forEach(item => {
-    isOnScreen(item)
+    if(isOnScreen(item)) showItem(item)
+  })
+
+  toCount.forEach(item => {
+    if(isOnScreen(item)) {
+      if(item.classList.contains('started')) return
+      item.classList.add('started')
+
+      const start = parseInt(item.dataset.start)
+      const end = parseInt(item.dataset.end)
+      const duration = parseInt(item.dataset.duration)
+      const prefix = item.hasAttribute('data-prefix') ? item.dataset.prefix : null
+
+      animateValue(item, start, end, duration, prefix)
+    }
   })
 
   const scrollTop = document.querySelector('.page').scrollTop

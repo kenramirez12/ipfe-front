@@ -1,6 +1,9 @@
 extends ../config/template
+append config
+  -pageName = 'inicio'
 
 block main
+
   include ../includes/welcome-modal.pug
 
   .container
@@ -36,7 +39,7 @@ block main
       .col-lg-5.text-center.text-lg-left
         h3.h1.text-secondary.font-weight-bold.mb-5.d-none.d-lg-block ¿Quiénes somos?
         p.my-4.mt-lg-0.mb-lg-5 Somos una institución sin fines de lucro, con más de 58 años de experiencia, promoviendo y facilitando el acceso a la educación superior y técnica, con el fin de contribuir en el desarrollo humano de las personas a través de la educación.
-        a.btn.btn-primary.px-5(href="#") Ver más
+        a.btn.btn-primary.px-5(href="nosotros.html") Ver más
     
     .row.justify-content-center.mt-5.position-relative
       .col-md-10.d-flex.flex-column.flex-md-row.mt-5.position-relative
@@ -50,16 +53,16 @@ block main
         .d-none.d-md-block.bubble.bubble-secondary.bubble--lg.delay-1(style="right:-8rem;top:4rem")
         .d-none.d-md-block.bubble.bubble-primary.delay-2(style="right:-4rem;top:2rem")
         .indicator-counter.mb-3.mb-md-0
-          .indicator-counter__value 103,300
+          .indicator-counter__value(data-count="number" data-start="103000" data-end="103300" data-duration="100") 103000
           .indicator-counter__label Beneficiarios totales
         .indicator-counter.mb-3.mb-md-0
-          .indicator-counter__value 125
+          .indicator-counter__value(data-count="number" data-start="0" data-end="125" data-duration="200") 0
           .indicator-counter__label Empresas donantes
         .indicator-counter.mb-3.mb-md-0
-          .indicator-counter__value 229
+          .indicator-counter__value(data-count="number" data-start="0" data-end="229" data-duration="200") 0
           .indicator-counter__label Proyectos administrados
         .indicator-counter.mb-3.mb-md-0
-          .indicator-counter__value 60
+          .indicator-counter__value(data-count="number" data-start="0" data-end="60" data-duration="200") 0
           .indicator-counter__label Instituciones aliadas
 
     include ../sections/nuestros-programas.pug
@@ -72,7 +75,7 @@ block main
     
     include ../sections/nuestra-experiencia.pug
 
-    .row.position-relative.mb-5.pt-md-5.pb-md-5.px-3
+    .row.position-relative.pt-md-5.pb-md-5.px-3
       //- img.position-absolute(src="assets/images/aldia-shape-01.svg" style="top:5rem;left:-5rem")
       .position-absolute.d-none.d-md-block(style="top:5rem;left:-5rem")
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="90 90 800 600" preserveAspectRatio="none" width="800" height="600">
@@ -88,21 +91,21 @@ block main
             </animate>
           </path>
         </svg>
-      .col-12.text-center.mb-4
+      .col-12.text-center
         h3.h1.text-secondary.font-weight-bold.mb-2 IPFE al día
         p Encuentra artículos de interés y nuestras últimas noticias
 
       .col-12.position-relative.px-5.px-md-0
         .swiper-button-prev.d-lg-none
         .swiper-button-next.d-lg-none
-        .blog-slider.overflow-hidden
-          .swiper-wrapper.d-flex.align-items-center
+        .blog-slider.overflow-hidden.px-md-4
+          .swiper-wrapper.d-flex.align-items-center.pt-4
             each val in [1, 2, 3]
               .swiper-slide
                 .entry-item
-                  a(href="#" class="hover:decoration-none")
+                  a(href="blog-interna.html" class="hover:decoration-none")
                     img(src="assets/images/blog.jpg", alt="" class="entry-item__thumbnail")
 
                   .entry-item__content
-                    a(href="#" class="hover:decoration-none"): h4.entry-item__title Conoce los pasos para posutlar a una beca en Perú
-                    a.entry-item__link(href="#" class="hover:decoration-none") Leer <img class="ml-1" height="10" src="assets/images/arrow-primary.svg" alt="">
+                    a(href="blog-interna.html" class="hover:decoration-none"): h4.entry-item__title Conoce los pasos para posutlar a una beca en Perú
+                    a.entry-item__link(href="blog-interna.html" class="hover:decoration-none") Leer <img class="ml-1" height="10" src="assets/images/arrow-primary.svg" alt="">

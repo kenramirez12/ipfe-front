@@ -13,7 +13,7 @@
 
 @for $i from 1 through 60 {
   [data-animation-delay='#{$i * 50}'] {
-    transition-delay:  #{$i * 50}ms;
+    transition-delay:  #{$i * 50}ms!important;
   }
 }
 

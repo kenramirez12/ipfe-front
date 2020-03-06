@@ -1,4 +1,6 @@
 extends ../config/template
+append config
+  -pageName = 'blog'
 
 block main
   .container
@@ -27,9 +29,9 @@ block main
         .single-entry__top-bar
           span.text-secondary Jueves 28 de Febrero 2020
           .d-flex
-            a.mr-4(href="#"): img(src="assets/images/facebook-icon.svg", height="28" alt="")
-            a.mr-4(href="#"): img(src="assets/images/linkedin-icon.svg", height="28" alt="")
-            a.mr-4(href="#"): img(src="assets/images/instagram-icon.svg", height="28" alt="")
+            a.mr-3(href="#"): img(src="assets/images/facebook-icon.svg", height="28" alt="")
+            a.mr-3(href="#"): img(src="assets/images/linkedin-icon.svg", height="28" alt="")
+            a.mr-3(href="#"): img(src="assets/images/instagram-icon.svg", height="28" alt="")
             a(href="#"): img(src="assets/images/twitter-icon.svg", height="28" alt="")
 
       .col-md-10.col-lg-9

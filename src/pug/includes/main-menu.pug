@@ -2,6 +2,9 @@ nav.main-nav.ml-auto.d-none.d-lg-block
   ul.main-menu.mb-0
     each page in pages
       li.main-menu__item(itemprop="url")
+        if(pageName === page.name)
+          a.main-menu__link.active(href=page.url itemprop="name")= page.title
+        else
           a.main-menu__link(href=page.url itemprop="name")= page.title
             if page.child.length > 0
               ul 

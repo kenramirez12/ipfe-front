@@ -8,6 +8,9 @@
         ul.responsive-main-menu.mb-0
           each page in pages
             li.responsive-main-menu__item(itemprop="url")
+              if(pageName === page.name)
+                a.responsive-main-menu__link.active(href=page.url itemprop="name")= page.title
+              else
                 a.responsive-main-menu__link(href=page.url itemprop="name")= page.title
                   if page.child.length > 0
                     ul 
